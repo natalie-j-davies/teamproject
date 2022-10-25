@@ -20,7 +20,7 @@
     <h1>Welcome to Team Project !!!</h1>
     <p>Tester page for uploading the code</p>
     <p>Adding content to the index.html page</p>
-
+    <button id="button" onclick= "document.location='register.php'">Register here</button>
 
     <h2>PHONES CASES</h2>
 </body>
