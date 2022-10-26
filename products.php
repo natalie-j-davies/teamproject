@@ -7,6 +7,12 @@
     <title>Products</title>
 </head>
 <body>
-    <h1>Products page</h1>
+<div id="nav-bar">
+        <a class="active" href="index.php">Home</a>
+        <a href="products.php">Products</a>
+        <a href="contact.php">Contact us</a>
+        <a href="#about">About</a>
+    </div>
+    <h1> products page</h1>
 </body>
 </html>

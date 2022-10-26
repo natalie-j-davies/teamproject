@@ -7,6 +7,12 @@
     <title>Contact page</title>
 </head>
 <body>
-    
+<div id="nav-bar">
+        <a class="active" href="index.php">Home</a>
+        <a href="products.php">Products</a>
+        <a href="contact.php">Contact us</a>
+        <a href="#about">About</a>
+    </div>
+    <h1>contacts page</h1>
 </body>
 </html>
