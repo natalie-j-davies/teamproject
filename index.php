@@ -12,8 +12,8 @@
 <body>
     <div id="nav-bar">
         <a class="active" href="index.php">Home</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact us</a>
+        <a href="products.php">Products</a>
+        <a href="contact.php">Contact us</a>
         <a href="#about">About</a>
     </div>
     <h1>Tester page to learn git</h1>
