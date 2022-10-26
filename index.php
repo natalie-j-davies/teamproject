@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="nav-bar">
-        <a class="active" href="index.html">Home</a>
+        <a class="active" href="index.php">Home</a>
         <a href="#products">Products</a>
         <a href="#contact">Contact us</a>
         <a href="#about">About</a>
@@ -26,8 +26,6 @@
     <button id="button" onclick= "document.location='register.php'">Register here</button>
 
     <h2>PHONES CASES</h2>
-</body>
-</html>
     <h2>natalie test for pull change again test 2</h2>
 </body>
 </html>
