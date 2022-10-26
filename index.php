@@ -11,9 +11,9 @@
 </head>
 <body>
     <div id="nav-bar">
-        <a class="active" href="index.html">Home</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact us</a>
+        <a class="active" href="index.php">Home</a>
+        <a href="products.php">Products</a>
+        <a href="contact.php">Contact us</a>
         <a href="#about">About</a>
     </div>
     <h1>Tester page to learn git</h1>
@@ -26,8 +26,6 @@
     <button id="button" onclick= "document.location='register.php'">Register here</button>
 
     <h2>PHONES CASES</h2>
-</body>
-</html>
     <h2>natalie test for pull change again test 2</h2>
     <h2>sydul test</h2> 
 
