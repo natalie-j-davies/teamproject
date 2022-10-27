@@ -1,3 +1,8 @@
+@extends('layouts.master')
+
+@section('content')
+<title> {{ $title }}</title>
+        <p>This is the about page for an example Laravel web application.</p>
 <?php
 //if the form has been submitted
 if (isset($_POST['submitted'])){
@@ -59,3 +64,5 @@ if (isset($_POST['submitted'])){
 </div>
 </body>
 </html>
+
+@endsection
