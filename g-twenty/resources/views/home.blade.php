@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <title> {{ $title }}</title>
+<title>G-Twenty</title>
     <p>This is the home page for an example Laravel web application.</p>
     <!DOCTYPE html>
 <html lang="en">
