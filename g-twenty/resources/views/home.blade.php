@@ -1,5 +1,8 @@
 @extends('layouts.master')
-
+@section('navbar')
+    @parent
+    <p>appending nav bar from master.blade </p>
+@endsection
 @section('content')
 <title>G-Twenty</title>
     <p>This is the home page for an example Laravel web application.</p>
