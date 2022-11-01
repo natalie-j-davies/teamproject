@@ -1,9 +1,9 @@
 <?php
 
 $db_host = 'localhost';
-$db_name = '###to be sorted###';
-$username = 'root';
-$password = '';
+$db_name = 'u_210209859_db';
+$username = 'u-210209859';
+$password = 'qrygSvEBi5g3hga';
    
 try {
 	$db = new PDO("mysql:dbname=$db_name;port=3306;host=$db_host", $username, $password); 
