@@ -10,6 +10,7 @@
     <title>Test</title>
 </head>
 <body>
+<<<<<<< HEAD
     <Div id="nav-bar">
         <a class="active" href="index.php">Home</a>
         <a href="#products">Products</a>
@@ -27,5 +28,8 @@
 
     <h2>PHONES CASES</h2>
     <h2>natalie test for pull change again test 2</h2>
+=======
+    <p>testing</p>
+>>>>>>> f57593f93e1a1c9e501f5c3a9e22f6e697f742e0
 </body>
 </html>
