@@ -11,7 +11,5 @@
 </head>
 <body>
     <p>testing for test</p>
-    <p>testing</p>
-    <p>Testing PHP</p>
 </body>
 </html>
