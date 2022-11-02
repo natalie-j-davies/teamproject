@@ -10,10 +10,11 @@
     <title>Test</title>
 </head>
 <body>
-  <p>testing for test</p>
+    <p>testing for test</p>
+    <p>testing</p>
+    <p>Testing PHP</p>
 
-  
-    <p>testing more</p>
-
+    <p>testing the page</p>
+    
 </body>
 </html>
