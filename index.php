@@ -10,26 +10,7 @@
     <title>Test</title>
 </head>
 <body>
-<<<<<<< HEAD
-    <Div id="nav-bar">
-        <a class="active" href="index.php">Home</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact us</a>
-        <a href="#about">About</a>
-    </div>
-    <h1>Tester page to learn. git</h1>
-    <p>Tester page for team project</p>
-
-    <h1>Welcome to Team Project !!!</h1>
-    <p>Tester page for uploading the code</p>
-    <p>Adding content to the index.html page</p>
-
-    <button id="button" onclick= "document.location='register.php'">Register here</button>
-
-    <h2>PHONES CASES</h2>
-    <h2>natalie test for pull change again test 2</h2>
-=======
+    <p>testing for test</p>
     <p>testing</p>
->>>>>>> f57593f93e1a1c9e501f5c3a9e22f6e697f742e0
 </body>
 </html>
