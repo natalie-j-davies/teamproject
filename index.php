@@ -10,13 +10,13 @@
     <title>Test</title>
 </head>
 <body>
-    <div id="nav-bar">
+    <Div id="nav-bar">
         <a class="active" href="index.php">Home</a>
         <a href="#products">Products</a>
         <a href="#contact">Contact us</a>
         <a href="#about">About</a>
     </div>
-    <h1>Tester page to learn git</h1>
+    <h1>Tester page to learn. git</h1>
     <p>Tester page for team project</p>
 
     <h1>Welcome to Team Project !!!</h1>
