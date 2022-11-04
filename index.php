@@ -7,7 +7,7 @@
 
     <link rel = "stylesheet" type="text/css" href="style/style.css" />
 
-    <title>Test</title>
+    <title>Home Page</title>
 </head>
 <body>
     <p>checking and testing</p>
