@@ -16,6 +16,15 @@
         <!-- content -->
         <div class="content">
 
+            <!-- nav bar -->
+            <div class="topnav">
+                <a class="active" href="index.php">Home</a>
+                <a href="products.php">Products</a>
+                <a href="signup.php">Sign Up</a>
+                <a href="about.php">About Us</a>
+                <a href="contact.php">Contact</a>
+            </div>
+
             <!-- signup title -->
             <div class="login-title text-center">
                 <h1 class="title">Sign Up</h1>
