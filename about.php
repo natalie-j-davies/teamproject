@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
-    <title>Home Page</title>
+    <title>About Us Page</title>
 </head>
 <body>
     <!--navigation bar-->
@@ -19,18 +19,5 @@
   <a href="about.php">About Us</a>
   <a href="contact.php">Contact</a>
 </div>
-<!--log in and clear button--> 
-<form action="index.php" method="post">
-<div id="login">
-	<label>User Name </label>
-	<input type="text" name="username" value="" placeholder="Username"/>
-
-	<label>Password </label>
-	<input type="password" name="password" value="" placeholder="Password"/>
-
-	<input type="submit" value="Sign In" class="button"/>
-	<input type="hidden" name="login" value="TRUE" />
-	</form>
-
 </body>
 </html>
