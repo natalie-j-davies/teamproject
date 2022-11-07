@@ -12,10 +12,19 @@
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
-    <title>Sign-Up</title>
+    <title><?php echo TITLE; ?></title>
 </head>
 <body>
     <!-- wrapper -->
     <div class="wrapper">
+        <!-- nav bar -->
+        <div class="topnav">
+            <a class="active" href="index.php">Home</a>
+            <a href="products.php">Products</a>
+            <a href="signup.php">Sign Up</a>
+            <a href="about.php">About Us</a>
+            <a href="contact.php">Contact</a>
+        </div>
+
         <!-- content -->
         <div class="content">
