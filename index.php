@@ -74,8 +74,6 @@ if (isset($_POST['submitted'])){
 	<input type="reset" value="clear" class="button"/>
 	<input type="hidden" name="submitted" value="TRUE" />
 	</form>
-<p>checking and testing.</p>
 
-<p>testing for test</p>
 </body>
 </html>
