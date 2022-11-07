@@ -11,6 +11,12 @@
     <title>Sign-Up</title>
 </head>
 <body>
-    <p>test sign-up</p>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- content -->
+        <div class="content">
+            
+        </div>
+    </div>
 </body>
 </html>
