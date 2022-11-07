@@ -41,6 +41,11 @@
                     </div>
                 </form>
             </div>
+
+            <div class="footer">
+
+            </div>
+            <small>&copy; <?php echo date('Y'); ?> G-TWENTY</small>
         </div>
         <!-- end content -->
     </div>
