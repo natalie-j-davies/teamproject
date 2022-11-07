@@ -9,12 +9,13 @@
 
     <title>Home Page</title>
 </head>
-<ul>
-    <li><a href = "default.asp">Home</a></li>
-  <li><a href="products.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
-</ul>
+<div class="topnav">
+  <a class="active" href="index.php">Home</a>
+  <a href="products.php">Products</a>
+  <a href="signup.php">Sign Up</a>
+  <a href="about.php">About Us</a>
+  <a href="contact.php">Contact</a>
+</div>
 
 
 <body>
