@@ -63,6 +63,7 @@ if (isset($_POST['submitted'])){
   <a href="about.php">About Us</a>
   <a href="contact.php">Contact</a>
 </div>
+<!--log in and clear button--> 
 <form action="index.php" method="post">
 <div id="index-login">
 	<label>User Name </label>
