@@ -18,7 +18,7 @@
 
 
 <body>
-    <p>checking and testing</p>
+    <p>checking and testing.</p>
     <p>testing for test</p>
 </body>
 </html>
