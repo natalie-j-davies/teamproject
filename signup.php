@@ -15,7 +15,23 @@
     <div class="wrapper">
         <!-- content -->
         <div class="content">
-            
+
+            <!-- signup title -->
+            <div class="login-title text-center">
+                <h1 class="title">Sign Up</h1>
+                <p>Please fill in this sign-up form to create an account</p>
+            </div>
+
+            <hr>
+
+            <!-- signup form -->
+            <div class="login-form">
+                <form action="#" id="signup-form">
+                    <div class="container">
+                        
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
