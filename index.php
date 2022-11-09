@@ -2,6 +2,7 @@
     define("TITLE", "Sign Up | G-TWENTY");
     include('includes/header.php');
 ?>
+
   <!--log in and clear button--> 
   <form action="index.php" method="post">
     <div id="login">
@@ -16,6 +17,6 @@
     </div>
   </form>
 
-  <?php
+<?php
     include('includes/footer.php');
 ?>
