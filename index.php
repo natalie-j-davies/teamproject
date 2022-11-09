@@ -11,26 +11,27 @@
     <title>Home Page</title>
 </head>
 <body>
-    <!--navigation bar-->
-<div class="topnav">
-  <a class="active" href="index.php">Home</a>
-  <a href="products.php">Products</a>
-  <a href="signup.php">Sign Up</a>
-  <a href="about.php">About Us</a>
-  <a href="contact.php">Contact</a>
-</div>
-<!--log in and clear button--> 
-<form action="index.php" method="post">
-<div id="login">
-	<label>User Name </label>
-	<input type="text" name="username" value="" placeholder="Username"/>
+  <!--navigation bar-->
+  <div class="topnav">
+    <a class="active" href="index.php">Home</a>
+    <a href="products.php">Products</a>
+    <a href="signup.php">Sign Up</a>
+    <a href="about.php">About Us</a>
+    <a href="contact.php">Contact</a>
+  </div>
+  <!--log in and clear button--> 
+  <form action="index.php" method="post">
+    <div id="login">
+      <label>User Name </label>
+      <input type="text" name="username" value="" placeholder="Username"/>
 
-	<label>Password </label>
-	<input type="password" name="password" value="" placeholder="Password"/>
+      <label>Password </label>
+      <input type="password" name="password" value="" placeholder="Password"/>
 
-	<input type="submit" value="Sign In" class="button"/>
-	<input type="hidden" name="login" value="TRUE" />
-	</form>
+      <input type="submit" value="Login" class="button"/>
+      <input type="hidden" name="login" value="TRUE" />
+    </div>
+  </form>
 
 </body>
 </html>
