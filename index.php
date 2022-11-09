@@ -16,6 +16,6 @@
     </div>
   </form>
 
-  <?php
+<?php
     include('includes/footer.php');
 ?>
