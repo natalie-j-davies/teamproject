@@ -19,6 +19,7 @@
     <div class="wrapper">
         <!-- nav bar -->
         <div class="topnav">
+            <img src="images/temp_logo.png" alt="img" id="temp-logo"></img>
             <a class="active" href="index.php">Home</a>
             <a href="products.php">Products</a>
             <a href="signup.php">Sign Up</a>
