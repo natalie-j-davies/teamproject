@@ -12,7 +12,7 @@
 <div id="log-out">
 	<h2> Logged out of your G-TWENTY account </h2> 
 	<p>Would like to log in again? <br></p>
-	<button id="button" onclick= "document.location='index.php'">Log in</button>
+	<button id="button" onclick= "document.location='login.php'">Log in</button>
 </div>
 
 <?php
