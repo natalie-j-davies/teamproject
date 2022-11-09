@@ -2,7 +2,7 @@
     define("TITLE", "Private Policy  | G-TWENTY");
     include('includes/header.php');
 ?>
-
+<!--This is concept work not finished product -->
 <h1>PRIVACY POLICY</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
     minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
