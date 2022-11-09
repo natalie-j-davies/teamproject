@@ -25,6 +25,7 @@
             <a href="signup.php">Sign Up</a>
             <a href="about.php">About Us</a>
             <a href="contact.php">Contact</a>
+            <input type="text" placeholder="Search..">
         </div>
 
         <!-- content -->
