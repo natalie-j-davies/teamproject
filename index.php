@@ -1,5 +1,5 @@
 <?php
-    define("TITLE", "Sign Up | G-TWENTY");
+    define("TITLE", "Home | G-TWENTY");
     include('includes/header.php');
 ?>
 
