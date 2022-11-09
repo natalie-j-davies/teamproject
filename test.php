@@ -47,11 +47,11 @@ if (isset($_POST['submitted'])){
 
 	Username: <input type="text" name="username" /><br>
 	Password: <input type="password" name="password" /><br>
-    First Name: <input type="text" name="firstname" /><br>
-    Last Name: <input type="text" name="lastname" /><br>
+  First Name: <input type="text" name="firstname" /><br>
+  Last Name: <input type="text" name="lastname" /><br>
 	Phone Number: <input type="text" name="phone" /><br>
 	Email: <input type="test" name="email" /><br>
-    Address Line: <input type="text" name="address" /><br>
+  Address Line: <input type="text" name="address" /><br>
 	Postcode: <input type="text" name="postcode" /><br>
 
 	<input type="submit" value="Register" /> 
