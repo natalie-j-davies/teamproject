@@ -2,6 +2,7 @@
     define("TITLE", "Sign Up | G-TWENTY");
     include('includes/header.php');
 ?>
+<?php
 //if the form has been submitted
 if (isset($_POST['login'])){
 	if ( !isset($_POST['username'], $_POST['password']) ) {
