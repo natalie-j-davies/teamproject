@@ -21,7 +21,11 @@
 
                         <!-- Password Field -->
                         <label for="password"><b>Password: </b></label>
-                        <input type="password" id="password" name="password"><br><br>
+                        <input type="password" id="password" name="password" required><br><br>
+
+                        <!-- Repeat Password Field -->
+                        <label for="password-repeat"><b>Repeat Password: </b></label>
+                        <input type="password" id="password-repeat" name="password-repeat" required><br><br>
 
                         <!-- First Name Field -->
                         <label for="firstname"><b>First Name: </b></label>
@@ -30,6 +34,14 @@
                         <!-- Last Name Field -->
                         <label for="lastname"><b>Last Name: </b></label>
                         <input type="text" id="lastname" name="lastname"><br><br>
+                        
+                        <!-- Phone Number Field -->
+                        <label for="phone"><b>Phone Number: </b></label>
+                        <input type="text" id="phone" name="phone"><br><br>
+
+                        <!-- Email Field -->
+                        <label for="email"><b>Email Address: </b></label>
+                        <input type="text" id="email" name="email" required><br><br>
                     </div>
                 </form>
             </div>
