@@ -22,7 +22,7 @@
         <p>Shipping Address     </p>
         <p>Total     </p>
     </div>
-    <p>Would you like to logout? <a href="logout.php">click here</p>
+    <p>Would you like to logout? <a href="logout.php">click here</a></p>
 </div>
 
 
