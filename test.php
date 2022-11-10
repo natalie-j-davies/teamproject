@@ -1,6 +1,7 @@
 <?php
     define("TITLE", "TEST | G-TWENTY");
     include('includes/header.php');
+    session_start();
 ?>
 <?php
 //if the form has been submitted
