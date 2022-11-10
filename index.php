@@ -4,7 +4,7 @@
 ?>
 
   <!--log in and clear button--> 
-  <form action="index.php" method="post">
+  <form action="account.php" method="post">
     <div id="login">
       <label>User Name </label>
       <input type="text" name="username" value="" placeholder="Username"/>
