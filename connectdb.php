@@ -1,9 +1,9 @@
 <?php
 
-$db_host = 'localhost';
-$db_name = 'gtwenty_db';
-$username = "root";
-$password = "";
+$db_host = 'localhost:3306';
+$db_name = 'u_210209859_gtwentydb';
+$username = "u-210209859";
+$password = "qrygSvEBi5g3hga";
    
 try {
 	$db = new PDO("mysql:host=$db_host;dbname=$db_name", $username, $password); 

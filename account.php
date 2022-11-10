@@ -4,6 +4,12 @@
     session_start();
 ?>
 
+<?php
+
+include_once('connectdb.php');
+
+
+?>
 
 <div id="account-main">
     <h1>Account Dashboard</h1>

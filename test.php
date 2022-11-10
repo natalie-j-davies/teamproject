@@ -12,12 +12,12 @@ if (isset($_POST['submitted'])){
   require_once('connectdb.php');
 	//creating variables for all data entered into register form
   $username=isset($_POST['username'])?$_POST['username']:false;
-  $password=isset($_POST['password'])?password_hash($_POST['password'],PASSWORD_DEFAULT):false;
-  $firstname=isset($_POST['firstname'])?$_POST['firstname']:false;
-  $lastname=isset($_POST['lastname'])?$_POST['lastname']:false;
+  $password=isset($_POST['password'])?password_hash($_POST['userPassword'],PASSWORD_DEFAULT):false;
+  $firstname=isset($_POST['firstname'])?$_POST['firstName']:false;
+  $lastname=isset($_POST['lastname'])?$_POST['lastName']:false;
   $phone=isset($_POST['phone'])?$_POST['phone']:false;
   $email=isset($_POST['email'])?$_POST['email']:false;
-  $address=isset($_POST['address'])?$_POST['address']:false;
+  $address=isset($_POST['address'])?$_POST['addressLine']:false;
   $postcode=isset($_POST['postcode'])?$_POST['postcode']:false;
 
   //checks if username and password is correct
