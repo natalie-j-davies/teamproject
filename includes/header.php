@@ -26,7 +26,7 @@
             <a href="about.php">About Us</a>
             <a href="contact.php">Contact</a>
             <input type="text" placeholder="Search..">
-            <a href="login.php">Account</a>
+            <a href="login.php"><img src="images/temp_profile.png" alt="img" id="temp-profile"></img></a>
         </div>
 
         <!-- content -->
