@@ -6,3 +6,7 @@
     max-width: 60px;
     max-height: 60px;
 }
+#login-button{
+    color: white;
+    padding: 5px;
+}
