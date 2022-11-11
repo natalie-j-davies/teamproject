@@ -19,7 +19,7 @@
   </form>
 
   <p>Not a member? Register <a href="signup.php">here</a></p>
-  <p>By signing-in you agree to G-TWENY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy.</a></p>
+  <p>By signing-in you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy.</a></p>
 <?php
     include('includes/footer.php');
 ?>
