@@ -4,7 +4,7 @@
 ?>
 
   <!--log in and clear button--> 
-  <div id="login-buttondgdfg">
+  <div id="login-button">
   <button type="button"><a href="login.php">Sign in!</a></button>
   </div>  
 
