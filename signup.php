@@ -46,6 +46,12 @@
                         <!-- Postcode Field -->
                         <label for="postcode"><b>Postcode: </b></label>
                         <input type="text" id="postcode" name="postcode"><br><br>
+
+                        <p>By creating an account you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
+
+                        <div class="clearfix">
+                            <button type="submit" class="signupBtn">Sign Up</button>
+                        </div>
                     </div>
                 </form>
             </div>
