@@ -1,5 +1,5 @@
 <?php
-    define("TITLE", "Privacy Policy| G-TWENTY");
+    define("TITLE", "Privacy Policy | G-TWENTY");
     include('includes/header.php');
 ?>
 <!--This is concept work not finished product -->
