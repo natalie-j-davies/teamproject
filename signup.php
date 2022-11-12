@@ -62,7 +62,7 @@
 
                         <!-- Link to the Login Page -->
                         <div class="loginLink clearfix">
-                            <p>Already have an account. Login <a href="login.php">here</a></p>
+                            <p>Already have an account? Login <a href="login.php">here</a></p>
                         </div>
                     </div>
                 </form>
