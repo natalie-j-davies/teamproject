@@ -17,11 +17,11 @@
       <div class="container" id="login">
         <!-- Username Field -->
         <label for="username">Username </label>
-        <input type="text" name="username" value="" placeholder="Username"/>
+        <input type="text" name="username" value="" placeholder="Username"/><br><br>
 
         <!-- Password Field -->
         <label for="password">Password </label>
-        <input type="password" name="password" value="" placeholder="Password"/>
+        <input type="password" name="password" value="" placeholder="Password"/><br><br>
 
         <!-- Login Button -->
         <input type="submit" value="Login" class="button"/>
