@@ -14,7 +14,7 @@
 </div>
 <h4>Featured Collection</h4>
 <div id="middle-container">
-  <div><img id="pic-2"><a href="products.php" src="images/carousel-4.png"><p>Phone Case eg</p></div>
+  <div><img id="pic-2" src="images/carousel-4.png"><p>Phone Case eg</p></div>
   <div><img id="pic-3" src="images/carousel-4.png"><p>Phone Case eg</p></div>
   <div><img id="pic-4" src="images/carousel-4.png"><p>Phone Case eg</p></div>
   <div><img id="pic-5" src="images/carousel-4.png"><p>Phone Case eg</p></div>
