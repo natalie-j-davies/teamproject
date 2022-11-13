@@ -14,10 +14,10 @@
 </div>
 <h4>Featured Collection</h4>
 <div id="middle-container">
-  <div><img id="pic-2" src="images/carousel-4.png"><p>Phone Case eg</p></div>
-  <div><img id="pic-3" src="images/carousel-4.png"><p>Phone Case eg</p></div>
-  <div><img id="pic-4" src="images/carousel-4.png"><p>Phone Case eg</p></div>
-  <div><img id="pic-5" src="images/carousel-4.png"><p>Phone Case eg</p></div>
+  <div><img id="pic-2" src="images/carousel-4.png"><p>Clear Cases</p></div>
+  <div><img id="pic-3" src="images/carousel-4.png"><p>Leather Cases</p></div>
+  <div><img id="pic-4" src="images/carousel-4.png"><p>Metal Cases</p></div>
+  <div><img id="pic-5" src="images/carousel-4.png"><p>Wood Cases</p></div>
 </div>
 
 <div id="community">
