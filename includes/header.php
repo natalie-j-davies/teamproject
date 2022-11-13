@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+	<script defer src="js/script.js"></script>
     <title><?php echo TITLE; ?></title>
 </head>
 <body>
