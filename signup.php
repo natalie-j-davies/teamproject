@@ -12,9 +12,9 @@
             <hr>
 
             <!-- Sign-up form to sign up an account -->
-            <div class="login-form">
+            <div class="signup-form">
                 <form action="signup.php" id="signup-form">
-                    <div class="container">
+                    <div class="signup-container">
                         <!-- Username Field -->
                         <label for="username">Username </label>
                         <input type="text" id="username" name="username"><br><br>
