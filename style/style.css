@@ -18,10 +18,12 @@
     margin: auto;
     text-align: center;
 }
+/* Head of index.php*/
 #pic-1{
     width: 100%;
     max-height: 400px;
 }
+/* Feature Collection using flex box */
 #middle-container{
     display: flex;
     flex-wrap: wrap;
@@ -56,10 +58,31 @@
     padding: 10px;
     border-radius: 16px;
 }
-#community{
-    padding: 10px;
+/* Our Community using flex box*/
+#lower-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding: 5px;
 }
 #pic-6{
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+#pic-7{
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+#pic-8{
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
 }
