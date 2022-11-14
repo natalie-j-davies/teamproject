@@ -14,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
 	<!-- JavaScript files -->
     <script defer src="js/script.js"></script>
+    <!-- fontawesome.com for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title><?php echo TITLE; ?></title>
 </head>
 <body>
@@ -27,8 +30,8 @@
             <a href="signup.php">Sign Up</a>
             <a href="about.php">About Us</a>
             <a href="contact.php">Contact</a>
-            <input type="text" placeholder="Search..">
-            <a href="login.php"><img src="images/temp_profile.png" alt="img" id="temp-profile"></img></a>
+            <input type="text" placeholder="Search.." required><i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <a href="login.php"><i class="fa fa-user" id="user-icon"></i></a>
         </div>
 
         <!-- content -->
