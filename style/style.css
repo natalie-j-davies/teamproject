@@ -13,15 +13,13 @@
 }
 #header-container{
     position: relative;
-    padding-left: 5px;
-    padding-right: 5px;
     margin: auto;
     text-align: center;
 }
 /* Head of index.php*/
 #pic-1{
     width: 100%;
-    max-height: 400px;
+    max-height: 480px;
 }
 /* Feature Collection using flex box */
 #middle-container{
@@ -35,25 +33,25 @@
 
 }
 #pic-2{
-    width: 200px;
+    width: 225px;
     height: 250px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-3{
-    width: 200px;
+    width: 225px;
     height:250px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-4{
-    width: 200px;
+    width: 225px;
     height: 250px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-5{
-    width: 200px;
+    width: 225px;
     height: 250px;
     padding: 10px;
     border-radius: 16px;
