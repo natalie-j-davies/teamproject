@@ -96,7 +96,7 @@
     border-radius: 16px;
 }
 /* login form */
-#login-form{
+.login-form{
     background-color: aqua;
 }
 #login-container{
