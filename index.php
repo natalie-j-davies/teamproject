@@ -5,7 +5,7 @@
 
   <!--log in button--> 
   <div id="login-button">
-  <button type="button"><a href="login.php">Sign in!</a></button>
+    <button type="button"><a href="login.php">Sign in!</a></button>
   </div> 
   <!--lhead of index.php main picture --> 
   <div id="header-container"> 
@@ -13,7 +13,7 @@
     <h2>Effortless Style</h2>
     <!--shop button takes user to products.php--> 
     <button><a href="products.php">Shop Now</a></button>
-</div>
+  </div>
 <!--feature collection with links to products --> 
 <h4>Featured Collection</h4>
 <div id="middle-container">
@@ -26,9 +26,10 @@
 <div id="community">
   <h4>Our Community</h4>
   <div id="lower-container">
-  <div><img id="pic-6" src="images/carousel-4.png"><p>Example</p></div>
-  <div><img id="pic-7" src="images/carousel-4.png"><p>Example</p></div>
-  <div><img id="pic-8" src="images/carousel-4.png"><p>Example</p></div>
+    <div><img id="pic-6" src="images/carousel-4.png"><p>Example</p></div>
+    <div><img id="pic-7" src="images/carousel-4.png"><p>Example</p></div>
+    <div><img id="pic-8" src="images/carousel-4.png"><p>Example</p></div>
+  </div>
 </div>
 
 <?php
