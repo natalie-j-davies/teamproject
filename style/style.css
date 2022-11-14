@@ -95,11 +95,14 @@
     padding: 10px;
     border-radius: 16px;
 }
-/* login form */
-.login-form{
-    background-color: aqua;
+/* signup form */
+.signup-form{
+width: 50%;
+text-align: center;
+align-items: center;
+margin: auto;
+padding: 50px;
 }
-#login-container{
-    text-align: center;
-    background-color: aqua;
+.signup-container{
+    text-align: left;
 }

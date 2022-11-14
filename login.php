@@ -12,9 +12,9 @@
   <hr>
 
   <!-- Log in form and button --> 
-  <div class="login-form">
+  <div class="signup-form">
     <form action="account.php" method="post">
-      <div class="container" id="login">
+      <div class="signup-container" id="login">
         <!-- Username Field -->
         <label for="username">Username </label>
         <input type="text" name="username" value="" placeholder="Username"/><br><br>
