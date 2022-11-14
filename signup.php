@@ -13,7 +13,7 @@
 
             <!-- Sign-up form to sign up an account -->
             <div class="signup-form">
-                <form action="signup.php" id="signup-form">
+                <form action="signup.php" id="signup">
                     <div class="signup-container">
                         <!-- Username Field -->
                         <label for="username">Username </label>
