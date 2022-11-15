@@ -1,7 +1,6 @@
 <?php
     define("TITLE", "Home | G-TWENTY");
     include('includes/header.php');
-    session_start();
 ?>
 
   <!--log in button--> 
