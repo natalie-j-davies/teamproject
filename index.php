@@ -12,17 +12,24 @@ if (isset($_POST['login'])){
 	 exit('Please fill both the username and password fields!');
 	}
 	// connect DB
-	require_once ("connectdb.php");
 	try {
+    require_once ("connectdb.php");
 	//Query DB to find the matching username/password
 	//using prepare to prevent SQL injection.
 		$stat = $db->prepare('SELECT Userpassword FROM users WHERE username = ?');
 		$stat->execute(array($_POST['username']));
-		
+  }
+	catch(PDOException $ex) {
+		echo("Failed to connect to the database.<br>");
+		echo($ex->getMessage());
+		exit;
+	}
+  }
 		// fetch the result row and check 
 		if ($stat->rowCount()>0){ 
 			$row=$stat->fetch();
-
+    }
+    ?>
   <!--log in button--> 
   <div id="login-button-container">
     <button id="login-button" type="button"><a href="login.php">Sign in!</a></button>
