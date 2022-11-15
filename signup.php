@@ -2,7 +2,40 @@
     define("TITLE", "Sign Up | G-TWENTY");
     include('includes/header.php');
 ?>
+<?php
+//if the form has been submitted
+if (isset($_POST['submit'])){
 
+  // connect to the database
+  require_once('connectdb.php');
+//creating variables for all data entered into register form
+  $username=isset($_POST['username'])?$_POST['username']:false;
+  $password=isset($_POST['password'])?password_hash($_POST['password'],PASSWORD_DEFAULT):false;
+  $firstname=isset($_POST['firstname'])?$_POST['firstname']:false;
+  $lastname=isset($_POST['lastname'])?$_POST['lastname']:false;
+  $phone=isset($_POST['phone'])?$_POST['phone']:false;
+  $email=isset($_POST['email'])?$_POST['email']:false;
+  $address=isset($_POST['address'])?$_POST['address']:false;
+  $postcode=isset($_POST['postcode'])?$_POST['postcode']:false;
+
+ try{
+
+	//register user by inserting the user info into users database
+	$stat=$db->prepare("insert into users values(default,?,?,?,?,?,?,?,?)");
+	$stat->execute(array($username, $password,$firstname,$lastname,$phone,$email,$address,$postcode));
+
+	echo "Congratulations $username! You are now registered. ";
+    session_start();
+	$_SESSION["username"]=$_POST['username'];
+	header("Location:account.php");
+
+ }
+ catch (PDOexception $ex){
+	echo "Sorry, a database error occurred! <br>";
+	echo "Error details: <em>". $ex->getMessage()."</em>";
+ }
+}
+?>
             <!-- Sign-up title -->
             <div class="login-title text-center">
                 <h1 class="title">Sign Up</h1>
@@ -13,7 +46,7 @@
 
             <!-- Sign-up form to sign up an account -->
             <div class="signup-form">
-                <form action="signup.php" id="signup">
+                <form action="signup.php" method="post">
                     <div class="signup-container">
                         <!-- Username Field -->
                         <label for="username">Username </label>
@@ -51,7 +84,7 @@
 
                         <div class="signupBtnDiv clearfix">
                             <!-- Sign Up button -->
-                            <button type="submit" class="signupBtn" value="Sign Up">
+                            <button type="submit" class="signupBtn" name="submit" value="Sign Up">
                                 <span class="inner">
                                     <span class="label">
                                         <span class="label-text">Sign Up</span>

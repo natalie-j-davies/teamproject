@@ -76,15 +76,6 @@ if (isset($_POST['login'])){
     include('includes/footer.php');
 ?>
 
-
-?>
-<?php
-
-if ((empty($_POST['username'])) OR (empty($_POST['password']))){
-  echo "<p> Please fill in all the above inputs</p>";
-}
-
-?>
 <p>Sign in here..</p>
   <!--log in and clear button--> 
   <form action="account.php" method="post">
