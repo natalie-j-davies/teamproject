@@ -1,11 +1,8 @@
 <?php
     define("TITLE", "About Us | G-TWENTY");
     include('includes/header.php');
-    session_start();
 ?>
-
-    
-        
+  
         <section class="about">
          <div class="main">
             <img src="twenty.jpg">

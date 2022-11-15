@@ -38,7 +38,7 @@
             <img src="images/temp_logo.png" alt="img" id="temp-logo"></img>
             <a class="active" href="index.php">Home</a>
             <a href="products.php">Products</a>
-            <a href="test.php">Sign Up</a>
+            <a href="signup.php">Sign Up</a>
             <a href="about.php">About Us</a>
             <a href="contact.php">Contact</a>
 
