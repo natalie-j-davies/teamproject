@@ -1,12 +1,7 @@
 <?php
-	session_start();
-
-	session_destroy();
-
-?>
-<?php
     define("TITLE", "Log Out | G-TWENTY");
     include('includes/header.php');
+	session_destroy();
 ?>
 
 <div id="log-out">
