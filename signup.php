@@ -3,7 +3,7 @@
     include('includes/header.php');
 ?>
 
-            <!-- signup title -->
+            <!-- Sign-up title -->
             <div class="login-title text-center">
                 <h1 class="title">Sign Up</h1>
                 <p>Please fill in this sign-up form to create an account</p>
@@ -11,11 +11,59 @@
 
             <hr>
 
-            <!-- signup form -->
-            <div class="login-form">
-                <form action="#" id="signup-form">
-                    <div class="container">
+            <!-- Sign-up form to sign up an account -->
+            <div class="signup-form">
+                <form action="signup.php" id="signup">
+                    <div class="signup-container">
+                        <!-- Username Field -->
+                        <label for="username">Username </label>
+                        <input type="text" id="username" name="username"><br><br>
+
+                        <!-- Password Field -->
+                        <label for="password">Password </label>
+                        <input type="password" id="password" name="password" required><br><br>
+
+                        <!-- First Name Field -->
+                        <label for="firstname">First Name </label>
+                        <input type="text" id="firstname" name="firstname"><br><br>
+
+                        <!-- Last Name Field -->
+                        <label for="lastname">Last Name </label>
+                        <input type="text" id="lastname" name="lastname"><br><br>
                         
+                        <!-- Phone Number Field -->
+                        <label for="phone">Phone Number </label>
+                        <input type="text" id="phone" name="phone"><br><br>
+
+                        <!-- Email Field -->
+                        <label for="email">Email Address </label>
+                        <input type="text" id="email" name="email" required><br><br>
+
+                        <!-- Address Line Field -->
+                        <label for="address">Address Line </label>
+                        <input type="text" id="address" name="address"><br><br>
+
+                        <!-- Postcode Field -->
+                        <label for="postcode">Postcode </label>
+                        <input type="text" id="postcode" name="postcode"><br><br>
+
+                        <p>By creating an account you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
+
+                        <div class="signupBtnDiv clearfix">
+                            <!-- Sign Up button -->
+                            <button type="submit" class="signupBtn" value="Sign Up">
+                                <span class="inner">
+                                    <span class="label">
+                                        <span class="label-text">Sign Up</span>
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+
+                        <!-- Link to the Login Page -->
+                        <div class="loginLink clearfix">
+                            <p>Already have an account? Login <a href="login.php">here</a></p>
+                        </div>
                     </div>
                 </form>
             </div>

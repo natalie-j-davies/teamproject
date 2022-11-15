@@ -1,8 +1,9 @@
 <?php
-    define("TITLE", "Sign Up | G-TWENTY");
+    define("TITLE", "Home | G-TWENTY");
     include('includes/header.php');
     session_start();
 ?>
+
 <?php
 //if the form has been submitted
 if (isset($_POST['login'])){
@@ -22,30 +23,32 @@ if (isset($_POST['login'])){
 		if ($stat->rowCount()>0){ 
 			$row=$stat->fetch();
 
-			if (password_verify($_POST['password'], $row['Userpassword'])){ 
-
-			  session_start();
-				$_SESSION["username"]=$_POST['username'];
-				header("Location:index.php");
-				exit();
-			
-			} else {
-			 echo "<p style='color:red'>Error logging in, incorrect password </p>";
-			 }
-		} else {
-		  echo "<p style='color:red'>Error logging in, Username not found </p>";
-		}
-	}
-	catch(PDOException $ex) {
-		echo("Failed to connect to the database.<br>");
-		echo($ex->getMessage());
-		exit;
-	}
-
-}
-?>
-
-
+  <!--log in button--> 
+  <div id="login-button-container">
+    <button id="login-button" type="button"><a href="login.php">Sign in!</a></button>
+  </div> 
+  <!--lhead of index.php main picture --> 
+  <div id="header-container"> 
+    <img id="pic-1" src="images/carousel-1.png"  >
+    <h2>Effortless Style</h2>
+    <!--shop button takes user to products.php--> 
+    <button><a href="products.php">Shop Now</a></button>
+  </div>
+<!--feature collection with links to products --> 
+<h4>Featured Collection</h4>
+<div id="middle-container">
+  <div><img id="pic-2" src="images/clearcase.JPEG"><p id="FC-label">Clear Cases</p></div>
+  <div><img id="pic-3" src="images/leathercase.JPEG"><p id="FC-label">Leather Cases</p></div>
+  <div><img id="pic-4" src="images/metalcase.JPEG"><p id="FC-label">Metal Cases</p></div>
+  <div><img id="pic-5" src="images/woodcase.JPEG"><p id="FC-label">Wood Cases</p></div>
+</div>
+<!--our community section - more pictures of phone cases/people to inspire user to shop--> 
+  <h4>Our Community</h4>
+  <div id="lower-container">
+    <div><img id="pic-6" src="images/carousel-4.png"><p>Example</p></div>
+    <div><img id="pic-7" src="images/carousel-4.png"><p>Example</p></div>
+    <div><img id="pic-8" src="images/carousel-4.png"><p>Example</p></div>
+  </div>
 
 <?php
     include('includes/footer.php');

@@ -1,7 +1,10 @@
             <div class="footer">
 
             </div>
-            <small>&copy; <?php echo date('Y'); ?> <?php echo $companyName; ?></small>
+            <small>Copyright&copy; <?php echo date('Y'); ?> <?php echo $companyName; ?>
+            <?php 
+            echo "<a href='privacypolicy.php'>Privacy Policy</a><a href='termsconditions.php'>Term and Conditions</a>";
+            ?></small>
         </div>
         <!-- end content -->
     </div>

@@ -1,4 +1,108 @@
+/* nav bar */
 #temp-logo{
     max-width: 120px;
     max-height: 120px;
+}
+#temp-profile{
+    max-width: 60px;
+    max-height: 50px;
+}
+#user-icon{
+    font-size: 32px;
+    color:  #333
+}
+#login-button-container{
+    text-align: center;
+    padding: 5px;
+}
+#login-button{
+    align-items: center;
+    background-color: white;
+}
+/*Main picture on index.php*/
+#header-container{
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+/* Head of index.php*/
+#pic-1{
+    width: 100%;
+    max-height: 480px;
+}
+/* Feature Collection using flex box */
+#middle-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+#pic-2{
+    width: 225px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+#pic-3{
+    width: 225px;
+    height:250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+#pic-4{
+    width: 225px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+#pic-5{
+    width: 225px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+#FC-label{
+    text-align: center;
+}
+/* Our Community using flex box*/
+#lower-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+#pic-6{
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+#pic-7{
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+#pic-8{
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+/* signup form */
+.signup-form{
+width: 50%;
+text-align: center;
+align-items: center;
+margin: auto;
+padding: 50px;
+}
+.signup-container {
+    text-align: left;
 }
