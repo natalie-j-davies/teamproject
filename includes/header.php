@@ -44,11 +44,11 @@
             <a href="contact.php">Contact</a>
             <input type="text" placeholder="Search.." required>
             <i class="fa fa-magnifying-glass"></i>
-            <?php 
+            <?php /*If the user is not logged in a plain account icon will show in the nav bar */
             if (!isset($_SESSION['username'])){
                 echo "<a href='login.php'><i class='fa fa-user' id='user-icon'></i></a>";
                 exit();
-            }
+            } /*If the user is logged in the username will show in the nav bar */
                 $username=$_SESSION['username'];
                 echo "<a href='account.php'>". $_SESSION['username'] ."</a>"; 
             ?>

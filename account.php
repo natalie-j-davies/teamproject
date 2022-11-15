@@ -11,7 +11,7 @@
 	$username=$_SESSION['username'];
 
 	?>
-<!--This is concept work not finished product -->
+<!--The Account dashboard will show all user information when user logs in -->
     <div id="account-container">
 <?php
 	include ('connectdb.php'); 
