@@ -1,7 +1,27 @@
 <?php
     define("TITLE", "Home | G-TWENTY");
     include('includes/header.php');
+    session_start();
 ?>
+
+<?php
+//if the form has been submitted
+if (isset($_POST['login'])){
+	if ( !isset($_POST['username'], $_POST['password']) ) {
+	// Could not get the data that should have been sent.
+	 exit('Please fill both the username and password fields!');
+	}
+	// connect DB
+	require_once ("connectdb.php");
+	try {
+	//Query DB to find the matching username/password
+	//using prepare to prevent SQL injection.
+		$stat = $db->prepare('SELECT Userpassword FROM users WHERE username = ?');
+		$stat->execute(array($_POST['username']));
+		
+		// fetch the result row and check 
+		if ($stat->rowCount()>0){ 
+			$row=$stat->fetch();
 
   <!--log in button--> 
   <div id="login-button-container">
@@ -29,7 +49,6 @@
     <div><img id="pic-7" src="images/carousel-4.png"><p>Example</p></div>
     <div><img id="pic-8" src="images/carousel-4.png"><p>Example</p></div>
   </div>
-
 
 <?php
     include('includes/footer.php');

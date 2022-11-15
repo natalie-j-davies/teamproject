@@ -39,9 +39,10 @@
             <img src="images/temp_logo.png" alt="img" id="temp-logo"></img>
             <a class="active" href="index.php">Home</a>
             <a href="products.php">Products</a>
-            <a href="signup.php">Sign Up</a>
+            <a href="test.php">Sign Up</a>
             <a href="about.php">About Us</a>
             <a href="contact.php">Contact</a>
+
             <input type="text" placeholder="Search.." required>
             <i class="fa fa-magnifying-glass"></i>
             <?php /*If the user is not logged in a plain account icon will show in the nav bar */
@@ -52,6 +53,9 @@
                 $username=$_SESSION['username'];
                 echo "<a href='account.php'>". $_SESSION['username'] ."</a>"; 
             ?>
+          <input type="text" placeholder="Search..">
+            <a href="login.php">Account</a>
+
         </div>
 
         <!-- content -->
