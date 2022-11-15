@@ -47,17 +47,6 @@
         </div>*/
 
 ?>
-    <p>Would you like to logout? <a href="logout.php">click here</a></p>
-
-    session_start();
-?>
-
-<?php
-
-include_once('connectdb.php');
-
-
-?>
 
 <div id="account-main">
     <h1>Account Dashboard</h1>

@@ -4,10 +4,9 @@
 	//start the session, check if the user is not logged in, redirect to start
 	session_start();	
 
-	if (!isset($_SESSION['username'])){
-		exit();
+	if (isset($_SESSION['username'])){
+		$username=$_SESSION['username'];
 	}
-	$username=$_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,16 +44,18 @@
 
             <input type="text" placeholder="Search.." required>
             <i class="fa fa-magnifying-glass"></i>
-            <?php /*If the user is not logged in a plain account icon will show in the nav bar */
-            if (!isset($_SESSION['username'])){
-                echo "<a href='login.php'><i class='fa fa-user' id='user-icon'></i></a>";
-                exit();
-            } /*If the user is logged in the username will show in the nav bar */
-                $username=$_SESSION['username'];
+            <?php 
+            /*If the user is logged in the username will show in the nav bar */
+            if (isset($_SESSION['username'])){
+                
                 echo "<a href='account.php'>". $_SESSION['username'] ."</a>"; 
+            }
+            /*If the user is not logged in a plain account icon will show in the nav bar */
+            else{
+                echo "<a href='login.php'><i class='fa fa-user' id='user-icon'></i></a>";
+            }
+
             ?>
-          <input type="text" placeholder="Search..">
-            <a href="login.php">Account</a>
 
         </div>
 
