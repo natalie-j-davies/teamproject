@@ -1,7 +1,14 @@
 <?php
     $companyName = "G-TWENTY";
-?>
 
+	//start the session, check if the user is not logged in, redirect to start
+	session_start();	
+
+	if (!isset($_SESSION['username'])){
+		exit();
+	}
+	$username=$_SESSION['username'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,8 +42,16 @@
             <a href="signup.php">Sign Up</a>
             <a href="about.php">About Us</a>
             <a href="contact.php">Contact</a>
-            <input type="text" placeholder="Search.." required><i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-            <a href="login.php"><i class="fa fa-user" id="user-icon"></i></a>
+            <input type="text" placeholder="Search.." required>
+            <i class="fa fa-magnifying-glass"></i>
+            <?php 
+            if (!isset($_SESSION['username'])){
+                echo "<a href='login.php'><i class='fa fa-user' id='user-icon'></i></a>";
+                exit();
+            }
+                $username=$_SESSION['username'];
+                echo "<a href='account.php'>". $_SESSION['username'] ."</a>"; 
+            ?>
         </div>
 
         <!-- content -->
