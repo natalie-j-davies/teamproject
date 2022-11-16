@@ -56,8 +56,8 @@ if (isset($_POST['login'])){
 
   <!-- Log in form and button --> 
   <div class="signup-form">
-    <form action="account.php" method="post">
-      <div id="login-container">
+    <form action="login.php" method="post">
+      <div class="login-container">
         <!-- Username Field -->
         <label for="username">Username </label>
         <input type="text" name="username" value="" placeholder="Username" required/><br><br>
