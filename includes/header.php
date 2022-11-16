@@ -16,12 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style/style.css" />
-<<<<<<< HEAD
-    <!--<link rel="stylesheet"  type="text/css" href="style/AboutUs.css">
-=======
+    <link rel="stylesheet"  type="text/css" href="style/AboutUs.css">
   <!-<link rel="stylesheet"  type="text/css" href="style/AboutUs.css">
->>>>>>> 60157d3ccbd7cbfa48a8ca25b2bad2de6426f448
-    <link rel="stylesheet"  type="text/css" href="style/ContactUs.css">-->
+    <link rel="stylesheet"  type="text/css" href="style/ContactUs.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
 	<!-- JavaScript files -->
