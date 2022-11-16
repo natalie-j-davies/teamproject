@@ -1,4 +1,46 @@
-/* nav bar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: plum;
+    min-height: 8vh;
+
+}
+nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+color: purple;
+text-decoration: none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:blueviolet
+
+}
+
+.burgermenu div{
+    width: 30px;
+    height: 4px;
+    background-color: purple;
+    margin: 5px;
+    
+    }
+
+button:hover{
+
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+ 
+
 #temp-logo{
     max-width: 120px;
     max-height: 120px;
@@ -95,11 +137,52 @@
     padding: 10px;
     border-radius: 16px;
 }
-/* login form */
-.login-form{
-    background-color: aqua;
+/* signup form */
+.signup-form{
+width: 50%;
+text-align: center;
+align-items: center;
+margin: auto;
+padding: 50px;
 }
 #login-container{
     text-align: center;
     background-color: aqua;
+}
+.titleList{
+    text-align: center;
+}
+.sortby{
+ 
+ position: relative;
+ display: inline-block;
+ 
+ 
+}
+.sortbybutton{
+    margin-left: 10px;
+border-style: solid;
+border-width: 3px;
+background-color: white;
+padding: 10px 20px;
+border-radius: 8px;
+}
+.filter{
+ 
+position: relative;
+ display: inline-block;
+    
+    
+}
+.filterbutton{
+
+border-style: solid;
+border-width: 3px;
+background-color: white;
+padding: 10px 20px;
+border-radius: 8px;
+}
+
+.signup-container {
+    text-align: left;
 }
