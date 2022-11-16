@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet"  type="text/css" href="style/AboutUs.css">
   <!--<link rel="stylesheet"  type="text/css" href="style/AboutUs.css">
     <link rel="stylesheet"  type="text/css" href="style/ContactUs.css">-->
     <!-- Bootstrap -->
@@ -33,7 +34,7 @@
 <body>
     <!-- wrapper -->
     <!--<div class="wrapper"> -->
-        <nav>
+        <nav class="nav">
             <ul>
         <div class="topnav">
         <li><img src="images/temp_logo.png" alt="img" id="temp-logo"></img>

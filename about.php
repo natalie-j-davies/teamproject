@@ -12,7 +12,7 @@
                 <br>
                 <p>G-Twenty was founded in 2022 bya group of Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi quaerat reiciendis numquam suscipit quos voluptas cum velit. Corporis perferendis itaque harum rem autem sint hic! Nam quae nobis alias?</p>
                 <br>
-                <button type="button">View Our Latest Products?</button>
+                <a href="products.php"><button type="button" >View Our Latest Products?</button></a>
             </div>
     
 

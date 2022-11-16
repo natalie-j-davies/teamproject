@@ -1,4 +1,14 @@
-nav{
+
+
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -7,19 +17,19 @@ nav{
     min-height: 8vh;
 
 }
-nav ul li{
+.nav ul li{
     list-style-type: none;
     display:inline-block;
     padding: 10px 20px;
 }
 
-nav ul li a{
+.nav ul li a{
 color: purple;
 text-decoration: none;
 font-weight:bold;
 }
 
-nav ul li a:hover{
+.nav ul li a:hover{
     color:blueviolet
 
 }
@@ -66,6 +76,7 @@ button:hover{
     position: relative;
     margin: auto;
     text-align: center;
+  
 }
 /* Head of index.php*/
 #pic-1{
