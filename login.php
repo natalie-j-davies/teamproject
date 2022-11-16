@@ -12,7 +12,6 @@ if (isset($_POST['login'])){
 	//using prepare to prevent SQL injection.
 		$stat = $db->prepare('SELECT userPassword FROM users WHERE username = ?');
 		$stat->execute(array($_POST['username']));
-  
 		// fetch the result row and check 
 		if ($stat->rowCount()>0){ 
 			$row=$stat->fetch();
