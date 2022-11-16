@@ -32,15 +32,19 @@
 </head>
 <body>
     <!-- wrapper -->
-    <div class="wrapper">
-        <!-- nav bar -->
+    <!--<div class="wrapper"> -->
+        <nav>
+            <ul>
         <div class="topnav">
-            <img src="images/temp_logo.png" alt="img" id="temp-logo"></img>
-            <a class="active" href="index.php">Home</a>
-            <a href="products.php">Products</a>
-            <a href="signup.php">Sign Up</a>
-            <a href="about.php">About Us</a>
-            <a href="contact.php">Contact</a>
+        <li><img src="images/temp_logo.png" alt="img" id="temp-logo"></img>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="products.php">Products</a></li>
+        <li><a href="signup.php">Sign Up</a></li>
+        <li><a href="about.php">About Us</a></li>
+        <li><a href="contact.php">Contact</a></li>
+</nav>
+</ul>
+
 
             <input type="text" placeholder="Search.." required>
             <i class="fa fa-magnifying-glass"></i>
