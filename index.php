@@ -2,6 +2,16 @@
     define("TITLE", "Home | G-TWENTY");
     include('includes/header.php');
 ?>
+<nav>
+<ul>
+    <li><a href = "#">Home</a></li>
+    <li><a href = "#">Products</a></li>
+    <li><a href = "#">Sign Up</a></li>
+    <li><a href = "#">About Us</a></li>
+    <li><a href = "#">Contact Us</a></li>
+    <li><a href = "#">Search</a></li>
+</ul>
+</nav>
 
   <!--log in button--> 
   <div id="login-button-container">
