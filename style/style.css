@@ -27,12 +27,15 @@ text-decoration: none;
 font-weight:bold;
 }
 
+nav ul li a:hover{
+    color: grey
 
+}
 
 .burgermenu div{
     width: 30px;
     height: 4px;
-    background-color: purple;
+    background-color: white;
     margin: 5px;
     
     }
