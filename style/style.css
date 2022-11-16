@@ -1,10 +1,10 @@
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    align-items: center;
-    background-color: plum;
-    min-height: 8vh;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right:10%;
 
 }
 nav ul li{
