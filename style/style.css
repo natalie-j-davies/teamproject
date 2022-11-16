@@ -153,14 +153,7 @@ align-items: center;
 margin: auto;
 padding: 50px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 84b38322d52b23976a9c1baad5675d803fbfed40
-#login-container{
-    text-align: center;
-    background-color: aqua;
-}
 .titleList{
     text-align: center;
 }
@@ -197,8 +190,7 @@ border-radius: 8px;
 
 .signup-container {
     text-align: left;
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 84b38322d52b23976a9c1baad5675d803fbfed40
+
+
