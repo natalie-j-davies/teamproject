@@ -31,7 +31,6 @@
     <a href="#">Case Colors</a>
     </div>
     
-    
  </div>
 </div>
 
