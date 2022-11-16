@@ -1,3 +1,11 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+
 nav{
     display: flex;
     align-items: center;
@@ -145,10 +153,7 @@ align-items: center;
 margin: auto;
 padding: 50px;
 }
-.login-container{
-    text-align: center;
-    background-color: aqua;
-}
+
 .titleList{
     text-align: center;
 }
@@ -185,4 +190,7 @@ border-radius: 8px;
 
 .signup-container {
     text-align: left;
+
 }
+
+
