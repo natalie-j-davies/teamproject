@@ -15,7 +15,7 @@
 
 </div>
 <br>
-<div class ="productsection">
+<div class = "productsection">
  <button class="productbutton">Sort By</button>
  <div class ="productdropdown">
     <a href="#">Alphabetically</a>
