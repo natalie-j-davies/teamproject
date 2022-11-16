@@ -13,8 +13,18 @@
     </form>
 
 </div>
-<div class ="sortby">Sort by:</div>
+<br>
+<div class ="sortby">
+ <button class="sortbybutton">Sort By</button>
+    
+ </div>
 
+<div class ="filter">
+    <button class="filterbutton">Filter</button>
+</div>
+
+
+<hr>
 <?php
     include('includes/footer.php');
 ?>

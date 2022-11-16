@@ -103,13 +103,36 @@
     text-align: center;
     background-color: aqua;
 }
-.searchform{
-    padding-left: 300px;
-    padding-right: 300px;
-}
-.searchbar{
+.titleList{
     text-align: center;
 }
-.form-control{
-    text-align: center;
+.sortby{
+ 
+ position: relative;
+ display: inline-block;
+ 
+ 
+}
+.sortbybutton{
+    margin-left: 10px;
+border-style: solid;
+border-width: 3px;
+background-color: white;
+padding: 10px 20px;
+border-radius: 8px;
+}
+.filter{
+ 
+position: relative;
+ display: inline-block;
+    
+    
+}
+.filterbutton{
+
+border-style: solid;
+border-width: 3px;
+background-color: white;
+padding: 10px 20px;
+border-radius: 8px;
 }
