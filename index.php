@@ -4,7 +4,7 @@
 ?>
 <nav>
 
-<h1> G-TWENTY<h1>
+
 <ul>
     <li><a href = "#">Home</a></li>
     <li><a href = "#">Products</a></li>
