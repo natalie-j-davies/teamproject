@@ -34,7 +34,7 @@
 <body>
     <!-- wrapper -->
     <!--<div class="wrapper"> -->
-        <nav>
+        <nav class="nav">
             <ul>
         <div class="topnav">
         <li><img src="images/temp_logo.png" alt="img" id="temp-logo"></img>
