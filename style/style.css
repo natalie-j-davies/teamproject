@@ -30,7 +30,15 @@ button:hover{
     cursor: pointer;
 }
 
+.burgermenu div{
+width: 30px;
+height: 4px;
+background-color: purple;
+margin: 5px;
 
+
+}
+ 
 
 #temp-logo{
     max-width: 120px;
