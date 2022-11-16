@@ -10,9 +10,8 @@ if (isset($_POST['login'])){
 	try {
 	//Query DB to find the matching username/password
 	//using prepare to prevent SQL injection.
-		$stat = $db->prepare('SELECT userPassword FROM users WHERE username = ?');
-		$stat->execute(array($_POST['username']));
-  
+    $stat = $db->prepare('SELECT userPassword FROM adminusers WHERE username = ?');
+	$stat->execute(array($_POST['username']));
 		// fetch the result row and check 
 		if ($stat->rowCount()>0){ 
 			$row=$stat->fetch();
@@ -41,7 +40,7 @@ if (isset($_POST['login'])){
 ?>
   <!-- Login title -->
   <div class="login-title text-center">
-    <h1 class="title">Login</h1>
+    <h1 class="title">Admin Login</h1>
     <p>Please sign in here to login</p>
   </div>
 
@@ -49,7 +48,7 @@ if (isset($_POST['login'])){
 
   <!-- Log in form and button --> 
   <div class="signup-form">
-    <form action="login.php" method="post">
+    <form action="admin.php" method="post">
       <div class="login-container">
         <!-- Username Field -->
         <label for="username">Username </label>
@@ -60,15 +59,12 @@ if (isset($_POST['login'])){
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
         
         <!-- Admin Checkbox-->
-        <a href="admin.php"><button type="button" >Take me to admin login</button></a><br>
+        <a href="login.php"><button type="button" >Take me to customer login</button></a><br>
         
         <!-- Login Button -->
         <input type="submit" value="Login" class="button"/>
         <input type="hidden" name="login" value="TRUE" />
     </form>
-        <div class="signupLink clearfix">
-          <p>Not a member? Register <a href="signup.php">here</a></p>
-        </div>
 
         <p>By signing-in you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
       </div>
