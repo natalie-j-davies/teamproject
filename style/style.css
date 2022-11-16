@@ -158,21 +158,48 @@ padding: 50px;
 .titleList{
     text-align: center;
 }
-.sortby{
+.productsection{
  
  position: relative;
  display: inline-block;
  
  
 }
-.sortbybutton{
-    margin-left: 10px;
+.productbutton{
+margin-left: 10px;
 border-style: solid;
 border-width: 3px;
 background-color: white;
 padding: 10px 20px;
 border-radius: 8px;
 }
+
+.productdropdown{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    overflow: auto;
+    z-index: 1;
+    background-color: lightgray;
+    
+    
+}
+.productdropdown a{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+}
+.productsection:hover .productdropdown{
+    display: block;
+    
+}
+.productsection a:hover{
+    background-color: rgb(169, 166, 166);
+    text-decoration: none;
+    color: black;
+}
+
 .filter{
  
 position: relative;
@@ -180,14 +207,7 @@ position: relative;
     
     
 }
-.filterbutton{
 
-border-style: solid;
-border-width: 3px;
-background-color: white;
-padding: 10px 20px;
-border-radius: 8px;
-}
 
 .signup-container {
     text-align: left;

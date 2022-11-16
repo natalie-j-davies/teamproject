@@ -15,13 +15,25 @@
 
 </div>
 <br>
-<div class ="sortby">
- <button class="sortbybutton">Sort By</button>
+<div class ="productsection">
+ <button class="productbutton">Sort By</button>
+ <div class ="productdropdown">
+    <a href="#">Alphabetically</a>
+    <a href="#">Newest</a>
+ </div>
     
  </div>
 
-<div class ="filter">
-    <button class="filterbutton">Filter</button>
+<div class ="productsection">
+    <button class="productbutton">Filter</button>
+    <div class ="productdropdown">
+    <a href="#">Case Styles</a>
+    <a href="#">Case Colors</a>
+    </div>
+    <div class = "productdropdown2"> 
+    <a href ="#">Wood Cases</a>
+    
+ </div>
 </div>
 
 
