@@ -2,8 +2,6 @@
     define("TITLE", "Home | G-TWENTY");
     include('includes/header.php');
 ?>
-
-
   <!--log in button--> 
   <div id="login-button-container">
     <button id="login-button" type="button"><a href="login.php">Sign in!</a></button>
