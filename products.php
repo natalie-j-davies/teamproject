@@ -30,8 +30,7 @@
     <a href="#">Case Styles</a>
     <a href="#">Case Colors</a>
     </div>
-    <div class = "productdropdown2"> 
-    <a href ="#">Wood Cases</a>
+    
     
  </div>
 </div>
