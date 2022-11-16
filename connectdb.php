@@ -1,6 +1,6 @@
 <?php
 
-$db_host = 'localhost';
+$db_host = 'localhost:3306';
 $db_name = 'gtwenty_db';
 $username = "root";
 $password = "";
