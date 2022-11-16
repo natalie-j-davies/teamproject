@@ -9,17 +9,17 @@ nav{
 nav ul li{
     list-style-type: none;
     display:inline-block;
-    padding: 5px 10px;
+    padding: 10px 20px;
 }
 
 nav ul li a{
-color: orangered;
+color: purple;
 text-decoration: none;
 font-weight:bold;
 }
 
 nav ul li a:hover{
-    color:orange
+    color:blueviolet
 
 }
 
