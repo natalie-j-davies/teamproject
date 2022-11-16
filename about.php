@@ -5,7 +5,7 @@
   
         <section class="about">
          <div class="main">
-            <img src="images/twenty.jpg">
+            <img src="images/logo/logo-symbol.png">
             <div class="about-text">
                 <h1>About Us</h1>
                 <h5>About<span class="about-p-title" > G-Twenty</span></h5>

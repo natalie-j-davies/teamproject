@@ -36,7 +36,7 @@
         <nav class="nav">
             <ul>
         <div class="topnav">
-        <li><img src="images/temp_logo.png" alt="img" id="temp-logo"></img>
+        <li><img src="images/logo/logo.png" alt="img" id="temp-logo"></img>
         <li><a class="active" href="index.php">Home</a></li>
         <li><a href="products.php">Products</a></li>
         <li><a href="signup.php">Sign Up</a></li>
