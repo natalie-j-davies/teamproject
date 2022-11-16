@@ -11,7 +11,7 @@ if (isset($_POST['login'])){
 	//Query DB to find the matching username/password
 	//using prepare to prevent SQL injection.
     $stat = $db->prepare('SELECT userPassword FROM adminusers WHERE username = ?');
-	$stat->execute(array($_POST['username']));
+	  $stat->execute(array($_POST['username']));
 		// fetch the result row and check 
 		if ($stat->rowCount()>0){ 
 			$row=$stat->fetch();
@@ -58,7 +58,7 @@ if (isset($_POST['login'])){
         <label for="password">Password </label>
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
         
-        <!-- Admin Checkbox-->
+        <!-- Customer Login Button-->
         <a href="login.php"><button type="button" >Take me to customer login</button></a><br>
         
         <!-- Login Button -->
