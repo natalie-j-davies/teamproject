@@ -17,8 +17,8 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <link rel="stylesheet"  type="text/css" href="style/AboutUs.css">
-  <!-<link rel="stylesheet"  type="text/css" href="style/AboutUs.css">
-    <link rel="stylesheet"  type="text/css" href="style/ContactUs.css">
+  <!--<link rel="stylesheet"  type="text/css" href="style/AboutUs.css">
+    <link rel="stylesheet"  type="text/css" href="style/ContactUs.css">-->
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
 	<!-- JavaScript files -->
