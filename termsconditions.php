@@ -1,5 +1,5 @@
 <?php
-    define("TITLE", "Terms and Conditions  | G-TWENTY");
+    define("TITLE", "Terms and Conditions | G-TWENTY");
     include('includes/header.php');
 ?>
 <!--This is concept work not finished product -->
