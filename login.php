@@ -10,9 +10,16 @@ if (isset($_POST['login'])){
 	try {
 	//Query DB to find the matching username/password
 	//using prepare to prevent SQL injection.
+
+  //if the checkbox is not ticked check the users database
+  if(!isset($_POST['checkbox'])){
 		$stat = $db->prepare('SELECT userPassword FROM users WHERE username = ?');
 		$stat->execute(array($_POST['username']));
-		
+  }else if(isset($_POST['checkbox'])) {
+    //if the checkbox is ticked check the adminusers databse
+    $stat = $db->prepare('SELECT userPassword FROM adminusers WHERE username = ?');
+		$stat->execute(array($_POST['username']));
+  }
 		// fetch the result row and check 
 		if ($stat->rowCount()>0){ 
 			$row=$stat->fetch();
@@ -58,7 +65,11 @@ if (isset($_POST['login'])){
         <!-- Password Field -->
         <label for="password">Password </label>
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
-
+        
+        <!-- Admin Checkbox-->
+        <input type="checkbox" name="checkbox" value="Admin">
+        <label for="checkbox">I am admin</label><br>
+        
         <!-- Login Button -->
         <input type="submit" value="Login" class="button"/>
         <input type="hidden" name="login" value="TRUE" />
