@@ -42,6 +42,15 @@
         <li><a href="signup.php">Sign Up</a></li>
         <li><a href="about.php">About Us</a></li>
         <li><a href="contact.php">Contact</a></li>
+
+        <div class = "burgermenu">
+            <div class = "line1"></div>
+            <div class = "line2"></div>
+            <div class = "line3"></div>
+
+</div>
+
+
 </nav>
 </ul>
 
