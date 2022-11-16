@@ -45,7 +45,7 @@
     letter-spacing: 2px;
 }
 
-.test{
+.about-p-title{
     color: indianred;
 }
 
@@ -57,7 +57,7 @@
     margin-bottom: 45px;
 }
 
-button{
+.about-button{
     background: indianred;
     color: white;
     text-decoration: none;

@@ -7,26 +7,26 @@
     border: none;
 }
 
-header{
+.header{
     position: absolute;
     text-align: center;
     width: 75%;
     left: 12%;
     top: 2rem;
 }
-header h1{
+.header h1{
     font-size: 30px;
 }
 
-.content{
+.about-content{
     display: flex;
     min-height: 110vh;
 }
-.content section{
+.about-content section{
     margin-top: 8vh;
     margin-left: 20vh;
 }
-.content-form{
+.about-socials-content{
     margin-top: 7rem;
 }
 

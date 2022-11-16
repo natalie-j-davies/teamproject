@@ -9,8 +9,8 @@
                     <br>
                     <p>Hey There, For all enquiries, please email us or use the contact form and our expert support team will get back to you as soon as possible.</p>
                 </header>
-                <div class="content">
-                    <div class="content-form">
+                <div class="about-content">
+                    <div class="about-socials-content">
                         <section>
                             <h2>Socials</h2>
                             <p>
