@@ -6,7 +6,7 @@ box-sizing: border-box;
 }
 
 
-nav{
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -15,19 +15,19 @@ nav{
     min-height: 8vh;
 
 }
-nav ul li{
+.nav ul li{
     list-style-type: none;
     display:inline-block;
     padding: 10px 20px;
 }
 
-nav ul li a{
+.nav ul li a{
 color: purple;
 text-decoration: none;
 font-weight:bold;
 }
 
-nav ul li a:hover{
+.nav ul li a:hover{
     color:blueviolet
 
 }
