@@ -13,15 +13,15 @@
 
                 <div class="column three last col-sm-3">
                     <!-- FAQ -->
-                    <h3>Get Help</h3>
-                    <ul>
-                        <li>FAQs</li>
+                    <h3 id="get-help-heading">Get Help</h3>
+                    <ul class="get-help-info">
+                        <li><a href="#">FAQs</a></li>
                         <li><a href="about.php">Who we are?</a></li>
                         <li><a href="contact.php">Contact Us</a></li>
                     </ul>
                 </div>
-                <small>Copyright&copy; <?php echo date('Y'); ?> <?php echo $companyName; ?></small>
             </div>
+            <small>Copyright&copy; <?php echo date('Y'); ?> <?php echo $companyName; ?></small>
         </div>
         <!-- end content -->
     </div>
