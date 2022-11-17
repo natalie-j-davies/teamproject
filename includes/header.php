@@ -47,7 +47,7 @@
         /*If the user is logged in the username will show in the nav bar */
             if (isset($_SESSION['username'])){
                 
-                echo "<a href='account.php'>". $_SESSION['username'] ."</a>"; 
+                echo "<li><a href='account.php'>". $_SESSION['username'] ."</li></a>"; 
             }
             /*If the user is not logged in a plain account icon will show in the nav bar */
             else{
