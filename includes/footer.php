@@ -20,8 +20,9 @@
                         <li><a href="contact.php">Contact Us</a></li>
                     </ul>
                 </div>
+
+                <small>Copyright&copy; <?php echo date('Y'); ?> <?php echo $companyName; ?></small>
             </div>
-            <small>Copyright&copy; <?php echo date('Y'); ?> <?php echo $companyName; ?></small>
         </div>
         <!-- end content -->
     </div>
