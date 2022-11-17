@@ -35,14 +35,14 @@
     <!--<div class="wrapper"> -->
         <nav class="nav">
             <ul>
-        <div class="topnav">
-        <li><img src="images/logo/logo.png" alt="img" id="temp-logo"></img>
-        <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="products.php">Products</a></li>
-        <li><a href="signup.php">Sign Up</a></li>
-        <li><a href="about.php">About Us</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <li><input type="text" placeholder="Search.." required></li>
+                <div class="topnav">
+                    <li><img src="images/logo/logo.png" alt="img" id="temp-logo"></img>
+                    <li><a class="active" href="index.php">Home</a></li>
+                    <li><a href="products.php">Products</a></li>
+                    <li><a href="signup.php">Sign Up</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><input type="text" placeholder="Search.." required></li>
         <?php 
         /*If the user is logged in the username will show in the nav bar */
             if (isset($_SESSION['username'])){
@@ -57,18 +57,16 @@
             ?>
 
 
-        <div class = "burgermenu">
-            <div class = "line1"></div>
-            <div class = "line2"></div>
-            <div class = "line3"></div>
+                    <div class = "burgermenu">
+                        <div class = "line1"></div>
+                        <div class = "line2"></div>
+                        <div class = "line3"></div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
 
-</div>
-
-
-</nav>
-</ul>
-
-        </div>
+        
 
         <!-- content -->
         <div class="content">
