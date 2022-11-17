@@ -3,16 +3,16 @@
     include('includes/header.php');
 ?>
 
-        <div class="container">
+        <div class="contact">
                 <header>
-                    <h1>Contact Us</h1>
+                <h1><img class="contact-logo"src="images/logo/logo-symbol.png">Contact Us</h1>
                     <br>
                     <p>Hey There, For all enquiries, please email us or use the contact form and our expert support team will get back to you as soon as possible.</p>
                 </header>
-                <div class="about-content">
-                    <div class="about-socials-content">
+                <div class="contact-flexbox">
+                    <div class="social-box">
                         <section>
-                            <h2>Socials</h2>
+                            <h3>Socials</h3>
                             <p>
                                 Instagram:<br>
                                 G-Twenty2022<br>
@@ -20,51 +20,37 @@
                                 G--Twenty2022<br>
                                 Facebook: <br>
                                 G-Twenty2022
-                                
                             </p>
-                        </section>
-        
-                        <section>
-                            <h2>Contact Number</h2>
-                            <br>
+                            <h3>Contact Number</h3>
                             <p>01218906558</p>
-                        </section>
-        
-                        <section>
-                            <h2>Email Address</h2>
-                            <br>
+
+                            <h3>Email Address</h3>
                             <p>G-Twenty2022@hotmail.com</p>
                         </section>
                     </div>
-                </div>
-        
-              <form>
-                <div class="form">
-                    <div class="right">
-                      <div class="contact-form">
-                          <input type="text" required>
+                <div class="form-box">
+                    <form>
+                    <div class="contact-form">
                           <span>Full Name</span>
-                      </div>
+                          <input type="text" required>
+                      </div><br>
           
                       <div class="contact-form">
-                          <input type="E-mail" required>
                           <span>Email Address</span>
-                      </div>
+                          <input type="E-mail" required>
+                      </div><br>
                       <div class="contact-form">
-                          <textarea name="text">
-                            
-                          </textarea>
-                          <span> Input your Message here....</span>
-                      </div>
-          
+                      <span> Input your Message here....</span>
+                          <textarea name="text"> </textarea>
+                      </div><br>
                       <div class="contact-form">
                           <input type="submit" name="submit">
-                      </div>
-                      </div>
                     </div>
-                  </div>
-            </form>
-            </div>    
+                </div>
+                    </form>
+            </div>   
+            </div> 
+
         
     
 
