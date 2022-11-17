@@ -42,12 +42,11 @@
                     <li><a href="signup.php">Sign Up</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="contact.php">Contact</a></li>
-                    <li><input type="text" placeholder="Search.." required></li>
         <?php 
         /*If the user is logged in the username will show in the nav bar */
             if (isset($_SESSION['username'])){
                 
-                echo "<li><a href='account.php'>". $_SESSION['username'] ."</li></a>"; 
+                echo "<li><i class='fa fa-user' id='user-icon-logged-in'></i><a href='account.php'>". $_SESSION['username'] ."</li></a>"; 
             }
             /*If the user is not logged in a plain account icon will show in the nav bar */
             else{
