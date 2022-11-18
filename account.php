@@ -12,14 +12,19 @@
 
 	?>
 <!--The Account dashboard will show all user information when user logs in -->
-<div id="account-container">
-    <?php
+
+<?php
         echo "<h2>". $username ."'s Account Dashboard</h2>";
-    ?>
-<div id="account-flex">
-    <div id="account-left-bar">
-        <p>stuff       </p>
-    <div id="acccount-info-box">
+?>
+<!--account-conatiner is the flex box-->
+    <div id="account-container">
+
+    <div id="account-left-box">
+        <a href="account.php">Profile</a><br>
+        <a href="account.php">Order History</a><br>
+        <a href="account.php">Messages</a><br>
+    </div>
+    <div id="acccount-right-box">
 <?php
 	$username=$_SESSION['username'];
 
@@ -62,14 +67,15 @@ catch (PDOexception $ex){
     echo "Error details: <em>". $ex->getMessage()."</em>";
 }
 ?>
-</div>
+
         <h2>Recent Orders</h2>
         <p>Product Name     </p>
         <p>Order Number     </p>
         <p>Order Date     </p>
         <p>Shipping Address     </p>
         <p>Total     </p>
-    </div>
+
+</div>
 </div>
     <p>Would you like to logout? <a href="logout.php">click here</p>
 </div>

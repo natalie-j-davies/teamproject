@@ -223,18 +223,10 @@ position: relative;
     background-color: whitesmoke;
     bottom: 5px;
 }
-
+/*Account Page CSS*/
 #account-container{
-    background-color: white;
-
-}
-#account-flex{
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
 }
-#account-info-box{
-    background-color: black;
-}
-#account-orders{
-    background-color: aliceblue;
-}
+
