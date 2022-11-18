@@ -29,7 +29,7 @@
 }
 /*All CSS regarding social flex box*/
 .social-box{
-    width: 20%;
+    width: 30%;
     background-color: whitesmoke;
     padding: 5px;
     margin: 0;
@@ -61,7 +61,7 @@
     margin-top: 10px;
 }
 .form-box .contact-form input:focus ~span{
-    transform-box: translateY(-20px);
+    transform-box: translateY(-10px);
     pointer-events: none;
 }
 /*Text Area in form*/
