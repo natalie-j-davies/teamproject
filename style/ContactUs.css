@@ -81,10 +81,10 @@
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 13px 30px;
+    padding: 11px 28px;
     border-radius: 30px;
     transition: .3s;
-    width: 28rem;
+    width: 26rem;
 }
 #contact-button input[type=submit]:hover{
     background: transparent;
