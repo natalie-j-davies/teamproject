@@ -59,7 +59,7 @@ if (isset($_POST['login'])){
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
         
         <!-- Admin Checkbox-->
-        <a href="admin.php"><button type="button" >Take me to admin login</button></a><br>
+        <a href="adminlogin.php"><button type="button" >Take me to admin login</button></a><br>
         
         <!-- Login Button -->
         <input type="submit" value="Login" class="button"/>
