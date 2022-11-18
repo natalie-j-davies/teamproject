@@ -4,7 +4,7 @@
 ?>
 <?php
 //if the login form is submitted
-if (isset($_POST['login'])){
+if (isset($_POST['submit'])){
 	// connect DB
 	require_once ("connectdb.php");
 	try {
@@ -15,7 +15,7 @@ if (isset($_POST['login'])){
 		// fetch the result row and check 
 		if ($stat->rowCount()>0){ 
 			$row=$stat->fetch();
-
+     
 			if (password_verify($_POST['password'], $row['userPassword'])){ 
 
 			  session_start();
@@ -48,7 +48,7 @@ if (isset($_POST['login'])){
 
   <!-- Log in form and button --> 
   <div class="signup-form">
-    <form action="admin.php" method="post">
+    <form action="adminlogin.php" method="post">
       <div class="login-container">
         <!-- Username Field -->
         <label for="username">Username </label>
@@ -63,7 +63,7 @@ if (isset($_POST['login'])){
         
         <!-- Login Button -->
         <input type="submit" value="Login" class="button"/>
-        <input type="hidden" name="login" value="TRUE" />
+        <input type="hidden" name="submit" value="TRUE" />
     </form>
 
         <p>By signing-in you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
