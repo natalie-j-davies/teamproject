@@ -76,12 +76,19 @@
 }
 /*Submit button*/
 .form-box .contact-form input[type=submit]{
-    background-color: dodgerblue;
-    border: 2px solid dodgerblue;
-    font-size: 16px;
-    height: 40px;
-    padding: 5px;
+    background: lightskyblue;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .3s;
+    width: 28rem;
 }
-.form-box .contact-form input[type=submit]:hover{
-    color: rgb(255, 250, 247);
+#contact-button input[type=submit]:hover{
+    background: transparent;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    transform: scale(1.3);
 }

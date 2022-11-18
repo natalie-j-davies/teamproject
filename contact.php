@@ -43,7 +43,7 @@
                       <span> Input your Message here....</span>
                           <textarea name="text"> </textarea>
                       </div><br>
-                      <div class="contact-form">
+                      <div class="contact-form" id="contact-button">
                           <input type="submit" name="submit">
                     </div>
                 </div>
