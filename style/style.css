@@ -215,7 +215,6 @@ position: relative;
     
 }
 
-
 .signup-container {
     text-align: left;
 }
@@ -223,4 +222,19 @@ position: relative;
     height: auto;
     background-color: whitesmoke;
     bottom: 5px;
+}
+
+#account-container{
+    background-color: white;
+
+}
+#account-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+#account-info-box{
+    background-color: black;
+}
+#account-orders{
+    background-color: aliceblue;
 }

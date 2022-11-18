@@ -13,12 +13,18 @@
 	?>
 <!--The Account dashboard will show all user information when user logs in -->
 <div id="account-container">
-<div id='acccount-info-box'>
+    <?php
+        echo "<h2>". $username ."'s Account Dashboard</h2>";
+    ?>
+<div id="account-flex">
+    <div id="account-left-bar">
+        <p>stuff       </p>
+    <div id="acccount-info-box">
 <?php
 	$username=$_SESSION['username'];
 
 /* Prints the username of current logged in user */
-    echo "<h2>". $username ."'s Account Dashboard</h2>";
+
 	include ('connectdb.php'); 
 
 try{
@@ -36,19 +42,19 @@ try{
                     <p>Username: ". $row['username'] ."</p>
                     <p>Address: ". $row['addressLine'] ."</p>
                     <p>Postcode: ". $row['postcode'] ."</p>
-                    </div>";
+                    ";
 
                 }
             }
             else {
-                echo "<div id='acccount-info-box'>
+                echo "
                 <h3>Profile</h3>
                 <p>Name:  Database Error</p>
                 <p>Email:   Database Error</p>
                 <p>Username:   Database Error</p>
                 <p>Address:   Database Error</p>
                 <p>Postcode:   Database Error</p>
-                </div>";
+                ";
             }
         }
 catch (PDOexception $ex){
@@ -56,8 +62,7 @@ catch (PDOexception $ex){
     echo "Error details: <em>". $ex->getMessage()."</em>";
 }
 ?>
-
-    <div id="account-orders">
+</div>
         <h2>Recent Orders</h2>
         <p>Product Name     </p>
         <p>Order Number     </p>
@@ -65,9 +70,10 @@ catch (PDOexception $ex){
         <p>Shipping Address     </p>
         <p>Total     </p>
     </div>
-    <p>Would you like to logout? <a href="logout.php">click here</p>
-
 </div>
+    <p>Would you like to logout? <a href="logout.php">click here</p>
+</div>
+
 
 
 <?php
