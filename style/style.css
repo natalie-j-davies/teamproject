@@ -223,6 +223,20 @@ position: relative;
     background-color: whitesmoke;
     bottom: 5px;
 }
+
+.column {
+    display: block;
+    float: left;
+}
+
+.column.three {
+    width: 203px;
+    margin-right: 45px;
+}
+
+.column.last {
+    margin: 0;
+}
 /*Account Page CSS*/
 #account-container{
     display: flex;

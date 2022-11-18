@@ -1,4 +1,4 @@
-            <div class="footer col-sm-12">
+            <div class="footer col-sm-12" id="main-footer">
                 <div class="column three col-sm-3">
                     <!-- Social media -->
                     <h3 class="footer-heading">Social Media</h3>
