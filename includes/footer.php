@@ -2,6 +2,11 @@
                 <div class="column three col-sm-3">
                     <!-- Social media -->
                     <h3 class="footer-heading">Social Media</h3>
+                    <ul id="social-media-info">
+                        <li>Instagram: G-Twenty2022</li>
+                        <li>Twitter: G--Twenty2022</li>
+                        <li>Facebook: G-Twenty2022</li>
+                    </ul>
                 </div>
 
                 <div class="column three col-sm-3">
