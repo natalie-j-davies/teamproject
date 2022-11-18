@@ -20,6 +20,7 @@
     flex-wrap: wrap;
     background-color: white;
     padding: 5px;
+
     
 }
 .contact-flexbox section{
@@ -29,17 +30,21 @@
 /*All CSS regarding social flex box*/
 .social-box{
     width: 30%;
-    background-color: white;
+    background-color: whitesmoke;
     padding: 5px;
     margin: 0;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
 }
 
 /*All CSS regarding form flex box*/
 .form-box{
     width: 50%;
-    background-color: white;
+    background-color: whitesmoke;
     text-align: right;
-    padding: 5px;
+    padding: 10px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
 
 .form-box .contact-form input{
