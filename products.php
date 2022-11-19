@@ -16,7 +16,7 @@
 </div>
 <br>
 <div class = "productsection">
- <button class="productbutton">Sort By</button>
+ <button class="productbutton sortbybutton">Sort By</button>
  <div class ="productdropdown">
     <a href="#">Alphabetically</a>
     <a href="#">Newest</a>
@@ -25,7 +25,7 @@
  </div>
 
 <div class ="productsection">
-    <button class="productbutton">Filter</button>
+    <button class="productbutton filterbutton">Filter</button>
     <div class ="productdropdown">
     <a href="#">Case Styles</a>
     <a href="#">Case Colors</a>
