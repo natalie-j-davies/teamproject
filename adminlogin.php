@@ -58,9 +58,6 @@ if (isset($_POST['submit'])){
         <label for="password">Password </label>
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
         
-        <!-- Customer Login Button-->
-        <a href="login.php"><button type="button" >Take me to customer login</button></a><br>
-        
         <!-- Login Button -->
         <input type="submit" value="Login" class="button"/>
         <input type="hidden" name="submit" value="TRUE" />
