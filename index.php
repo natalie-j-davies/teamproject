@@ -3,10 +3,6 @@
     include('includes/header.php');
 ?>
 
-  <!--log in button--> 
-  <div id="login-button-container">
-    <button id="login-button" type="button"><a href="login.php">Sign in!</a></button>
-  </div> 
   <!--lhead of index.php main picture --> 
   <div id="header-container"> 
     <img id="pic-1" src="images/temp_images/carousel-1.png"  >

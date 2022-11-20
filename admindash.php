@@ -1,6 +1,6 @@
 <?php
     define("TITLE", "Login | G-TWENTY");
-    include('includes/header.php');
+    include('includes/adminheader.php');
 
 ?>
 <?php
@@ -14,16 +14,16 @@
 <!--The Account dashboard will show all user information when user logs in -->
 <div id='account-header'>
 <?php
-        echo "<h1 id='account-title'><img src='images/logo/logo-symbol.png' alt='img' id='account-logo'>". $username ."'s Account Dashboard</h1>";
+        echo "<h1 id='account-title'><img src='images/logo/logo-symbol.png' alt='img' id='account-logo'>". $username ."'s Admin Dashboard</h1>";
 ?>
 </div>
 <!--account-conatiner is the flex box-->
     <div id="account-container">
 
     <div id="account-left-box">
-        <a href="account.php">Profile</a><br>
-        <a href="account.php">Recent Orders</a><br>
-        <a href="account.php">Messages</a><br>
+        <a href="customers.php">Customers</a><br>
+        <a href="orders.php">Orders</a><br>
+        <a href="stock.php">Stock</a><br>
     </div>
     <div id="account-right-box">
 <?php
@@ -35,7 +35,7 @@
 
 try{
     $userid = $_SESSION['username'];
-    $query = "SELECT * FROM users WHERE username = '$userid'";
+    $query = "SELECT * FROM adminusers WHERE username = '$userid'";
     $rows =  $db->query($query);
     
 
@@ -47,8 +47,6 @@ try{
                     <p>Name: ". $row['firstName'] ." ". $row['lastName'] ."</p>
                     <p>Email: ". $row['email'] ."</p>
                     <p>Phone: ". $row['phone'] ."</p>
-                    <p>Address: ". $row['addressLine'] ."</p>
-                    <p>Postcode: ". $row['postcode'] ."</p>
                     ";
 
                 }
@@ -69,24 +67,6 @@ catch (PDOexception $ex){
     echo "Error details: <em>". $ex->getMessage()."</em>";
 }
 ?>
-    <h2>Recent Orders</h2>
-    <table id="account-table">
-    <tr>
-        <th>Product Name</th>
-        <th>Order Number</th>
-        <th>Order Date</th>
-    </tr>
-    <tr>
-        <td>Example Table</td>
-        <td>123456789</td>
-        <td>20/11/2022</td>
-    </tr>
-    <tr>
-        <td>Example Table</td>
-        <td>987654321</td>
-        <td>20/11/2022</td>
-    </tr>
-    </table>
 
 </div>
 </div>

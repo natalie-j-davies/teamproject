@@ -20,7 +20,7 @@ if (isset($_POST['submit'])){
 			if ($pass){ 
 			  session_start();
 				$_SESSION["username"]=$_POST['username'];
-				header("Location:account.php");
+				header("Location:admindash.php");
 				exit();
 			
 			} else {
@@ -57,9 +57,6 @@ if (isset($_POST['submit'])){
         <!-- Password Field -->
         <label for="password">Password </label>
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
-        
-        <!-- Customer Login Button-->
-        <a href="login.php"><button type="button" >Take me to customer login</button></a><br>
         
         <!-- Login Button -->
         <input type="submit" value="Login" class="button"/>
