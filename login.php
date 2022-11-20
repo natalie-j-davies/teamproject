@@ -40,7 +40,7 @@ if (isset($_POST['login'])){
 ?>
   <!-- Login title -->
   <div class="login-title text-center">
-    <h1 class="title">Login</h1>
+    <h1 class="title"><img class="login-logo" src="images/logo/logo-symbol.png">Login</h1>
     <p>Please sign in here to login</p>
   </div>
 

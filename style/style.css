@@ -213,6 +213,12 @@ padding: 50px;
     transform: scale(1.05);
 }
 
+.login-logo{
+    width: 55px;
+    height: 50px;
+    padding-right: 2px;
+}
+
 /*Login button*/
 input[type=submit]#login-button {
     background: lightskyblue;
