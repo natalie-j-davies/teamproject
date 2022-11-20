@@ -2,7 +2,6 @@
 .contact {
     width: 100%;
     margin: auto;
-    padding: 30px;
     background-color: white;
     text-align: center;
 }
@@ -11,17 +10,21 @@
     height: 55px;
     padding: 5px;
 }
-.contact h1{
-    font-size: 30px;
-
+#contact-title{
+    border-bottom: 1px solid lightgray;
 }
-
+#contact-title p{
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    width: 70%;
+}
 .contact-flexbox{
     display: flex;
     flex-wrap: wrap;
     justify-content: center ;
     background-color: white;
-    padding: 5px;
+    padding: 25px;
 }
 .contact-flexbox section{
     text-align: left;
@@ -29,7 +32,7 @@
 }
 /*All CSS regarding social flex box*/
 .social-box{
-    width: 30%;
+    width: 28%;
     background-color: whitesmoke;
     padding: 5px;
     margin: 0;
@@ -40,11 +43,12 @@
 /*All CSS regarding form flex box*/
 .form-box{
     width: 40%;
-    background-color: whitesmoke;
+    background-color: white;
     text-align: left;
     padding: 10px;
     border-top-right-radius: 32px;
     border-bottom-right-radius: 32px;
+    border-left: 1px solid #333;
 }
 
 .form-box .contact-form input{
