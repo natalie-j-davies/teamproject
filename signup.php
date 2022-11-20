@@ -38,7 +38,7 @@ if (isset($_POST['submit'])){
 ?>
             <!-- Sign-up title -->
             <div class="login-title text-center">
-                <h1 class="title">Sign Up</h1>
+                <h1 class="title"><img class="signup-logo" src="images/logo/logo-symbol.png">Sign Up</h1>
                 <p>Please fill in this sign-up form to create an account</p>
             </div>
 
