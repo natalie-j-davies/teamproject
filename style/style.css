@@ -57,6 +57,7 @@ font-weight:bold;
     border-style: none;
     outline: none;
     font-weight: bold;
+    font-size: inherit;
     margin: 0;
     padding: 12px 16px;
     border-radius: 6px;
