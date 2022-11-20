@@ -12,9 +12,9 @@
 
 	?>
 <!--The Account dashboard will show all user information when user logs in -->
-<div id='account-header-border'>
+<div id='account-header'>
 <?php
-        echo "<h2><img src='images/logo/logo-symbol.png' alt='img' id='account-logo'>". $username ."'s Account Dashboard</h2>";
+        echo "<h1 id='account-title'><img src='images/logo/logo-symbol.png' alt='img' id='account-logo'>". $username ."'s Account Dashboard</h1>";
 ?>
 </div>
 <!--account-conatiner is the flex box-->
@@ -25,7 +25,7 @@
         <a href="account.php">Recent Orders</a><br>
         <a href="account.php">Messages</a><br>
     </div>
-    <div id="acccount-right-box">
+    <div id="account-right-box">
 <?php
 	$username=$_SESSION['username'];
 
@@ -42,8 +42,8 @@ try{
     if ($rows && $rows->rowCount()> 0) {
                 while  ($row =  $rows->fetch())	{
                     echo "
-                    <h3>Profile</h3>
-                    <p>Name:  ". $row['firstName'] ." ". $row['lastName'] ."</p>
+                    <h2>Profile</h2>
+                    <p>Name: ". $row['firstName'] ." ". $row['lastName'] ."</p>
                     <p>Email: ". $row['email'] ."</p>
                     <p>Username: ". $row['username'] ."</p>
                     <p>Address: ". $row['addressLine'] ."</p>
@@ -87,7 +87,6 @@ catch (PDOexception $ex){
     </tr>
     </table>
 
-</div>
 </div>
 </div>
 <div id="account-button-container">

@@ -248,42 +248,44 @@ position: relative;
     margin: 0;
 }
 /*Account Page CSS*/
+#account-header{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
 #account-container{
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
     width: 75%;
-    height: 400px;
+    height: 100%;
     margin: auto;
     padding: 10px;
-
+    justify-content: baseline;
 }
 #account-logo{
     width: 55px;
     height: 50px;
     padding-right: 2px;
 }
-#account-header-border{
-    border-bottom: solid #333;
-    border-width: 2px;
-    width: 75%;
-    margin: auto;
-}
-#account-header-border h2{
-    font-weight: bold;
-}
+
 #account-left-box{
-    border-right: 1px solid #333;
-    height: 90%;
     width: 20%;
     color: #333;
     background-color: whitesmoke;
-    padding: 2px;
+    padding-top: 5px;
+    padding-left: 12px;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
 }
 #account-right-box{
     width: 80%;
-    padding: 15px;
-    background-color: aquamarine;
+    border-left: 1px solid #333;
+    padding-left: 20px;
+}
+#account-right-box p{
+    border-bottom: 0.5px lightblue;
 }
 /*Recent Order History Table*/
 #account-table{
@@ -297,10 +299,11 @@ position: relative;
 #account-table td{
     padding-top: 5px;
 }
+/*Account logout button*/
 #account-button-container{
     margin: auto;
     text-align: center;
-    padding: 50px;
+    padding: 25px;
 }
 #account-logout-button{
     background: lightskyblue;
