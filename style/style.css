@@ -325,3 +325,30 @@ position: relative;
     border: 2px solid lightblue;
     cursor: pointer;
 }
+
+/*ADMIN VIEW customer table*/
+#customer-header{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+}
+#customer-table{
+    width: 95%;
+    padding: 35px;
+    margin: auto;
+}
+#customer-table th{
+    width: 150px;
+    border-bottom: solid 1px #333;
+    padding: 15px;
+    text-align: left;
+    background-color: whitesmoke;
+}
+#customer-table td{
+    padding: 10px;
+    border-bottom: solid 0.5px lightskyblue;
+}
+#customer-table tr:hover{
+    background-color: lightskyblue;
+}
