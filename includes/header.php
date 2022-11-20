@@ -23,6 +23,8 @@
 	<!-- JavaScript files -->
     <script defer src="js/script.js"></script>
     <!-- fontawesome.com for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,16 +48,40 @@
         /*If the user is logged in the username will show in the nav bar */
             if (isset($_SESSION['username'])){
                 
-                echo "<li><i class='fa fa-user' id='user-icon-logged-in'></i><a href='account.php'>". $_SESSION['username'] ."</li></a>"; 
+                echo "
+                <div id='dropdown'>
+                <button id='dropdown-button'>" . $_SESSION['username'] . "<i class='fa fa-caret-down'></i>
+                </button>
+                <div id='dropdown-content'>
+                  <a href='account.php'>Profile</a><br>
+                  <a href='logout.php'>Logout</a><br>
+                  <a href='#to be made'>Shopping Basket</a>
+                </div>
+              </div> 
+
+                </nav>
+                "; 
             }
             /*If the user is not logged in a plain account icon will show in the nav bar */
             else{
-                echo "<a href='login.php'><i class='fa fa-user' id='user-icon'></i></a>";
+                echo "
+                <div id='dropdown'>
+                <button id='dropdown-button'>Account<i class='fa fa-caret-down'></i>
+                </button>
+                <div id='dropdown-content'>
+                  <a href='login.php'>Customer Sign In</a><br>
+                  <a href='adminlogin.php'>Admin Sign In</a><br>
+                  <a href='privacypolicy.php'>Privacy Policy</a>
+                </div>
+              </div> 
+
+                </nav>
+                "; 
             }
 
             ?>
 
-
+<!--
                     <div class = "burgermenu">
                         <div class = "line1"></div>
                         <div class = "line2"></div>
@@ -64,7 +90,7 @@
                 </div>
             </ul>
         </nav>
-
+        -->
         
 
         <!-- content -->
