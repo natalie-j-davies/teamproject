@@ -142,6 +142,11 @@ button:hover{
 }
 
 /* signup form */
+.signup-logo{
+    width: 55px;
+    height: 50px;
+    padding: 5px;
+}
 .signup-form{
 width: 50%;
 text-align: center;
