@@ -77,7 +77,7 @@ catch (PDOexception $ex){
 
 </div>
 </div>
-    <p>Would you like to logout? <a href="logout.php">click here</p>
+    <p>Would you like to logout? <a href="logout.php">click here</a></p>
 </div>
 
 
