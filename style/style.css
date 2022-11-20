@@ -194,6 +194,7 @@ text-align: center;
     overflow: auto;
     z-index: 1;
     background-color: lightgray;
+    cursor: pointer;
     
     
 }
