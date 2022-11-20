@@ -15,9 +15,9 @@ if (isset($_POST['submit'])){
 		// fetch the result row and check 
 		if ($stat->rowCount()>0){ 
 			$row=$stat->fetch();
+      $pass = password_verify($_POST['password'] , $row['userPassword']);
      
-			if (password_verify($_POST['password'], $row['userPassword'])){ 
-
+			if ($pass){ 
 			  session_start();
 				$_SESSION["username"]=$_POST['username'];
 				header("Location:account.php");
@@ -65,9 +65,9 @@ if (isset($_POST['submit'])){
         <input type="submit" value="Login" class="button"/>
         <input type="hidden" name="submit" value="TRUE" />
     </form>
-
+    </div>
         <p>By signing-in you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
-      </div>
+
 
   </div>
 
