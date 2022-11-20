@@ -5,14 +5,16 @@
 
         <div class="contact">
                 <header>
-                <h1><img class="contact-logo"src="images/logo/logo-symbol.png">Contact Us</h1>
-                    <br>
-                    <p>Hey There, For all enquiries, please email us or use the contact form and our expert support team will get back to you as soon as possible.</p>
-                </header>
+                <div id="contact-title">
+                    <h1><img class="contact-logo"src="images/logo/logo-symbol.png">Contact Us</h1>
+                        <p>For all enquiries, please email us or use the contact form and our 
+                            expert support team will get back to you as soon as possible.</p>
+                    </header>
+                </div>
                 <div class="contact-flexbox">
                     <div class="social-box">
                         <section>
-                            <h3>Socials</h3>
+                            <h4>Socials</h4>
                             <p>
                                 Instagram:<br>
                                 G-Twenty2022<br>
@@ -21,10 +23,10 @@
                                 Facebook: <br>
                                 G-Twenty2022
                             </p>
-                            <h3>Contact Number</h3>
+                            <h4>Contact Number</h4>
                             <p>01218906558</p>
 
-                            <h3>Email Address</h3>
+                            <h4>Email Address</h4>
                             <p>G-Twenty2022@hotmail.com</p>
                         </section>
                     </div>
