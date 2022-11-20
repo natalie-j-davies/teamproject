@@ -59,10 +59,12 @@
     padding: 13px 30px;
     border-radius: 30px;
     transition: .3s;
+
 }
 
 .about-button:hover{
     background: transparent;
     border: 2px solid lightblue;
     cursor: pointer;
+    transform: scale(1.05);
 }
