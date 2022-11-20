@@ -12,16 +12,17 @@
 
 	?>
 <!--The Account dashboard will show all user information when user logs in -->
-
+<div id='account-header-border'>
 <?php
-        echo "<h2>". $username ."'s Account Dashboard</h2>";
+        echo "<h2><img src='images/logo/logo-symbol.png' alt='img' id='account-logo'>". $username ."'s Account Dashboard</h2>";
 ?>
+</div>
 <!--account-conatiner is the flex box-->
     <div id="account-container">
 
     <div id="account-left-box">
         <a href="account.php">Profile</a><br>
-        <a href="account.php">Order History</a><br>
+        <a href="account.php">Recent Orders</a><br>
         <a href="account.php">Messages</a><br>
     </div>
     <div id="acccount-right-box">
@@ -67,21 +68,31 @@ catch (PDOexception $ex){
     echo "Error details: <em>". $ex->getMessage()."</em>";
 }
 ?>
-
-        <h2>Recent Orders</h2>
-        <p>Product Name     </p>
-        <p>Order Number     </p>
-        <p>Order Date     </p>
-        <p>Shipping Address     </p>
-        <p>Total     </p>
+    <h2>Recent Orders</h2>
+    <table id="account-table">
+    <tr>
+        <th>Product Name</th>
+        <th>Order Number</th>
+        <th>Order Date</th>
+    </tr>
+    <tr>
+        <td>Example Table</td>
+        <td>123456789</td>
+        <td>20/11/2022</td>
+    </tr>
+    <tr>
+        <td>Example Table</td>
+        <td>987654321</td>
+        <td>20/11/2022</td>
+    </tr>
+    </table>
 
 </div>
 </div>
-    <p>Would you like to logout? <a href="logout.php">click here</a></p>
 </div>
-
-
-
+<div id="account-button-container">
+<a href="logout.php"><button id="account-logout-button" type="button" >Would you like to logout?</button></a>
+</div>
 <?php
     include('includes/footer.php');
 ?>
