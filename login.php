@@ -59,7 +59,7 @@ if (isset($_POST['login'])){
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
         
         <!-- Login Button -->
-        <input type="submit" value="Login" class="button"/>
+        <input type="submit" value="Login" class="button" id="login-button"/>
         <input type="hidden" name="login" value="TRUE" />
     </form>
         <div class="signupLink clearfix">
