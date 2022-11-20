@@ -20,7 +20,7 @@ if (isset($_POST['submit'])){
 			if ($pass){ 
 			  session_start();
 				$_SESSION["username"]=$_POST['username'];
-				header("Location:account.php");
+				header("Location:admindash.php");
 				exit();
 			
 			} else {
