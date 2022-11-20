@@ -85,11 +85,7 @@ if (isset($_POST['submit'])){
                         <div class="signupBtnDiv clearfix">
                             <!-- Sign Up button -->
                             <button type="submit" class="signupBtn" name="submit" value="Sign Up">
-                                <span class="inner">
-                                    <span class="label">
-                                        <span class="label-text">Sign Up</span>
-                                    </span>
-                                </span>
+                                <span class="label-text">Sign Up</span>
                             </button>
                         </div>
 
