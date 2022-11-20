@@ -46,6 +46,7 @@ try{
                     <p>Name: ". $row['firstName'] ." ". $row['lastName'] ."</p>
                     <p>Email: ". $row['email'] ."</p>
                     <p>Username: ". $row['username'] ."</p>
+                    <p>Phone: ". $row['phone'] ."</p>
                     <p>Address: ". $row['addressLine'] ."</p>
                     <p>Postcode: ". $row['postcode'] ."</p>
                     ";
