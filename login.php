@@ -47,7 +47,7 @@ if (isset($_POST['login'])){
   <hr>
 
   <!-- Log in form and button --> 
-  <div class="signup-form">
+  <div class="login-form">
     <form action="login.php" method="post">
       <div class="login-container">
         <!-- Username Field -->
