@@ -40,7 +40,7 @@ if (isset($_POST['submit'])){
 ?>
   <!-- Login title -->
   <div class="login-title text-center">
-    <h1 class="title">Admin Login</h1>
+    <h1 class="title"><img class="login-logo" src="images/logo/logo-symbol.png">Admin Login</h1>
     <p>Please sign in here to login</p>
   </div>
 
@@ -59,7 +59,7 @@ if (isset($_POST['submit'])){
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
         
         <!-- Login Button -->
-        <input type="submit" value="Login" class="button"/>
+        <input type="submit" value="Login" class="button" id="admin-login-button"/>
         <input type="hidden" name="submit" value="TRUE" />
     </form>
     </div>
