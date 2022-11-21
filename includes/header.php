@@ -16,13 +16,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <!--<link rel="stylesheet"  type="text/css" href="style/AboutUs.css">
-    <link rel="stylesheet"  type="text/css" href="style/ContactUs.css">-->
+    <link rel="stylesheet"  type="text/css" href="style/AboutUs.css">
+    <link rel="stylesheet"  type="text/css" href="style/ContactUs.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
 	<!-- JavaScript files -->
     <script defer src="js/script.js"></script>
     <!-- fontawesome.com for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,42 +35,62 @@
 <body>
     <!-- wrapper -->
     <!--<div class="wrapper"> -->
-        <nav>
+        <nav class="nav">
             <ul>
-        <div class="topnav">
-        <li><img src="images/temp_logo.png" alt="img" id="temp-logo"></img>
-        <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="products.php">Products</a></li>
-        <li><a href="signup.php">Sign Up</a></li>
-        <li><a href="about.php">About Us</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <li><input type="text" placeholder="Search.." required></li>
+                <div class="topnav">
+                    <li><a href="index.php"><img src="images/logo/logo.png" alt="img" id="nav-logo"></img></a></li>
+                    <li><a class="active" href="index.php">Home</a></li>
+                    <li><a href="products.php">Products</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="contact.php">Contact</a></li>
         <?php 
         /*If the user is logged in the username will show in the nav bar */
             if (isset($_SESSION['username'])){
                 
-                echo "<a href='account.php'>". $_SESSION['username'] ."</a>"; 
+                echo "
+                <div id='dropdown'>
+                <button id='dropdown-button'>" . $_SESSION['username'] . "<i class='fa fa-caret-down'></i>
+                </button>
+                <div id='dropdown-content'>
+                  <a href='account.php'>Profile</a><br>
+                  <a href='logout.php'>Logout</a><br>
+                  <a href='#to be made'>Shopping Basket</a>
+                </div>
+              </div> 
+
+                </nav>
+                "; 
             }
             /*If the user is not logged in a plain account icon will show in the nav bar */
             else{
-                echo "<a href='login.php'><i class='fa fa-user' id='user-icon'></i></a>";
+                echo "
+                <div id='dropdown'>
+                <button id='dropdown-button'>Account<i class='fa fa-caret-down'></i>
+                </button>
+                <div id='dropdown-content'>
+                    <a href='signup.php'>Sign Up</a><br>
+                    <a href='login.php'>Customer Sign In</a><br>
+                    <a href='adminlogin.php'>Admin Sign In</a>
+                </div>
+              </div> 
+
+                </nav>
+                "; 
             }
 
             ?>
 
-
-        <div class = "burgermenu">
-            <div class = "line1"></div>
-            <div class = "line2"></div>
-            <div class = "line3"></div>
-
-</div>
-
-
-</nav>
-</ul>
-
-        </div>
+<!--
+                    <div class = "burgermenu">
+                        <div class = "line1"></div>
+                        <div class = "line2"></div>
+                        <div class = "line3"></div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        -->
+        
 
         <!-- content -->
         <div class="content">

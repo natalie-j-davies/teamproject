@@ -1,123 +1,103 @@
-*{
-    padding: 0;
-    margin: 0;
-    color: rgb(0, 23, 88);
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    border: none;
-}
-
-header{
-    position: absolute;
+/*the conatiner tag holds the whole secion*/
+.contact {
+    width: 100%;
+    margin: auto;
+    background-color: white;
     text-align: center;
-    width: 75%;
-    left: 12%;
-    top: 2rem;
 }
-header h1{
-    font-size: 30px;
+.contact-logo{
+    width: 60px;
+    height: 55px;
+    padding: 5px;
 }
-
-.content{
+#contact-title{
+    border-bottom: 1px solid lightgray;
+}
+#contact-title p{
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    width: 70%;
+}
+.contact-flexbox{
     display: flex;
-    min-height: 110vh;
+    flex-wrap: wrap;
+    justify-content: center ;
+    background-color: white;
+    padding: 25px;
 }
-.content section{
-    margin-top: 8vh;
-    margin-left: 20vh;
+.contact-flexbox section{
+    text-align: left;
+
 }
-.content-form{
-    margin-top: 7rem;
+/*All CSS regarding social flex box*/
+.social-box{
+    width: 28%;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 0;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
 }
 
-.form{
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 50%;
-    justify-content: center;
-    align-items: center;
-    min-height: 110vh;
+/*All CSS regarding form flex box*/
+.form-box{
+    width: 40%;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-left: 1px solid #333;
 }
 
-.form .contact-form input{
+.form-box .contact-form input{
     width: 30rem;
     background-color: rgb(254, 254, 254);
-    border: 0px;
     border: rgb(255, 255, 255);
-    margin: 20px;
     padding: 10px;
     font-size: 18px;
     border-bottom: 2px solid rgb(0, 0, 0);
+
 }
-.form .contact-form input ~ span{
-    position: absolute;
-    left: 20px;
+.form-box .contact-form input ~ span{
     transition: 0.9s ease-in-out;
     margin-top: 10px;
 }
-.form .contact-form input:focus ~span{
-    transform: translateY(-20px);
+.form-box .contact-form input:focus ~span{
+    transform-box: translateY(-5px);
     pointer-events: none;
 }
-.form .contact-form textarea{
-    width: 30rem;
+/*Text Area in form*/
+.form-box .contact-form textarea{
     border: 0px;
-    
-    margin: 20px;
-    font-size: 17px;
+    font-size: 16px;
     border-bottom: 2px solid rgb(0, 0, 0);
+    width: 30rem;
 }
-.form .contact-form textarea ~ span
-{
-    position: absolute;
-    left: 20px;
+.form-box .contact-form textarea ~ span{
     margin-top: 10px;
     transition: 0.9s ease-in-out;
 }
-.form .contact-form textarea:focus ~span{
-    transform: translateY(-20px);
+.form-box .contact-form textarea:focus ~span{
+    transform-box: translateY(-10px);
     pointer-events: none;
 }
-.form .contact-form input[type=submit]{
-    background-color: dodgerblue;
-    border: 2px solid dodgerblue;
-    font-size: 18px;
-    width: 50%;
-    height: 40px;
-    margin-top: -5px;
+/*Submit button*/
+.form-box .contact-form input[type=submit]{
+    background: lightskyblue;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 11px 28px;
+    border-radius: 30px;
+    transition: .3s;
+    width: 22rem;
 }
-.form .contact-form input[type=submit]:hover{
-    color: rgb(255, 250, 247);
-}
-
-@media screen and (max-width: 900px){
-    body{
-        background-repeat: repeat-y;
-        overflow: auto;
-    }
-    header{
-        position: absolute;
-        left: 0;
-        top: 20%;
-        width: 100%;
-    }
-    .empty{
-        height: 210vh;
-    }
-    .form{
-        position: absolute;
-        top: 100vh;
-        margin-left: 10%;
-    }
-    .content-form{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0;
-        margin-top: 53vh;
-        margin-left: 10vh;
-    }
-
-    
+#contact-button input[type=submit]:hover{
+    background: transparent;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    transform: scale(1.05);
 }

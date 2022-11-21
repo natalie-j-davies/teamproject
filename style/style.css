@@ -1,34 +1,47 @@
-*{
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
-
-}
-
-
-nav{
+/*All NAV BAR CSS*/
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
     align-items: center;
+<<<<<<< HEAD
     background-color: black;
     min-height: 8vh;
+=======
+    background-color: rgb(173, 230, 255);
+    font-size: 12px ;
+>>>>>>> 011ed498bef87a10664d500ffe9e27bd29aeb9e4
 
 }
-nav ul li{
+#nav-logo{
+    max-width: 120px;
+    max-height: 120px;
+    
+}
+.nav ul li{
     list-style-type: none;
     display:inline-block;
-    padding: 10px 20px;
+    padding: 10px 25px;
 }
 
+<<<<<<< HEAD
 nav ul li a{
 color: white;
+=======
+.nav ul li a{
+color: #333;
+>>>>>>> 011ed498bef87a10664d500ffe9e27bd29aeb9e4
 text-decoration: none;
 font-weight:bold;
 }
 
+<<<<<<< HEAD
 nav ul li a:hover{
     color: grey
+=======
+.nav ul li a:hover{
+    color:rgb(186, 43, 226)
+>>>>>>> 011ed498bef87a10664d500ffe9e27bd29aeb9e4
 
 }
 
@@ -38,42 +51,75 @@ nav ul li a:hover{
     background-color: white;
     margin: 5px;
     
-    }
-
-button:hover{
-
-    transform: scale(1.3);
-    cursor: pointer;
 }
 
-
- 
-
-#temp-logo{
-    max-width: 120px;
-    max-height: 120px;
-}
 #temp-profile{
     max-width: 60px;
     max-height: 50px;
 }
 #user-icon{
     font-size: 32px;
-    color:  #333
+    color:  #333;
+    padding-top: 5px;
 }
+/*dropdown on navbar*/
+#dropdown{
+    float: right;
+    overflow: hidden;
+}
+#dropdown #dropdown-button{
+    font-size: 16px;
+    background-color:  inherit;
+    border-style: none;
+    outline: none;
+    font-weight: bold;
+    font-size: inherit;
+    margin: 0;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+#dropdown #dropdown-button:hover{
+    background-color: whitesmoke;
+}
+#dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5px;
+}
+#dropdown-content a{
+    float: none;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: #333;
+    padding: 12px 16px;
+}
+#dropdown-content a:hover{
+    background-color: whitesmoke;
+}
+#dropdown:hover #dropdown-content{
+    display: block;
+}
+
+/*Login Button on Index.php*/
 #login-button-container{
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 #login-button{
     align-items: center;
-    background-color: white;
+
 }
 /*Main picture on index.php*/
 #header-container{
     position: relative;
     margin: auto;
     text-align: center;
+  
 }
 /* Head of index.php*/
 #pic-1{
@@ -84,7 +130,6 @@ button:hover{
 #middle-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: baseline;
     width: 100%;
     height: auto;
@@ -121,65 +166,172 @@ button:hover{
 #lower-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: baseline;
-    width: 100%;
-    height: auto;
     padding: 5px;
 }
+#lower-padding{
+    padding: 30px;
+}
 #pic-6{
-    width: 200px;
+    width: 150px;
     height: 250px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-7{
-    width: 200px;
+    width: 150px;
     height: 250px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-8{
-    width: 200px;
+    width: 150px;
     height: 250px;
     padding: 10px;
     border-radius: 16px;
 }
+
 /* signup form */
+.signup-logo{
+    width: 55px;
+    height: 50px;
+    padding: 5px;
+}
 .signup-form{
-width: 50%;
-text-align: center;
-align-items: center;
-margin: auto;
-padding: 50px;
+    width: 50%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 15px;
+    background-color: whitesmoke;
+}
+.signup-container label{
+    padding: 5px;
+    text-align: left;
+}
+.signup-container input{
+    width: 30rem;
+    background-color: rgb(254, 254, 254);
+    border: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 18x;
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
+
+/*Sign up button*/
+.signupBtnDiv button[type=submit]{
+    background: lightskyblue;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .3s;
+}
+.signupBtn:hover{
+    background: transparent;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    transform: scale(1.05); 
+}
+
+
+.signupBtnDiv button[type=submit]:hover{
+    background: transparent;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+/*centres the submit button*/
+.signupBtnDiv {
+text-align: center;
+padding: 10px;
+}
+.login-logo{
+    width: 55px;
+    height: 50px;
+    padding-right: 2px;
+}
+
+/*Login button*/
+input[type=submit]#login-button {
+    background: lightskyblue;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 11px 28px;
+    border-radius: 30px;
+    transition: .3s;
+    width: 22rem;
+}
+
+input[type=submit]#login-button:hover {
+    background: transparent;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*Admin login button*/
+input[type=submit]#admin-login-button {
+    background: lightskyblue;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 11px 28px;
+    border-radius: 30px;
+    transition: .3s;
+    width: 22rem;
+}
+
+input[type=submit]#admin-login-button:hover {
+    background: transparent;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*Prodcut Page CSS*/
 .titleList{
     text-align: center;
 }
+.searchform{
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: auto;
+    min-width: 200px;
+}
 .productsection{
  
- position: relative;
+ 
  display: inline-block;
- 
- 
+ margin-left: 10px;
 }
 .productbutton{
-margin-left: 10px;
+
 border-style: solid;
 border-width: 3px;
 background-color: white;
-padding: 10px 20px;
+padding: 10px 25px;
 border-radius: 8px;
+text-align: center;
+
+
+
 }
+
+
 
 .productdropdown{
     display: none;
     position: absolute;
-    min-width: 100px;
     overflow: auto;
     z-index: 1;
     background-color: lightgray;
+    cursor: pointer;
     
     
 }
@@ -187,6 +339,19 @@ border-radius: 8px;
     display: block;
     text-decoration: none;
     padding: 15px;
+    color: black;
+}
+.productsection:hover .productdropdown{
+    display: block;
+    
+}
+.productbutton:hover {
+    color: darkblue;
+    
+}
+.productsection a:hover{
+    background-color: rgb(169, 166, 166);
+    text-decoration: none;
     color: black;
 }
 .productsection:hover .productdropdown{
@@ -207,10 +372,133 @@ position: relative;
     
 }
 
-
-.signup-container {
-    text-align: left;
-
+/*Footer CSS*/
+/*footer sticks to the bottom of the page*/
+.footer-container{
+    padding-top: 10px;
+    width: 100%;
+    color: #333;
+    bottom: -50;
+    position: absolute;
+    background-color: whitesmoke;
+}
+#footer-logo{
+    width: 75px;
+}
+.column {
+    display: block;
+    float: left;
 }
 
+.column.three {
+    width: 203px;
+    margin-right: 45px;
+}
 
+.column.last {
+    margin: 0;
+}
+/*Account Page CSS*/
+#account-header{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+#account-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    justify-content: baseline;
+}
+#account-logo{
+    width: 55px;
+    height: 50px;
+    padding-right: 2px;
+}
+
+#account-left-box{
+    width: 20%;
+    color: #333;
+    background-color: whitesmoke;
+    padding-top: 5px;
+    padding-left: 12px;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+#account-right-box{
+    width: 80%;
+    border-left: 1px solid #333;
+    padding-left: 20px;
+}
+#account-right-box p{
+    border-bottom: 0.5px lightblue;
+}
+/*Recent Order History Table*/
+#account-table{
+    width: 100%;
+    padding: 5px;
+}
+#account-table th{
+    width: 150px;
+    border-bottom: 0.5px #333;
+}
+#account-table td{
+    padding-top: 5px;
+}
+/*Account logout button*/
+#account-button-container{
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+}
+#account-logout-button{
+    background: lightskyblue;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .3s;
+}
+#account-logout-button:hover{
+    background: transparent;
+    border: 2px solid lightblue;
+    cursor: pointer;
+}
+
+/*ADMIN VIEW customer table*/
+#customer-header{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+}
+#customer-table{
+    width: 95%;
+    padding: 35px;
+    margin: auto;
+}
+#customer-table th{
+    width: 150px;
+    border-bottom: solid 1px #333;
+    padding: 15px;
+    text-align: left;
+    background-color: whitesmoke;
+}
+#customer-table td{
+    padding: 10px;
+    border-bottom: solid 0.5px lightskyblue;
+}
+#customer-table tr:hover{
+    background-color: lightskyblue;
+}
+/*Login Pages admin+user*/
+.login-form{
+    text-align: center;
+}

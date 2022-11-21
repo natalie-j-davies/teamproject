@@ -15,8 +15,8 @@
 
 </div>
 <br>
-<div class ="productsection">
- <button class="productbutton">Sort By</button>
+<div class = "productsection">
+ <button class="productbutton sortbybutton">Sort By</button>
  <div class ="productdropdown">
     <a href="#">Alphabetically</a>
     <a href="#">Newest</a>
@@ -25,16 +25,25 @@
  </div>
 
 <div class ="productsection">
-    <button class="productbutton">Filter</button>
+    <button class="productbutton materialbutton">Case Material</button>
     <div class ="productdropdown">
-    <a href="#">Case Styles</a>
-    <a href="#">Case Colors</a>
-    </div>
-    
-    
+    <a href="#">Clear Cases</a>
+    <a href="#">Leather Cases</a>
+    <a href="#">Metal Cases</a>
+    <a href="#">Wood Cases</a>
+    </div>  
  </div>
-</div>
+ <div class ="productsection">
+    <button class="productbutton stylebutton">Case Style</button>
+    <div class ="productdropdown">
+    <a href="#">Cartoon</a>
+    <a href="#">Futuristic</a>
+    <a href="#">Simple</a>
+    </div>  
+ </div>
+ 
 
+</div>
 
 <hr>
 <?php
