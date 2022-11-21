@@ -184,9 +184,9 @@ font-weight:bold;
 .signup-form{
     width: 50%;
     margin: auto;
-    padding: 50px;
-    border: solid 1px #333;
-    border-radius: 6px;
+    padding-left: 25px;
+    padding-right: 15px;
+    background-color: whitesmoke;
 }
 .signup-container label{
     padding: 5px;
@@ -204,7 +204,6 @@ font-weight:bold;
 
 /*Sign up button*/
 .signupBtnDiv button[type=submit]{
-
     background: lightskyblue;
     color: #333;
     text-decoration: none;
@@ -213,7 +212,6 @@ font-weight:bold;
     padding: 13px 30px;
     border-radius: 30px;
     transition: .3s;
-
 }
 .signupBtn:hover{
     background: transparent;
@@ -229,7 +227,11 @@ font-weight:bold;
     cursor: pointer;
     transform: scale(1.05);
 }
-
+/*centres the submit button*/
+.signupBtnDiv {
+text-align: center;
+padding: 10px;
+}
 .login-logo{
     width: 55px;
     height: 50px;
