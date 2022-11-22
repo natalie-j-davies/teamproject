@@ -98,21 +98,32 @@ nav ul li a:hover{
     display: block;
 }
 
-/*Login Button on Index.php*/
-#login-button-container{
-    text-align: center;
-    padding: 10px;
-}
-#login-button{
-    align-items: center;
 
-}
 /*Main picture on index.php*/
 #header-container{
     position: relative;
     margin: auto;
     text-align: center;
   
+}
+/*shop button*/
+#shop-now-button{
+    background: lightskyblue;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .3s;
+
+}
+
+#shop-now-button:hover{
+    background: transparent;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    transform: scale(1.05);
 }
 /* Head of index.php*/
 #pic-1{

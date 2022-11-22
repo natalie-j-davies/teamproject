@@ -8,7 +8,7 @@
     <img id="pic-1" src="images/temp_images/carousel-1.png"  >
     <h2>Effortless Style</h2>
     <!--shop button takes user to products.php--> 
-    <button><a href="products.php">Shop Now</a></button>
+    <a href="products.php"><button id="shop-now-button">Shop Now</button></a>
   </div>
 <!--feature collection with links to products --> 
 <h4>Featured Collection</h4>
