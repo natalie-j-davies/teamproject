@@ -433,14 +433,22 @@ position: relative;
 /*Footer CSS*/
 /*footer sticks to the bottom of the page*/
 .footer-container{
-    display: table;
+    padding-top: 10px;
     width: 100%;
-    margin: 0 auto;
-    background-color: whitesmoke;
+    color: #333;
     bottom: -50;
     position: absolute;
-    padding-top: 10px;
-    color: #333;
+    background-color: whitesmoke;
+}
+
+.footer-container .footer {
+    display: table;
+    max-width: 100%;
+    padding: 1em;
+    margin: 0 auto;
+    border: 0.062em none black;
+    background-color: whitesmoke;
+    color: black;
 }
 
 #footer-logo{
