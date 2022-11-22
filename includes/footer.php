@@ -13,9 +13,11 @@
                 <div class="column three">
                     <!-- Privacy Policy -->
                     <h4 class="footer-heading"><img src="images/logo/logo.png" alt="img" id="footer-logo"></img> Policies</h4>
-                        
-                    <p><a href='privacypolicy.php'>Privacy Policy</a><br>
-                    <a href='termsconditions.php'>Term and Conditions</a></p>
+                     
+                    <ul>
+                        <li><p><a href='privacypolicy.php'>Privacy Policy</a><br></li>
+                        <li><a href='termsconditions.php'>Term and Conditions</a></p></li>
+                    </ul>
                 </div>
 
                 <div class="column three last">
