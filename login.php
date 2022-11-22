@@ -49,7 +49,7 @@ if (isset($_POST['login'])){
   <!-- Log in form and button --> 
   <div class="login-form">
     <form action="login.php" method="post">
-      <div id="login-container">
+      <div class="login-container">
         <!-- Username Field -->
         <label for="username">Username </label>
         <input type="text" name="username" value="" placeholder="Username" required/><br><br>

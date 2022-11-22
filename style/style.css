@@ -267,17 +267,10 @@ padding: 10px;
     padding-right: 15px;
     background-color: whitesmoke;
 }
-#login-container label{
+
+.login-container label {
     padding: 5px;
     text-align: left;
-}
-#login-container input {
-    width: 30rem;
-    background-color: rgb(254, 254, 254);
-    border: rgb(255, 255, 255);
-    padding: 10px;
-    font-size: 18x;
-    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 /*Login button*/
