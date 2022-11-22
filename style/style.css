@@ -265,6 +265,8 @@ padding: 10px;
     margin: auto;
     padding-left: 25px;
     padding-right: 15px;
+    padding-top: 20px;
+    border-radius: 32px;
     background-color: whitesmoke;
 }
 
@@ -466,6 +468,7 @@ position: relative;
 
 .column.three .footer-heading {
     text-align: center;
+    font-size: 24px;
 }
 
 .column.three ul {
@@ -476,6 +479,16 @@ position: relative;
 .column.last {
     margin: 0;
 }
+
+/*Copyright section on footer*/
+#copyright-section {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+    background-color: rgb(173, 230, 255);
+}
+
 /*Account Page CSS*/
 #account-header{
     width: 100%;
