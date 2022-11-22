@@ -252,11 +252,34 @@ nav ul li a:hover{
 text-align: center;
 padding: 10px;
 }
+
+/* login form */
 .login-logo{
     width: 55px;
     height: 50px;
     padding-right: 2px;
 }
+
+.login-form{
+    width: 50%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 15px;
+    background-color: whitesmoke;
+}
+#login-container label{
+    padding: 5px;
+    text-align: left;
+}
+#login-container input {
+    width: 30rem;
+    background-color: rgb(254, 254, 254);
+    border: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 18x;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
 /*Login button*/
 input[type=submit]#login-button {
     background: lightskyblue;
