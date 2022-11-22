@@ -442,6 +442,10 @@ position: relative;
 .column {
     display: block;
     float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 250px;
+    background-color: rgb(173, 230, 255);
 }
 
 .column.three {
