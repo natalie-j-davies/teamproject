@@ -34,14 +34,13 @@
     <a href="#">Over £60</a>
     </div>  
  </div>
- 
 </div>
-
 </div>
 
 <br>
 <br>
 <hr>
+
 <div class="sidebar">
     <div class = "sidebarcategories">Case Style</div>
     <label class="container">Cartoon
