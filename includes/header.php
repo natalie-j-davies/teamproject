@@ -38,10 +38,9 @@
         <nav class="nav">
             <ul>
                 <div class="topnav">
-                    <li><a href="index.php"><img src="images/logo/logo.png" alt="img" id="temp-logo"></img></a></li>
+                    <li><a href="index.php"><img src="images/logo/logo.png" alt="img" id="nav-logo"></img></a></li>
                     <li><a class="active" href="index.php">Home</a></li>
                     <li><a href="products.php">Products</a></li>
-                    <li><a href="signup.php">Sign Up</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="contact.php">Contact</a></li>
         <?php 
@@ -69,9 +68,9 @@
                 <button id='dropdown-button'>Account<i class='fa fa-caret-down'></i>
                 </button>
                 <div id='dropdown-content'>
-                  <a href='login.php'>Customer Sign In</a><br>
-                  <a href='adminlogin.php'>Admin Sign In</a><br>
-                  <a href='privacypolicy.php'>Privacy Policy</a>
+                    <a href='signup.php'>Sign Up</a><br>
+                    <a href='login.php'>Customer Sign In</a><br>
+                    <a href='adminlogin.php'>Admin Sign In</a>
                 </div>
               </div> 
 

@@ -4,39 +4,55 @@
     align-items: center;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(173, 230, 255);
+<<<<<<< HEAD
+    background-color: black;
     min-height: 8vh;
+=======
+    background-color: rgb(173, 230, 255);
+    font-size: 12px ;
+>>>>>>> 011ed498bef87a10664d500ffe9e27bd29aeb9e4
 
+}
+#nav-logo{
+    max-width: 120px;
+    max-height: 120px;
+    
 }
 .nav ul li{
     list-style-type: none;
     display:inline-block;
-    padding: 10px 20px;
+    padding: 10px 25px;
 }
 
+<<<<<<< HEAD
+nav ul li a{
+color: white;
+=======
 .nav ul li a{
 color: #333;
+>>>>>>> 011ed498bef87a10664d500ffe9e27bd29aeb9e4
 text-decoration: none;
 font-weight:bold;
 }
 
+<<<<<<< HEAD
+nav ul li a:hover{
+    color: grey
+=======
 .nav ul li a:hover{
     color:rgb(186, 43, 226)
+>>>>>>> 011ed498bef87a10664d500ffe9e27bd29aeb9e4
 
 }
 
 .burgermenu div{
     width: 30px;
     height: 4px;
-    background-color: purple;
+    background-color: white;
     margin: 5px;
     
 }
 
-#temp-logo{
-    max-width: 120px;
-    max-height: 120px;
-}
 #temp-profile{
     max-width: 60px;
     max-height: 50px;
@@ -182,16 +198,25 @@ font-weight:bold;
     padding: 5px;
 }
 .signup-form{
-width: 50%;
-text-align: center;
-align-items: center;
-margin: auto;
-padding: 50px;
+    width: 50%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 15px;
+    background-color: whitesmoke;
 }
-#login-container{
-    text-align: center;
-    width: 100%;
+.signup-container label{
+    padding: 5px;
+    text-align: left;
 }
+.signup-container input{
+    width: 30rem;
+    background-color: rgb(254, 254, 254);
+    border: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 18x;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
 
 /*Sign up button*/
 .signupBtnDiv button[type=submit]{
@@ -200,11 +225,17 @@ padding: 50px;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 11px 28px;
+    padding: 13px 30px;
     border-radius: 30px;
     transition: .3s;
-    width: 22rem;
 }
+.signupBtn:hover{
+    background: transparent;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    transform: scale(1.05); 
+}
+
 
 .signupBtnDiv button[type=submit]:hover{
     background: transparent;
@@ -212,7 +243,11 @@ padding: 50px;
     cursor: pointer;
     transform: scale(1.05);
 }
-
+/*centres the submit button*/
+.signupBtnDiv {
+text-align: center;
+padding: 10px;
+}
 .login-logo{
     width: 55px;
     height: 50px;
@@ -233,6 +268,26 @@ input[type=submit]#login-button {
 }
 
 input[type=submit]#login-button:hover {
+    background: transparent;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*Admin login button*/
+input[type=submit]#admin-login-button {
+    background: lightskyblue;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 11px 28px;
+    border-radius: 30px;
+    transition: .3s;
+    width: 22rem;
+}
+
+input[type=submit]#admin-login-button:hover {
     background: transparent;
     border: 2px solid lightblue;
     cursor: pointer;
@@ -343,18 +398,19 @@ position: relative;
     
 }
 
-.signup-container {
-    text-align: left;
-}
 /*Footer CSS*/
-.footer{
-    background-color: whitesmoke;
-    bottom: 0;
-    left: 0;
-    position: fixed;
+/*footer sticks to the bottom of the page*/
+.footer-container{
+    padding-top: 10px;
     width: 100%;
+    color: #333;
+    bottom: -50;
+    position: absolute;
+    background-color: whitesmoke;
 }
-
+#footer-logo{
+    width: 75px;
+}
 .column {
     display: block;
     float: left;
@@ -467,4 +523,8 @@ position: relative;
 }
 #customer-table tr:hover{
     background-color: lightskyblue;
+}
+/*Login Pages admin+user*/
+.login-form{
+    text-align: center;
 }
