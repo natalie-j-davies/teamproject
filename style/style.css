@@ -206,7 +206,9 @@ nav ul li a:hover{
     margin: auto;
     padding-left: 25px;
     padding-right: 15px;
-    background-color: whitesmoke;
+    padding-top: 20px;
+    border-radius: 32px;
+    background-color: rgb(225, 225, 225);
 }
 .signup-container label{
     padding: 5px;
@@ -267,7 +269,7 @@ padding: 10px;
     padding-right: 15px;
     padding-top: 20px;
     border-radius: 32px;
-    background-color: whitesmoke;
+    background-color: rgb(225, 225, 225);
 }
 
 .login-container label {
