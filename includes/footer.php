@@ -1,6 +1,6 @@
     <div class="footer-container">    
-            <div class="footer col-sm-12" id="main-footer">
-                <div class="column three col-sm-3">
+            <div class="footer" id="main-footer">
+                <div class="column three">
                     <!-- Social media -->
                     <h4 class="footer-heading">Social Media</h4>
                     <ul id="social-media-info">
@@ -10,7 +10,7 @@
                     </ul>
                 </div>
 
-                <div class="column three col-sm-3">
+                <div class="column three">
                     <!-- Privacy Policy -->
                     <h4 class="footer-heading"><img src="images/logo/logo.png" alt="img" id="footer-logo"></img> Policies</h4>
                         
@@ -18,7 +18,7 @@
                     <a href='termsconditions.php'>Term and Conditions</a></p>
                 </div>
 
-                <div class="column three last col-sm-3">
+                <div class="column three last">
                     <!-- FAQ -->
                     <h4 class="footer-heading">Get Help</h4>
                     <ul class="get-help-info">
