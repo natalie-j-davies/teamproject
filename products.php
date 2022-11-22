@@ -73,6 +73,60 @@
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
+    <hr>
+    <div class = "sidebarcategories">Case Colour</div>
+    <label class="container">Red
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Orange
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Yellow
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Green
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Blue
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Pink
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Purple
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Brown
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Gray
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Black
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">White
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Silver
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Multicolour
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
    
 </div>
 <?php
