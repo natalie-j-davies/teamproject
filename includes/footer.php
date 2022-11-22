@@ -17,7 +17,7 @@
                     <br>
                     <ul>
                         <li><a href='privacypolicy.php'>Privacy Policy</a></li><br>
-                        <li><a href='termsconditions.php'>Term and Conditions</a></li>
+                        <li><a href='termsconditions.php'>Terms and Conditions</a></li>
                     </ul>
                 </div>
 
