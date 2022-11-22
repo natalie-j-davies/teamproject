@@ -58,10 +58,13 @@ if (isset($_POST['login'])){
         <label for="password">Password </label>
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
         
+        <br>
+
         <!-- Login Button -->
         <input type="submit" value="Login" class="button" id="login-button"/>
         <input type="hidden" name="login" value="TRUE" />
     </form>
+    <br><br>
         <div class="signupLink clearfix">
           <p>Not a member? Register <a href="signup.php">here</a></p>
         </div>
