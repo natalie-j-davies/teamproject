@@ -75,55 +75,68 @@
     </label>
     <hr>
     <div class = "sidebarcategories">Case Colour</div>
-    <label class="container">Red
+    <label class="container">
+    <span class = "circle red"></span>Red
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Orange
+    <label class="container">
+    <span class = "circle orange"></span>Orange
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Yellow
+    <label class="container">
+    <span class = "circle yellow"></span>Yellow
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Green
+    <label class="container">
+    <span class = "circle green"></span>Green
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Blue
+    <label class="container">
+    <span class = "circle blue"></span>Blue
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Pink
+    <label class="container">
+    <span class = "circle pink"></span>Pink
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Purple
+    <label class="container">
+    <span class = "circle purple"></span>Purple
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Brown
+    <label class="container">
+    <span class = "circle brown"></span>Brown
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Gray
+    <label class="container">
+    <span class = "circle gray"></span>Gray
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Black
+    <label class="container">
+    <span class = "circle black"></span>Black
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">White
+    <label class="container">
+    <span class = "circle white"></span>White
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Silver
+    <label class="container">
+    <span class = "circle silver"></span>Silver
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Multicolour
+    <label class="container">
+    <span class = "circle multicolour"></span>Multicolour
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
