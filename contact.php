@@ -19,7 +19,7 @@
                                 Instagram:<br>
                                 G-Twenty2022<br>
                                 Twitter: <br>
-                                G--Twenty2022<br>
+                                G-Twenty2022<br>
                                 Facebook: <br>
                                 G-Twenty2022
                             </p>
