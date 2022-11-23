@@ -11,12 +11,12 @@
     <a href="products.php"><button id="shop-now-button">Shop Now</button></a>
   </div>
 <!--feature collection with links to products --> 
-<h4>Featured Collection</h4>
+<h4>Featured Brands</h4>
 <div id="middle-container">
-  <div id ="upper-padding"><img id="pic-2" src="images/temp_images/clearcase.JPEG"><p id="FC-label">Clear Cases</p></div>
-  <div id ="upper-padding"><img id="pic-3" src="images/temp_images/leathercase.JPEG"><p id="FC-label">Leather Cases</p></div>
-  <div id ="upper-padding"><img id="pic-4" src="images/temp_images/metalcase.JPEG"><p id="FC-label">Metal Cases</p></div>
-  <div id ="upper-padding"><img id="pic-5" src="images/temp_images/woodcase.JPEG"><p id="FC-label">Wood Cases</p></div>
+  <div id ="upper-padding"><img id="pic-2" src="images/temp_images/apple.png"><p id="FC-label">  Apple</p></div>
+  <div id ="upper-padding"><img id="pic-3" src="images/temp_images/samsung.png"><p id="FC-label">Samsung </p></div>
+  <div id ="upper-padding"><img id="pic-4" src="images/temp_images/huawei.png"><p id="FC-label">Huawei</p></div>
+  <div id ="upper-padding"><img id="pic-5" src="images/temp_images/google.png"><p id="FC-label">Google</p></div>
 </div>
 <!--our community section - more pictures of phone cases/people to inspire user to shop--> 
   <h4>Newest Designs</h4>
