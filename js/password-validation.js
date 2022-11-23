@@ -7,6 +7,7 @@ function passwordValidator() {
     if (password != repeat_password) {
         document.getElementById('wrong_pass_alert').style.color = 'red';
         document.getElementById('wrong_pass_alert').innerHTML = 'Error! Password and confirm password not matched';
+        document.getElementById('create').disabled = true;
         document.getElementById('create').style.opacity = (0.4);
     } else {
         document.getElementById('wrong_pass_alert').style.color = 'green';
