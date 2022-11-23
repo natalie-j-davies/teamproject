@@ -56,6 +56,10 @@ if (isset($_POST['submit'])){
                         <label for="password">Password </label>
                         <input type="password" id="password" name="password" required><br><br>
 
+                        <!-- Repeat Password Field -->
+                        <label for="repeat-password">Repeat Password</label>
+                        <input type="password" id="repeat-password" name="repeat-password"><br><br>
+
                         <!-- First Name Field -->
                         <label for="firstname">First Name </label>
                         <input type="text" id="firstname" name="firstname"><br><br>
