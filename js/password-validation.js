@@ -1,4 +1,4 @@
-window.onclick = function() {
+window.onsubmit = function() {
     passwordValidator();
 }
 
