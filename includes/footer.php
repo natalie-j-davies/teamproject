@@ -5,7 +5,7 @@
                     <h4 class="footer-heading">Social Media</h4>
                     <br>
                     <ul id="social-media-info">
-                        <li>Instagram: G-Twenty2022</li><br>
+                        <li> <img src="images/temp_images/insta_logo"> G-Twenty2022</li><br>
                         <li>Twitter: G--Twenty2022</li><br>
                         <li>Facebook: G-Twenty2022</li>
                     </ul>
