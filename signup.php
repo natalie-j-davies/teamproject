@@ -88,7 +88,7 @@ if (isset($_POST['submit'])){
 
                         <div class="signupBtnDiv clearfix">
                             <!-- Sign Up button -->
-                            <button type="submit" class="signupBtn" id="create" name="submit" value="Sign Up" onclick="wrong_pass_alert()">
+                            <button type="submit" class="signupBtn" id="create" name="submit" value="Sign Up" onclick="fill_details_alert()">
                                 <span class="label-text">Sign Up</span>
                             </button>
                         </div>

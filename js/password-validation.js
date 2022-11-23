@@ -17,7 +17,7 @@ function passwordValidator() {
     }
 }
 
-function wrong_pass_alert() {
+function fill_details_alert() {
     // If all the fields are filled, a popup will say Your account is created!
     // Otherwise, if the fields are not filled, then pop up will say fill in the details
     if (document.getElementById('username').value != "" && document.getElementById('password').value != "" && document.getElementById('repeat-password').value != "" &&
