@@ -85,20 +85,128 @@
     <span class="checkmark"></span>
     </label>
     <hr>
-    <div class = "sidebarcategories">Brand</div>
-    <label class="container">Apple
+    <div class = "sidebarcategories">Phone Brand</div>
+    <div class = "sidebarsubcategories">Apple</div>
+    <label class="container">iPhone 12
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Google
+    <label class="container">iPhone 12 Mini
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Samsung
+    <label class="container">iPhone 12 Pro
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Wood Cases
+    <label class="container">iPhone 12 Pro Max
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">iPhone 13
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">iPhone 13 Mini
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">iPhone 13 Pro
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">iPhone 13 Pro Max
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">iPhone 14 
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">iPhone 14 Plus
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">iPhone 14 Pro
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">iPhone 14 Pro Max
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <div class = "sidebarsubcategories">Google</div>
+    <label class="container">Google Pixel 6
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Google Pixel 6 Pro
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <div class = "sidebarsubcategories">Huawei</div>
+    <label class="container">Huawei P20
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Huawei P20 Lite
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Huawei P20 Pro
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Huawei P30
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Huawei P30 Lite
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Huawei P30 Pro
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Huawei P40 Lite
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <div class = "sidebarsubcategories">Samsung Galaxy</div>
+    <label class="container">Samsung Galaxy S20
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Galaxy S20 Plus
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Galaxy S20 Ultra
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Galaxy S21
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Galaxy S21 Plus
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Galaxy S21 Ultra
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Galaxy S22
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Galaxy S22 Plus
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Galaxy S22 Ultra
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>

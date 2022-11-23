@@ -421,7 +421,7 @@ text-align: center;
 }
 .sidebar {
   
-    width: 170px; 
+    width: 210px; 
     z-index: 1;
     background-color: lightgrey; 
     overflow-x: hidden; 
@@ -431,6 +431,11 @@ text-align: center;
   }
 .sidebarcategories{
     font-size: 25px;
+    text-align: center;
+    
+}
+.sidebarsubcategories{
+    font-size: 20px;
     text-align: center;
     
 }
