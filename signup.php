@@ -58,8 +58,8 @@ if (isset($_POST['submit'])){
 
                         <!-- Repeat Password Field -->
                         <label for="repeat-password">Repeat Password</label>
-                        <input type="password" id="repeat-password" name="repeat-password" required><br><br>
-                        <span id="wrong_password_msg"></span>
+                        <input type="password" id="repeat-password" name="repeat-password" required onkeyup="passwordValidator()"><br><br>
+                        <p id="wrong_pass_alert"></p>
 
                         <!-- First Name Field -->
                         <label for="firstname">First Name </label>
@@ -88,7 +88,7 @@ if (isset($_POST['submit'])){
 
                         <div class="signupBtnDiv clearfix">
                             <!-- Sign Up button -->
-                            <button type="submit" class="signupBtn" name="submit" value="Sign Up">
+                            <button type="submit" class="signupBtn" id="create" name="submit" value="Sign Up" onclick="wrong_pass_alert()">
                                 <span class="label-text">Sign Up</span>
                             </button>
                         </div>
