@@ -3,6 +3,7 @@ function passwordValidator() {
     let repeat_password = document.getElementById("repeat-password").value;
     let text;
 
+    // If password is not the same as confirm password, have a error message displayed. Otherwise same password used will have no message.
     if (password !== repeat_password) {
         text.style.color = 'red';
         text = "Error: password is not the same as repeated password! Use the same password";
