@@ -462,6 +462,10 @@ text-align: center;
     background-color: lightgray;
     background-image: linear-gradient(lightgray,gray);
 }
+.gold{
+    background-color: yellow;
+    background-image: linear-gradient(yellow,orange);
+}
 .multicolour{
     background-color: red;
     background-image: linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);

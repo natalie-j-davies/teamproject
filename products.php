@@ -56,16 +56,16 @@
     <span class="checkmark"></span>
     </label>
     <hr>
-    <div class = "sidebarcategories">Case Material</div>
-    <label class="container">Clear Cases
+    <div class = "sidebarcategories">Brand</div>
+    <label class="container">Apple
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Leather Cases
+    <label class="container">Google
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Metal Cases
+    <label class="container">Samsung
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
@@ -127,6 +127,11 @@
     </label>
     <label class="container">
     <span class = "circle white"></span>White
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">
+    <span class = "circle gold"></span>Gold
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
