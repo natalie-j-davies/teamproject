@@ -2,12 +2,12 @@
             <div class="footer" id="main-footer">
                 <div class="column three">
                     <!-- Social media -->
-                    <h4 class="footer-heading">Social Media</h4>
+                    <h4 class="footer-heading">Follow Us</h4>
                     <br>
                     <ul id="social-media-info">
-                        <li>Instagram: G-Twenty2022</li><br>
-                        <li>Twitter: G--Twenty2022</li><br>
-                        <li>Facebook: G-Twenty2022</li>
+                        <li> <i class="fa-brands fa-instagram"></i> G-Twenty2022</li><br>
+                        <li> <i class="fa-brands fa-twitter"></i> G-Twenty2022</li><br>
+                        <li> <i class="fa-brands fa-facebook"></i> G-Twenty2022</li>
                     </ul>
                 </div>
 

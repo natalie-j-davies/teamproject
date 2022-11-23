@@ -11,7 +11,6 @@
     background-color: rgb(173, 230, 255);
     font-size: 12px ;
 
-
 }
 #nav-logo{
     max-width: 120px;
@@ -24,8 +23,12 @@
     padding: 10px 25px;
 }
 
+nav ul li a{
+color: white;
+}
 .nav ul li a{
 color: #333;
+
 text-decoration: none;
 font-weight:bold;
 }
@@ -35,7 +38,6 @@ nav ul li a:hover{
 }
 .nav ul li a:hover{
     color:rgb(186, 43, 226)
-
 }
 
 .burgermenu div{
@@ -173,8 +175,17 @@ nav ul li a:hover{
     align-items: baseline;
     padding: 5px;
 }
+
+#upper-padding{
+    padding:30px;
+
+
+
+
+}
+
 #lower-padding{
-    padding: 30px;
+    padding: 50px;
 }
 #pic-6{
     width: 150px;
@@ -189,6 +200,12 @@ nav ul li a:hover{
     border-radius: 16px;
 }
 #pic-8{
+    width: 150px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+#pic-9{
     width: 150px;
     height: 250px;
     padding: 10px;
@@ -552,6 +569,14 @@ position: relative;
     padding-bottom: 10px;
     background-color: rgb(173, 230, 255);
 }
+
+/* #socialmedia-section img {
+     width: 20px; 
+     height: 20px;
+
+
+
+} */
 
 /*Account Page CSS*/
 #account-header{
