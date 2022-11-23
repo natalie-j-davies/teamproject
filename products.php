@@ -2,7 +2,36 @@
     define("TITLE", "Products | G-TWENTY");
     include('includes/header.php');
 ?>
+<?php
+	include ('connectdb.php');  
 
+	try {
+
+		$query="SELECT  * FROM  products";
+		$rows =  $db->query($query);	
+		if ( $rows && $rows->rowCount()> 0) {
+			while  ($row =  $rows->fetch())	{
+				echo "<div id='cv-info-box'>
+				<h3>". $row['productName'] ."</h3>
+				<p>Price:  ". $row['price'] ."</p>
+				<p>Style: ". $row['caseStyle'] ."</p>
+                <p>Brand: ". $row['caseBrand'] ."</p>
+                <p> <img src=". $row['image'] ."> </p>
+                <p>Colour: <br>". $row['caseColour'] ."</p>
+				</div>";
+
+	        }
+        }
+		
+    else {
+	    echo  "<p>0 results.</p>\n";
+        }
+    }
+    catch (PDOexception $ex){
+        echo "Sorry, a database error occurred! <br>";
+        echo "Error details: <em>". $ex->getMessage()."</em>";
+    }
+?>
 <div class="titleList">
 <h1>Products</h1>
 </div>
