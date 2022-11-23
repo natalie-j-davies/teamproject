@@ -285,6 +285,7 @@ padding: 10px;
     padding-left: 25px;
     padding-right: 15px;
     padding-top: 20px;
+    padding-bottom: 15px;
     border-radius: 32px;
     background-color: rgb(225, 225, 225);
 }
@@ -575,13 +576,24 @@ position: relative;
     background-color: rgb(173, 230, 255);
 }
 
-/* #socialmedia-section img {
-     width: 20px; 
-     height: 20px;
+/* Social media icons */
+.fa-brands.fa-instagram, .fa-brands.fa-twitter, .fa-brands.fa-facebook {
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
 
+.fa-brands.fa-instagram {
+    color: rgb(193, 53, 132);
+}
 
+.fa-brands.fa-twitter {
+    color: rgb(29, 155, 240);
+}
 
-} */
+.fa-brands.fa-facebook {
+    color: rgb(1, 101, 225);
+}
 
 /*Account Page CSS*/
 #account-header{
