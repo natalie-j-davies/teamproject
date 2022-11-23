@@ -173,8 +173,17 @@ nav ul li a:hover{
     align-items: baseline;
     padding: 5px;
 }
+
+#upper-padding{
+    padding:30px;
+
+
+
+
+}
+
 #lower-padding{
-    padding: 30px;
+    padding: 50px;
 }
 #pic-6{
     width: 150px;
@@ -189,6 +198,12 @@ nav ul li a:hover{
     border-radius: 16px;
 }
 #pic-8{
+    width: 150px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 16px;
+}
+#pic-9{
     width: 150px;
     height: 250px;
     padding: 10px;
