@@ -58,8 +58,8 @@ if (isset($_POST['submit'])){
 
                         <!-- Repeat Password Field -->
                         <label for="repeat-password">Repeat Password</label>
-                        <input type="password" id="repeat-password" name="repeat-password"><br><br>
-                        <p id="text"></p>
+                        <input type="password" id="repeat-password" name="repeat-password" required><br><br>
+                        <span id="wrong_password_msg"></span>
 
                         <!-- First Name Field -->
                         <label for="firstname">First Name </label>

@@ -1,16 +1,13 @@
-window.onsubmit = function() {
-    passwordValidator();
-}
-
 function passwordValidator() {
-    let password = document.getElementById("password");
-    let repeat_password = document.getElementById("repeat-password");
+    let password = document.getElementById("password").value;
+    let repeat_password = document.getElementById("repeat-password").value;
     let text;
 
-    if (password === repeat_password) {
-        text = "";
+    if (password != repeat_password) {
+        text.style.color = 'red';
+        text = "Error: password is not the same as repeated password! Use the same password";
     } else {
-        text = "Error: password is not the same as repeated password!";
+        text = "";
     }
-    document.getElementById("text").innerHTML = text;
+    document.getElementById('wrong_password_msg').innerHTML = text;
 }
