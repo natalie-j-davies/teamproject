@@ -18,11 +18,15 @@ function passwordValidator() {
 }
 
 function wrong_pass_alert() {
-    // If all the fields and password and confirm password are filled and matched, a popup will say Your account is created!
+    // If all the fields are filled, a popup will say Your account is created!
     // Otherwise, if the fields are not filled, then pop up will say fill in the details
-    if(document.getElementById('password').value != "" && document.getElementById('repeat-password').value != ""){
+    if (document.getElementById('username').value != "" && document.getElementById('password').value != "" && document.getElementById('repeat-password').value != "" &&
+        document.getElementById('firstname').value != "" && document.getElementById('lastname').value != "" && document.getElementById('phone').value != "" &&
+        document.getElementById('email').value != "" && document.getElementById('address').value != "" && document.getElementById('postcode').value != "") {
+
         alert("Your account is created!");
-    } else{
+    
+    } else {
         alert('Please fill in the details');
     }
 }
