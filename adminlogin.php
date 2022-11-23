@@ -58,11 +58,14 @@ if (isset($_POST['submit'])){
         <label for="password">Password </label>
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
         
+        <br>
+
         <!-- Login Button -->
         <input type="submit" value="Login" class="button" id="admin-login-button"/>
         <input type="hidden" name="submit" value="TRUE" />
     </form>
     </div>
+      <br><br>
         <p>By signing-in you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
 
 

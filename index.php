@@ -8,7 +8,7 @@
     <img id="pic-1" src="images/temp_images/carousel-1.png"  >
     <h2>Effortless Style</h2>
     <!--shop button takes user to products.php--> 
-    <button><a href="products.php">Shop Now</a></button>
+    <a href="products.php"><button id="shop-now-button">Shop Now</button></a>
   </div>
 <!--feature collection with links to products --> 
 <h4>Featured Collection</h4>
@@ -22,8 +22,8 @@
   <h4>Newest Designs</h4>
   <div id="lower-container">
     <div id="lower-padding"><img id="pic-6" src="images/cases/brasspeaks.png"><p id="FC-label">Brass Peaks</p></div>
-    <div id="lower-padding"><img id="pic-7" src="images/cases/laserprisms-iphone.png"><p id="FC-label">Laser Prisms</p></div>
-    <div id="lower-padding"><img id="pic-8" src="images/cases/laserprisms-iphone(2).png"><p id="FC-label">Example</p></div>
+    <div id="lower-padding"><img id="pic-7" src="images/cases/obsidian_14proMax.png"><p id="FC-label">Obsidian</p></div>
+    <div id="lower-padding"><img id="pic-8" src="images/cases/snowyPeaks_GPxlPro.png"><p id="FC-label">Snowy Peaks</p></div>
   </div>
 
 <?php

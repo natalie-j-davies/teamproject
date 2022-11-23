@@ -50,34 +50,38 @@ if (isset($_POST['submit'])){
                     <div class="signup-container">
                         <!-- Username Field -->
                         <label for="username">Username </label>
-                        <input type="text" id="username" name="username"><br>
+                        <input type="text" id="username" name="username"><br><br>
 
                         <!-- Password Field -->
                         <label for="password">Password </label>
-                        <input type="password" id="password" name="password" required><br>
+                        <input type="password" id="password" name="password" required><br><br>
+
+                        <!-- Repeat Password Field -->
+                        <label for="repeat-password">Repeat Password</label>
+                        <input type="password" id="repeat-password" name="repeat-password"><br><br>
 
                         <!-- First Name Field -->
                         <label for="firstname">First Name </label>
-                        <input type="text" id="firstname" name="firstname"><br>
+                        <input type="text" id="firstname" name="firstname"><br><br>
                         <!-- Last Name Field -->
                         <label for="lastname">Last Name </label>
-                        <input type="text" id="lastname" name="lastname"><br>
+                        <input type="text" id="lastname" name="lastname"><br><br>
                         
                         <!-- Phone Number Field -->
                         <label for="phone">Phone Number </label>
-                        <input type="text" id="phone" name="phone"><br>
+                        <input type="text" id="phone" name="phone"><br><br>
 
                         <!-- Email Field -->
                         <label for="email">Email Address </label>
-                        <input type="text" id="email" name="email" required><br>
+                        <input type="text" id="email" name="email" required><br><br>
 
                         <!-- Address Line Field -->
                         <label for="address">Address Line </label>
-                        <input type="text" id="address" name="address"><br>
+                        <input type="text" id="address" name="address"><br><br>
 
                         <!-- Postcode Field -->
                         <label for="postcode">Postcode </label>
-                        <input type="text" id="postcode" name="postcode"><br>
+                        <input type="text" id="postcode" name="postcode"><br><br>
 
                         <p>By creating an account you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy.</a></p>
 
