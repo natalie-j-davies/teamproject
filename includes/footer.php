@@ -1,27 +1,32 @@
-            <div class="footer col-sm-12" id="main-footer">
-                <div class="column three col-sm-3">
+    <div class="footer-container">    
+            <div class="footer" id="main-footer">
+                <div class="column three">
                     <!-- Social media -->
-                    <h3 class="footer-heading">Social Media</h3>
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <br>
                     <ul id="social-media-info">
-                        <li>Instagram: G-Twenty2022</li>
-                        <li>Twitter: G--Twenty2022</li>
-                        <li>Facebook: G-Twenty2022</li>
+                        <li> <i class="fa-brands fa-instagram"></i> G-Twenty2022</li><br>
+                        <li> <i class="fa-brands fa-twitter"></i> G-Twenty2022</li><br>
+                        <li> <i class="fa-brands fa-facebook"></i> G-Twenty2022</li>
                     </ul>
                 </div>
 
-                <div class="column three col-sm-3">
+                <div class="column three">
                     <!-- Privacy Policy -->
-                    <h3 class="footer-heading">G-TWENTY Policies</h3>
-                    <img src="images/logo/logo.png" alt="img" id="temp-logo"></img>    
-                    <p><a href='privacypolicy.php'>Privacy Policy</a><br>
-                    <a href='termsconditions.php'>Term and Conditions</a></p>
+                    <h4 class="footer-heading"><img src="images/logo/logo.png" alt="img" id="footer-logo"></img> Policies</h4>
+                    <br>
+                    <ul>
+                        <li><a href='privacypolicy.php'>Privacy Policy</a></li><br>
+                        <li><a href='termsconditions.php'>Terms and Conditions</a></li>
+                    </ul>
                 </div>
 
-                <div class="column three last col-sm-3">
+                <div class="column three last">
                     <!-- FAQ -->
-                    <h3 class="footer-heading">Get Help</h3>
+                    <h4 class="footer-heading">Get Help</h4>
+                    <br>
                     <ul class="get-help-info">
-                        <li><a href="about.php">Who we are?</a></li>
+                        <li><a href="about.php">Who we are?</a></li><br>
                         <li><a href="contact.php">Contact Us</a></li>
                     </ul>
                 </div>
@@ -34,8 +39,9 @@
                 <small>Copyright&copy; <?php echo date('Y'); ?> <?php echo $companyName; ?></small>
             </div>
         </div>
+    
         <!-- end content -->
-    <!-- </div> -->
+    </div>
     <!-- end wrapper -->
 </body>
 </html>

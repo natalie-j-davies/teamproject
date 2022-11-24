@@ -40,14 +40,14 @@ if (isset($_POST['submit'])){
 ?>
   <!-- Login title -->
   <div class="login-title text-center">
-    <h1 class="title">Admin Login</h1>
+    <h1 class="title"><img class="login-logo" src="images/logo/logo-symbol.png">Admin Login</h1>
     <p>Please sign in here to login</p>
   </div>
 
   <hr>
 
   <!-- Log in form and button --> 
-  <div class="signup-form">
+  <div class="login-form">
     <form action="adminlogin.php" method="post">
       <div class="login-container">
         <!-- Username Field -->
@@ -58,14 +58,14 @@ if (isset($_POST['submit'])){
         <label for="password">Password </label>
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
         
-        <!-- Customer Login Button-->
-        <a href="login.php"><button type="button" >Take me to customer login</button></a><br>
-        
+        <br>
+
         <!-- Login Button -->
-        <input type="submit" value="Login" class="button"/>
+        <input type="submit" value="Login" class="button" id="admin-login-button"/>
         <input type="hidden" name="submit" value="TRUE" />
     </form>
     </div>
+      <br><br>
         <p>By signing-in you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
 
 

@@ -56,10 +56,14 @@ if (isset($_POST['submit'])){
                         <label for="password">Password </label>
                         <input type="password" id="password" name="password" required><br><br>
 
+                        <!-- Repeat Password Field -->
+                        <label for="repeat-password">Repeat Password</label>
+                        <input type="password" id="repeat-password" name="repeat-password" required onkeyup="passwordValidator()"><br><br>
+                        <p id="wrong_pass_alert"></p>
+
                         <!-- First Name Field -->
                         <label for="firstname">First Name </label>
                         <input type="text" id="firstname" name="firstname"><br><br>
-
                         <!-- Last Name Field -->
                         <label for="lastname">Last Name </label>
                         <input type="text" id="lastname" name="lastname"><br><br>
@@ -80,22 +84,18 @@ if (isset($_POST['submit'])){
                         <label for="postcode">Postcode </label>
                         <input type="text" id="postcode" name="postcode"><br><br>
 
-                        <p>By creating an account you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
+                        <p style="text-align: center;">By creating an account you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
 
                         <div class="signupBtnDiv clearfix">
                             <!-- Sign Up button -->
-                            <button type="submit" class="signupBtn" name="submit" value="Sign Up">
-                                <span class="inner">
-                                    <span class="label">
-                                        <span class="label-text">Sign Up</span>
-                                    </span>
-                                </span>
+                            <button type="submit" class="signupBtn" id="create" name="submit" value="Sign Up" onclick="fill_details_alert()">
+                                <span class="label-text">Sign Up</span>
                             </button>
                         </div>
 
                         <!-- Link to the Login Page -->
                         <div class="loginLink clearfix">
-                            <p>Already have an account? Login <a href="login.php">here</a></p>
+                            <p style="text-align: center;">Already have an account? Login <a href="login.php">here</a></p>
                         </div>
                     </div>
                 </form>

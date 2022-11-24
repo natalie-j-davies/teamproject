@@ -65,7 +65,7 @@
     margin-top: 10px;
 }
 .form-box .contact-form input:focus ~span{
-    transform-box: translateY(-10px);
+    transform-box: translateY(-5px);
     pointer-events: none;
 }
 /*Text Area in form*/
@@ -80,7 +80,7 @@
     transition: 0.9s ease-in-out;
 }
 .form-box .contact-form textarea:focus ~span{
-    transform-box: translateY(-20px);
+    transform-box: translateY(-10px);
     pointer-events: none;
 }
 /*Submit button*/
@@ -93,11 +93,11 @@
     padding: 11px 28px;
     border-radius: 30px;
     transition: .3s;
-    width: 26rem;
+    width: 22rem;
 }
 #contact-button input[type=submit]:hover{
     background: transparent;
     border: 2px solid lightblue;
     cursor: pointer;
-    transform: scale(1.3);
+    transform: scale(1.05);
 }

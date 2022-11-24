@@ -40,14 +40,14 @@ if (isset($_POST['login'])){
 ?>
   <!-- Login title -->
   <div class="login-title text-center">
-    <h1 class="title">Login</h1>
+    <h1 class="title"><img class="login-logo" src="images/logo/logo-symbol.png">Login</h1>
     <p>Please sign in here to login</p>
   </div>
 
   <hr>
 
   <!-- Log in form and button --> 
-  <div class="signup-form">
+  <div class="login-form">
     <form action="login.php" method="post">
       <div class="login-container">
         <!-- Username Field -->
@@ -58,13 +58,13 @@ if (isset($_POST['login'])){
         <label for="password">Password </label>
         <input type="password" name="password" value="" placeholder="Password" required/><br><br>
         
-        <!-- Admin Checkbox-->
-        <a href="adminlogin.php"><button type="button" >Take me to admin login</button></a><br>
-        
+        <br>
+
         <!-- Login Button -->
-        <input type="submit" value="Login" class="button"/>
+        <input type="submit" value="Login" class="button" id="login-button"/>
         <input type="hidden" name="login" value="TRUE" />
     </form>
+    <br><br>
         <div class="signupLink clearfix">
           <p>Not a member? Register <a href="signup.php">here</a></p>
         </div>
