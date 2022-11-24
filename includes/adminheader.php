@@ -22,8 +22,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
 	<!-- JavaScript files -->
     <script defer src="js/script.js"></script>
+    <script defer src="js/password-validation.js"></script>
     <!-- fontawesome.com for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,13 +57,6 @@
             }
 
             ?>
-
-
-                    <div class = "burgermenu">
-                        <div class = "line1"></div>
-                        <div class = "line2"></div>
-                        <div class = "line3"></div>
-                    </div>
                 </div>
             </ul>
         </nav>
