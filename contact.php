@@ -14,13 +14,13 @@
                 <div class="contact-flexbox">
                     <div class="social-box">
                         <section>
-                            <h4>Socials</h4>
+                            <h4>Follow Us</h4>
                             <p>
-                                Instagram:<br>
+                            <i class="fa-brands fa-instagram"></i>
                                 G-Twenty2022<br>
-                                Twitter: <br>
+                            <i class="fa-brands fa-twitter"></i>
                                 G-Twenty2022<br>
-                                Facebook: <br>
+                            <i class="fa-brands fa-facebook"></i>
                                 G-Twenty2022
                             </p>
                             <h4>Contact Number</h4>
