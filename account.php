@@ -21,9 +21,9 @@
     <div id="account-container">
 
     <div id="account-left-box">
-        <a href="account.php">Profile</a><br>
-        <a href="account.php">Recent Orders</a><br>
-        <a href="account.php">Messages</a><br>
+    <p><a href="account.php">Profile</a></p>
+    <p> <a href="account.php">Recent Orders</a></p>
+    <p><a href="termsconditions.php">Terms and Conditions</a></p>
     </div>
     <div id="account-right-box">
 <?php
@@ -34,14 +34,14 @@
 	include ('connectdb.php'); 
 
 try{
-    $userid = $_SESSION['username'];
-    $query = "SELECT * FROM users WHERE username = '$userid'";
+    $user = $_SESSION['username'];
+    $query = "SELECT * FROM users WHERE username = '$user';";
     $rows =  $db->query($query);
     
 
     if ($rows && $rows->rowCount()> 0) {
-                while  ($row =  $rows->fetch())	{
-                    echo "
+        while  ($row =  $rows->fetch())	{
+            echo "
                     <h2>Profile</h2>
                     <p>Username: ". $row['username'] ."</p>
                     <p>Name: ". $row['firstName'] ." ". $row['lastName'] ."</p>
@@ -49,47 +49,50 @@ try{
                     <p>Phone: ". $row['phone'] ."</p>
                     <p>Address: ". $row['addressLine'] ."</p>
                     <p>Postcode: ". $row['postcode'] ."</p>
-                    ";
+                ";
 
                 }
             }
             else {
-                echo "
-                <h3>Profile</h3>
-                <p>Name:  Database Error</p>
-                <p>Email:   Database Error</p>
-                <p>Username:   Database Error</p>
-                <p>Address:   Database Error</p>
-                <p>Postcode:   Database Error</p>
-                ";
+                echo "Apologies there has been a Database Error please come back later";
             }
+
+    $query = "SELECT * FROM orders WHERE userAccountID= '6' ORDER BY created_at";
+
+    $rows =  $db->query($query);
+        if ($rows && $rows->rowCount()> 0) {
+            echo " <h2>Recent Orders</h2>
+                <table id='account-table'>
+                <tr>
+                <th>Order Number </th>
+                <th>Order Date </th>
+                <th>Total Price </th>
+                </tr>";            
+                    while  ($row =  $rows->fetch())	{
+                        
+                    echo "<tr>
+                        <td>". $row['orderID'] ."</td>
+                        <td>". $row['created_at'] ."</td>
+                        <td>£". $row['total_price'] ."</td>
+                    </tr>
+                ";
+
         }
+    }
+    else {
+            echo "<h2>Recent Orders</h2>
+                    <p> You have no recent orders</p>";
+    }
+
+}
 catch (PDOexception $ex){
     echo "Sorry, a database error occurred! <br>";
     echo "Error details: <em>". $ex->getMessage()."</em>";
 }
 ?>
-    <h2>Recent Orders</h2>
-    <table id="account-table">
-    <tr>
-        <th>Product Name</th>
-        <th>Order Number</th>
-        <th>Order Date</th>
-    </tr>
-    <tr>
-        <td>Example Table</td>
-        <td>123456789</td>
-        <td>20/11/2022</td>
-    </tr>
-    <tr>
-        <td>Example Table</td>
-        <td>987654321</td>
-        <td>20/11/2022</td>
-    </tr>
-    </table>
-
-</div>
-</div>
+        </table>
+    </div>
+ </div>
 <div id="account-button-container">
 <a href="logout.php"><button id="account-logout-button" type="button" >Would you like to logout?</button></a>
 </div>
