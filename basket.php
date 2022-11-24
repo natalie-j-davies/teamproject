@@ -23,10 +23,12 @@
                 <td>Google Pixel 6</td>
                 <td>Gold</td>
                 <td>£15.00</td>
-                <td><img style ="width: 10px height:10px"id="order-image" src="images/cases/database_images/Obsidian/Google/Obsidian_GOOPIXEL6.png"></td>
+                <td><img id="order-image" src="images/cases/database_images/Obsidian/Google/Obsidian_GOOPIXEL6.png"></td>
             </tr>
         </table>
 </div>
+
+
 <?php
     include('includes/footer.php');
 ?>
