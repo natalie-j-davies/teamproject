@@ -49,17 +49,20 @@
         /*If the user is logged in the username will show in the nav bar */
             if (isset($_SESSION['username'])){
                 
-                echo "<li><i class='fa fa-user' id='user-icon-logged-in'></i><a href='admindash.php'>". $_SESSION['username'] ."</li></a>"; 
-            }
-            /*If the user is not logged in a plain account icon will show in the nav bar */
-            else{
-                echo "<a href='login.php'><i class='fa fa-user' id='user-icon'></i></a>";
-            }
-
-            ?>
+                echo "
+                <div id='dropdown'>
+                <button id='dropdown-button'>" . $_SESSION['username'] . "<i class='fa fa-caret-down'></i>
+                </button>
+                <div id='dropdown-content'>
+                  <a href='admindash.php'>Admin Dashboard</a><br>
+                  <a href='logout.php'>Logout</a><br>
                 </div>
-            </ul>
-        </nav>
+              </div> 
+
+                </nav>";
+            }
+            
+            ?>
 
         
 
