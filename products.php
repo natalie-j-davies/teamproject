@@ -16,7 +16,7 @@
 				<p>Price:  ". $row['price'] ."</p>
 				<p>Style: ". $row['caseStyle'] ."</p>
                 <p>Brand: ". $row['caseBrand'] ."</p>
-                <p> <img src=". $row['image'] ."> </p>
+                <img src=". $row['image'] .">
                 <p>Colour: <br>". $row['caseColour'] ."</p>
 				</div>";
 
