@@ -2,7 +2,17 @@
     define("TITLE", "Products | G-TWENTY");
     include('includes/header.php');
 ?>
-<?php
+
+<div class="titleList">
+<h1>Products</h1>
+</div>
+<div class="searchform">
+    <form>
+        <div class="searchbar">
+        <input type class="form-control" name="search" type="search" placeholder="Search Phone Cases">
+       
+    </form>
+    <?php
 	include ('connectdb.php');  
 
 	try {
@@ -11,12 +21,12 @@
 		$rows =  $db->query($query);	
 		if ( $rows && $rows->rowCount()> 0) {
 			while  ($row =  $rows->fetch())	{
-				echo "<div id='cv-info-box'>
+				echo "<div id='product-box'>
 				<h3>". $row['productName'] ."</h3>
 				<p>Price:  ". $row['price'] ."</p>
 				<p>Style: ". $row['caseStyle'] ."</p>
                 <p>Brand: ". $row['caseBrand'] ."</p>
-                <img src=". $row['image'] .">
+                <img class='product-image'src=". $row['image'] .">
                 <p>Colour: <br>". $row['caseColour'] ."</p>
 				</div>";
 
@@ -32,16 +42,6 @@
         echo "Error details: <em>". $ex->getMessage()."</em>";
     }
 ?>
-<div class="titleList">
-<h1>Products</h1>
-</div>
-<div class="searchform">
-    <form>
-        <div class="searchbar">
-        <input type class="form-control" name="search" type="search" placeholder="Search Phone Cases">
-       
-    </form>
-    
 </div>
 <br>
 <div class = prodbuttonsection>
