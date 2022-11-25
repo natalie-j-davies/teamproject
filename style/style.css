@@ -1,4 +1,8 @@
 /*All NAV BAR CSS*/
+#whole-container{
+    background-color: whitesmoke;
+    border-bottom: solid 1px lightgray;
+}
 .nav{
     display: flex;
     align-items: center;
@@ -133,35 +137,41 @@ nav ul li a:hover{
     max-height: 480px;
 }
 /* Feature Collection using flex box */
+#whole-container h4{
+    text-align: center;
+    padding-top: 25px;
+}
 #middle-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
     width: 100%;
     height: auto;
     padding: 5px;
+    margin: auto;
 }
 #pic-2{
-    width: 225px;
-    height: 250px;
+    width: 125px;
+    height: 150px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-3{
-    width: 225px;
-    height:250px;
+    width: 125px;
+    height: 150px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-4{
-    width: 225px;
-    height: 250px;
+    width: 125px;
+    height: 150px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-5{
-    width: 225px;
-    height: 250px;
+    width: 125px;
+    height: 150px;
     padding: 10px;
     border-radius: 16px;
 }
@@ -172,18 +182,22 @@ nav ul li a:hover{
 #lower-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
+    width: 100%;
+    height: auto;
     padding: 5px;
+    margin: auto;
 }
-
+#lower-padding:hover{
+    transform: scale(1.5);
+}
+#upper-padding:hover{
+    transform: scale(1.5);
+}
 #upper-padding{
     padding:30px;
-
-
-
-
 }
-
 #lower-padding{
     padding: 50px;
 }
@@ -236,7 +250,7 @@ nav ul li a:hover{
     background-color: rgb(254, 254, 254);
     border: rgb(255, 255, 255);
     padding: 10px;
-    font-size: 18x;
+    font-size: 14px;
     border-bottom: 2px solid rgb(0, 0, 0);
 }
 
@@ -285,6 +299,7 @@ padding: 10px;
     padding-left: 25px;
     padding-right: 15px;
     padding-top: 20px;
+    padding-bottom: 15px;
     border-radius: 32px;
     background-color: rgb(225, 225, 225);
 }
@@ -504,7 +519,10 @@ position: relative;
     
     
 }
-
+.product-image{
+    width: 100px;
+    height: 150px;
+}
 /*Footer CSS*/
 /*footer sticks to the bottom of the page*/
 .footer-container{
@@ -575,13 +593,24 @@ position: relative;
     background-color: rgb(173, 230, 255);
 }
 
-/* #socialmedia-section img {
-     width: 20px; 
-     height: 20px;
+/* Social media icons */
+.fa-brands.fa-instagram, .fa-brands.fa-twitter, .fa-brands.fa-facebook {
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
 
+.fa-brands.fa-instagram {
+    color: rgb(193, 53, 132);
+}
 
+.fa-brands.fa-twitter {
+    color: rgb(29, 155, 240);
+}
 
-} */
+.fa-brands.fa-facebook {
+    color: rgb(1, 101, 225);
+}
 
 /*Account Page CSS*/
 #account-header{
@@ -599,6 +628,7 @@ position: relative;
     margin: auto;
     padding: 10px;
     justify-content: baseline;
+    color: #333;
 }
 #account-logo{
     width: 55px;
@@ -615,10 +645,12 @@ position: relative;
     border-top-left-radius: 32px;
     border-bottom-left-radius: 32px;
 }
+
 #account-right-box{
     width: 80%;
     border-left: 1px solid #333;
     padding-left: 20px;
+    color: #333;
 }
 #account-right-box p{
     border-bottom: 0.5px lightblue;
@@ -686,4 +718,44 @@ position: relative;
 /*Login Pages admin+user*/
 .login-form{
     text-align: center;
+}
+
+/*Orders Page Admin User*/
+#orders-header{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+}
+#orders-table{
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+}
+#orders-table th{
+    border-bottom: solid 1px #333;
+    padding: 15px;
+    text-align: left;
+    background-color: whitesmoke;
+}
+#orders-table td{
+    padding-top: 5px;
+}
+#orders-container{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+}
+#orders-table td{
+    padding: 10px;
+    border-bottom: solid 0.5px lightskyblue;
+}
+#orders-table tr:hover{
+    background-color: lightskyblue;
+}
+/*Basket CSS*/
+#order-image{
+    width: 40px;
+    height: 70px;
+    padding: 5px;
 }

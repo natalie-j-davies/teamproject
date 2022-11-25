@@ -2,7 +2,7 @@
     define("TITLE", "Home | G-TWENTY");
     include('includes/header.php');
 ?>
-
+<div id="whole-container">
   <!--lhead of index.php main picture --> 
   <div id="header-container"> 
     <img id="pic-1" src="images/temp_images/carousel-1.png"  >
@@ -13,8 +13,8 @@
 <!--feature collection with links to products --> 
 <h4>Featured Brands</h4>
 <div id="middle-container">
-  <div id ="upper-padding"><img id="pic-2" src="images/temp_images/apple.png"><p id="FC-label">  Apple</p></div>
-  <div id ="upper-padding"><img id="pic-3" src="images/temp_images/samsung.png"><p id="FC-label">Samsung </p></div>
+  <div id ="upper-padding"><img id="pic-2" src="images/temp_images/apple.png"><p id="FC-label">Apple</p></div>
+  <div id ="upper-padding"><img id="pic-3" src="images/temp_images/samsung.png"><p id="FC-label">Samsung</p></div>
   <div id ="upper-padding"><img id="pic-4" src="images/temp_images/huawei.png"><p id="FC-label">Huawei</p></div>
   <div id ="upper-padding"><img id="pic-5" src="images/temp_images/google.png"><p id="FC-label">Google</p></div>
 </div>
@@ -26,7 +26,7 @@
     <div id="lower-padding"><img id="pic-8" src="images/cases/snowyPeaks_GPxlPro.png"><p id="FC-label">Snowy Peaks</p></div>
     <div id="lower-padding"><img id="pic-9" src="images/cases/hua30.png"><p id="FC-label">Refraction</p></div>
   </div>
-
+</div>
 <?php
     include('includes/footer.php');
 ?>

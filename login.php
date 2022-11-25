@@ -24,10 +24,10 @@ if (isset($_POST['login'])){
 				exit();
 			
 			} else {
-			 echo "<p style='color:red'>Error logging in, incorrect password </p>";
+			 echo "<p style='color:red; text-align: center;' >Error logging in, incorrect password </p>";
 			 }
 		} else {
-		  echo "<p style='color:red'>Error logging in, Username not found </p>";
+		  echo "<p style='color:red; text-align: center;'>Error logging in, Username not found </p>";
 		}
 	}
 	catch(PDOException $ex) {

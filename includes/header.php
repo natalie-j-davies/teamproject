@@ -56,7 +56,7 @@
                 <div id='dropdown-content'>
                   <a href='account.php'>Profile</a><br>
                   <a href='logout.php'>Logout</a><br>
-                  <a href='#to be made'>Shopping Basket</a>
+                  <a href='basket.php'>Shopping Basket</a>
                 </div>
               </div> 
 

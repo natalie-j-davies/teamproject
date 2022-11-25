@@ -84,18 +84,18 @@ if (isset($_POST['submit'])){
                         <label for="postcode">Postcode </label>
                         <input type="text" id="postcode" name="postcode"><br><br>
 
-                        <p>By creating an account you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy.</a></p>
+                        <p style="text-align: center;">By creating an account you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
 
                         <div class="signupBtnDiv clearfix">
                             <!-- Sign Up button -->
-                            <button type="submit" class="signupBtn" id="create" name="submit" value="Sign Up" onclick="wrong_pass_alert()">
+                            <button type="submit" class="signupBtn" id="create" name="submit" value="Sign Up" onclick="fill_details_alert()">
                                 <span class="label-text">Sign Up</span>
                             </button>
                         </div>
 
                         <!-- Link to the Login Page -->
                         <div class="loginLink clearfix">
-                            <p>Already have an account? Login <a href="login.php">here</a></p>
+                            <p style="text-align: center;">Already have an account? Login <a href="login.php">here</a></p>
                         </div>
                     </div>
                 </form>
