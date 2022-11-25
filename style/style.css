@@ -1,4 +1,8 @@
 /*All NAV BAR CSS*/
+#whole-container{
+    background-color: whitesmoke;
+    border-bottom: solid 1px lightgray;
+}
 .nav{
     display: flex;
     align-items: center;
@@ -133,35 +137,41 @@ nav ul li a:hover{
     max-height: 480px;
 }
 /* Feature Collection using flex box */
+#whole-container h4{
+    text-align: center;
+    padding-top: 25px;
+}
 #middle-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
     width: 100%;
     height: auto;
     padding: 5px;
+    margin: auto;
 }
 #pic-2{
-    width: 225px;
-    height: 250px;
+    width: 125px;
+    height: 150px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-3{
-    width: 225px;
-    height:250px;
+    width: 125px;
+    height: 150px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-4{
-    width: 225px;
-    height: 250px;
+    width: 125px;
+    height: 150px;
     padding: 10px;
     border-radius: 16px;
 }
 #pic-5{
-    width: 225px;
-    height: 250px;
+    width: 125px;
+    height: 150px;
     padding: 10px;
     border-radius: 16px;
 }
@@ -172,18 +182,22 @@ nav ul li a:hover{
 #lower-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
+    width: 100%;
+    height: auto;
     padding: 5px;
+    margin: auto;
 }
-
+#lower-padding:hover{
+    transform: scale(1.5);
+}
+#upper-padding:hover{
+    transform: scale(1.5);
+}
 #upper-padding{
     padding:30px;
-
-
-
-
 }
-
 #lower-padding{
     padding: 50px;
 }

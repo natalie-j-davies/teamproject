@@ -2,7 +2,7 @@
     define("TITLE", "Home | G-TWENTY");
     include('includes/header.php');
 ?>
-
+<div id="whole-container">
   <!--lhead of index.php main picture --> 
   <div id="header-container"> 
     <img id="pic-1" src="images/temp_images/carousel-1.png"  >
@@ -26,7 +26,7 @@
     <div id="lower-padding"><img id="pic-8" src="images/cases/snowyPeaks_GPxlPro.png"><p id="FC-label">Snowy Peaks</p></div>
     <div id="lower-padding"><img id="pic-9" src="images/cases/hua30.png"><p id="FC-label">Refraction</p></div>
   </div>
-
+</div>
 <?php
     include('includes/footer.php');
 ?>
