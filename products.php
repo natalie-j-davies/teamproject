@@ -12,36 +12,6 @@
         <input type class="form-control" name="search" type="search" placeholder="Search Phone Cases">
        
     </form>
-    <?php
-	include ('connectdb.php');  
-
-	try {
-
-		$query="SELECT  * FROM  products";
-		$rows =  $db->query($query);	
-		if ( $rows && $rows->rowCount()> 0) {
-			while  ($row =  $rows->fetch())	{
-				echo "<div id='product-box'>
-				<h3>". $row['productName'] ."</h3>
-				<p>Price:  ". $row['price'] ."</p>
-				<p>Style: ". $row['caseStyle'] ."</p>
-                <p>Brand: ". $row['caseBrand'] ."</p>
-                <img class='product-image'src=". $row['image'] .">
-                <p>Colour: <br>". $row['caseColour'] ."</p>
-				</div>";
-
-	        }
-        }
-		
-    else {
-	    echo  "<p>0 results.</p>\n";
-        }
-    }
-    catch (PDOexception $ex){
-        echo "Sorry, a database error occurred! <br>";
-        echo "Error details: <em>". $ex->getMessage()."</em>";
-    }
-?>
 </div>
 <br>
 <div class = prodbuttonsection>
@@ -64,12 +34,11 @@
     </div>  
  </div>
 </div>
-</div>
+
 
 <br>
 <br>
-<hr>
-
+<div class="productmainsection">
 <div class="sidebar">
     <div class = "sidebarcategories">Case Style</div>
     <label class="container">Cartoon
@@ -283,6 +252,39 @@
     <span class="checkmark"></span>
     </label>
    
+</div>
+<div class="products">
+<?php
+	include ('connectdb.php');  
+
+	try {
+		$query="SELECT  * FROM  products";
+		$rows =  $db->query($query);	
+		if ( $rows && $rows->rowCount()> 0) {
+			while  ($row =  $rows->fetch())	{
+				echo "<div id='product-box'>
+				<h3>". $row['productName'] ."</h3>
+				<p>Price:  ". $row['price'] ."</p>
+				<p>Style: ". $row['caseStyle'] ."</p>
+                <p>Brand: ". $row['caseBrand'] ."</p>
+                <img class='product-image'src=". $row['image'] .">
+                <p>Colour: <br>". $row['caseColour'] ."</p>
+				</div>";
+
+	        }
+        }
+		
+    else {
+	    echo  "<p>0 results.</p>\n";
+        }
+    }
+    catch (PDOexception $ex){
+        echo "Sorry, a database error occurred! <br>";
+        echo "Error details: <em>". $ex->getMessage()."</em>";
+    }
+
+?>
+</div>
 </div>
 <?php
     include('includes/footer.php');
