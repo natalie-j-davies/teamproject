@@ -174,7 +174,7 @@
     <span class="checkmark"></span>
     </label>
     <div class = "sidebarsubcategories">Samsung Galaxy</div>
-    <label class="container">Samsung Galaxy S20
+    <label class="container"> Galaxy S20
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
