@@ -11,39 +11,60 @@
 
 
 <div id="stock-left">
-    <form action="stock.php" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         <h5>Search by Brand</h5>
-        <input type="checkbox" id="html" name="fav_language" value="HTML">
-            <label for="html">Apple</label><br>
-        <input type="checkbox" id="css" name="fav_language" value="CSS">
-            <label for="css">Google</label><br>
-        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">Huawei</label><br>
-        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">Samsung</label>
+
+        <select class="form-select" id="stock-model">
+                <option id="all">All</option>
+                <option id="apple">Apple</option>
+                <option id="google">Google</option>
+                <option id="huawei">Huawei</option>
+                <option id="samsung">Samsung</option>
+        </select>
 
         <h5>Search by Style</h5>
-        <input type="checkbox" id="html" name="fav_language" value="HTML">
-            <label for="html">Brass Peaks</label><br>
-        <input type="checkbox" id="css" name="fav_language" value="CSS">
-            <label for="css">Laser Prisms</label><br>
-        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">Obsidian</label><br>
-        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">Premonition</label><br>
-        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">Refraction</label><br>
-        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">Snowy Peaks</label>
-        
+        <div class="form-check" id="stock-checkbox">
+        <input class="form-check-input" type="checkbox" id="BP" name="brasspeaks" value="something" checked>
+        <label class="form-check-label">Brass Peaks</label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="LP" name="laserprisms" value="something" checked>
+        <label class="form-check-label">Laser Prisms</label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="O" name="Obsidian" value="something" checked>
+        <label class="form-check-label">Obsidian</label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="P" name="Premonition" value="something" checked>
+        <label class="form-check-label">Premonition</label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="P" name="checkbox" value="something" checked>
+        <label class="form-check-label">Refraction</label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="SP" name="snowypeaks" value="something" checked>
+        <label class="form-check-label">Snowy Peaks</label>
+        </div>
+
+
         <h5>Search by Price</h5>
-        <input type="range" min="1" max="100" value="50" class="slider" id="stock-slider">
-        <p>Price: £<span id="price"></span></p>
-        
+        <input type="range" class="form-range" step="10" id="stock-slider" min="1" max="75" name="price">
+        <p>price range £1 to £ <span id="price"></span></p>
+
+        <button type="submit" class="about-button">Submit</button>
+
     </form>
 
 </div>
 <?php
+  $all=isset($_POST['all'])?$_POST['all']:false;
+  $apple=isset($_POST['apple'])?$_POST['apple']:false;
+  $google=isset($_POST['google'])?$_POST['google']:false;
+  $huawei=isset($_POST['huawei'])?$_POST['huawei']:false;
+  $samsung=isset($_POST['samsung'])?$_POST['samsung']:false;
+
 	include ('connectdb.php');  
 
 	try {
@@ -63,7 +84,7 @@
                 <th>Style</th>
                 <th>Colour Category</th>
                 </tr>"; 
-
+            
 			while  ($row =  $rows->fetch())	{
                 echo "<tr>
                 <td>". $row['stock'] ."</td>
