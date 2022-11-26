@@ -40,16 +40,24 @@
 <br>
 <div class="productmainsection">
 <div class="sidebar">
-    <div class = "sidebarcategories">Case Style</div>
-    <label class="container">Cartoon
+    <div class = "sidebarcategories">Case Design</div>
+    <label class="container">Brass Peaks
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Futuristic
+    <label class="container">Laser Prism
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
-    <label class="container">Simple
+    <label class="container">Obsidian
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Premonition
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Refraction
     <input type="checkbox">
     <span class="checkmark"></span>
     </label>
