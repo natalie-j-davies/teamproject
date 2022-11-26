@@ -178,6 +178,7 @@ nav ul li a:hover{
 #FC-label{
     text-align: center;
 }
+
 /* Our Community using flex box*/
 #lower-container{
     display: flex;
