@@ -46,7 +46,7 @@ if (isset($_POST['submit'])){
 
             <!-- Sign-up form to sign up an account -->
             <div class="signup-form">
-                <form action="signup.php" method="post">
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                     <div class="signup-container">
                         <!-- Username Field -->
                         <label for="username">Username </label>
