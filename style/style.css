@@ -542,6 +542,13 @@ position: relative;
     
 }
 
+.product-box{
+    display: inline-block;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    
+}
 /*Footer CSS*/
 /*footer sticks to the bottom of the page*/
 .footer-container{
