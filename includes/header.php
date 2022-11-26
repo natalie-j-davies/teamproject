@@ -21,7 +21,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
 	<!-- JavaScript files -->
-    <script defer src="js/script.js"></script>
+    <script defer src="js/slider.js"></script>
     <script defer src="js/password-validation.js"></script>
     <!-- fontawesome.com for icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
