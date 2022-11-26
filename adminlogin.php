@@ -48,7 +48,7 @@ if (isset($_POST['submit'])){
 
   <!-- Log in form and button --> 
   <div class="login-form">
-    <form action="adminlogin.php" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
       <div class="login-container">
         <!-- Username Field -->
         <label for="username">Username </label>

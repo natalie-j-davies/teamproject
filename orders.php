@@ -28,7 +28,7 @@ include ('connectdb.php');
                         while  ($row =  $rows->fetch())	{
                             
                         echo "<tr>
-                            <td>". $row['userAccountID'] ."</td>
+                            <td>". $row['userAccountId'] ."</td>
                             <td>". $row['orderID'] ."</td>
                             <td>". $row['created_at'] ."</td>
                             <td>£". $row['total_price'] ."</td>

@@ -57,7 +57,9 @@ try{
                 echo "Apologies there has been a Database Error please come back later";
             }
 
-    $query = "SELECT * FROM orders WHERE userAccountID= '6' ORDER BY created_at";
+    $query = "SELECT orders.userAccountId, orders.orderID, orders.created_at, orders.total_price, users.userAccountId
+                FROM orders
+                INNER JOIN users ON orders.userAccountId = users.userAccountId;";
 
     $rows =  $db->query($query);
         if ($rows && $rows->rowCount()> 0) {
@@ -69,7 +71,6 @@ try{
                 <th>Total Price </th>
                 </tr>";            
                     while  ($row =  $rows->fetch())	{
-                        
                     echo "<tr>
                         <td>". $row['orderID'] ."</td>
                         <td>". $row['created_at'] ."</td>
