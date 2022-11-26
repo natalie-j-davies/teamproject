@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <title><?php echo TITLE; ?></title>
+    <title><?php echo TITLE; ?></title><link rel="icon" type="image/x-icon" href="images/logo/logo-symbol.png">
 </head>
 <body>
     <!-- wrapper -->
