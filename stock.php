@@ -6,22 +6,17 @@
 <div id='customer-header'>
 <h1 id='account-title'><img src='images/logo/logo-symbol.png' alt='img' id='account-logo'>G-Twenty Stock</h1>
 </div>
-
-<div id="stock-container">
-
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-        <div id="searchbar-stock">
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="form-inline">
-            <div class="form-group">
-                <div class="input-group">
-                    <input type class="form-control" name="search" type="search" placeholder="Search key words">
-                    <span class="input-group-btn"><button class="btn btn-secondary" name="submit" type="submit"><i class="fa fa-search"></i></button></span>
-                </div>
+<div id="searchbar-stock">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="form-inline">
+        <div class="form-group">
+            <div class="input-group">
+                <input type class="form-control" name="search" type="search" placeholder="Search Phone Cases">
+                <span class="input-group-btn"><button class="btn btn-secondary" name="submit" type="submit"><i class="fa fa-search"></i></button></span>
             </div>
-        </form>
-    </div>
+        </div>
     </form>
-
+</div>
+<div id="stock-container">
 <div id='stock-right'>
                 <table id='stock-table'>
                 <tr>
