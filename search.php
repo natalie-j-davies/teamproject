@@ -10,7 +10,7 @@
     <form action= "search.php" method="POST">
         <div class="searchbar">
         <input  class="form-control" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>"  type="search" placeholder="Search Phone Cases">
-  
+    
        
        
     </form>
@@ -272,10 +272,17 @@
 
 
 	try {
-		$query="SELECT  * FROM  products";
-		$rows =  $db->query($query);	
-		if (( $rows && $rows->rowCount()> 0 ))  {
-			while  ($row =  $rows->fetch())	{
+        if(isset($_POST['search'])){
+        $search = mysqli_real_escape_string($connect,$_POST['search']);
+		$query="SELECT  * FROM  products 
+        WHERE productName LIKE '%$search%' 
+        OR phoneModel LIKE '%$search%'
+        OR caseStyle LIKE '%$search%'
+        OR caseBrand LIKE '%$search%'
+        OR caseColour LIKE '%$search%'";
+        $result = mysqli_query($connect,$query);
+        $queryresult = mysqli_num_rows($result);
+			while  ($row = mysqli_fetch_assoc($result))	{
 				echo 
                 "<div class='product-box'>
 				<h3>". $row['productName'] ."</h3>
@@ -287,7 +294,8 @@
 				</div>";
 
 	        }
-        }
+        
+    }
    
        
 		
