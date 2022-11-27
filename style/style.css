@@ -440,7 +440,6 @@ text-align: center;
 .productmainsection{
     margin-top: 20px;
     border-style: solid none solid none;
-    border-width: 1px;
 
 }
 .sidebar {
@@ -452,7 +451,6 @@ text-align: center;
     padding-top: 20px;
     border-style: none solid solid none;
     float: left;
-    border-width: 1px;
     
 
   }
@@ -536,8 +534,7 @@ position: relative;
     height: 150px;
 }
 .products{
-    
-  
+   padding-top: 30px;
     padding-left: 210px;
     
 }
