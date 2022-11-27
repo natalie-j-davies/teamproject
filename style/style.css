@@ -813,3 +813,11 @@ width: 20%;
 #stock-table tr:hover{
     background-color: lightskyblue;
 }
+#searchbar-stock{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+#stock-searchbar-input{
+    width: 300px;
+}
