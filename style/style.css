@@ -786,16 +786,9 @@ position: relative;
 
 
 /*Stock Page (admin) CSS*/
-#stock-flex-box{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-}
-#stock-left{
-width: 20%;
-}
-#stock-right{
+#stock-container{
     width: 80%;
+    margin: auto;
 }
 #stock-table th{
     border-bottom: solid 1px #333;
@@ -817,6 +810,7 @@ width: 20%;
     margin: auto;
     width: 60%;
     text-align: center;
+    padding: 10px;
 }
 #stock-searchbar-input{
     width: 300px;
