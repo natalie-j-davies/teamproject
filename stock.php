@@ -7,53 +7,18 @@
 <h1 id='account-title'><img src='images/logo/logo-symbol.png' alt='img' id='account-logo'>G-Twenty Stock</h1>
 </div>
 
-<div id="stock-flex-box">
+<div id="stock-container">
 
-
-<div id="stock-left">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-        <h5>Search by Brand</h5>
-
-        <select class="form-select" id="stock-model">
-                <option id="all">All</option>
-                <option id="apple">Apple</option>
-                <option id="google">Google</option>
-                <option id="huawei">Huawei</option>
-                <option id="samsung">Samsung</option>
-        </select>
-
-        <h5>Search by Style</h5>
-        <div class="form-check" id="stock-checkbox">
-        <input class="form-check-input" type="checkbox" id="BP" name="brasspeaks" value="something" checked>
-        <label class="form-check-label">Brass Peaks</label>
-        </div>
-        <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="LP" name="laserprisms" value="something" checked>
-        <label class="form-check-label">Laser Prisms</label>
-        </div>
-        <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="O" name="Obsidian" value="something" checked>
-        <label class="form-check-label">Obsidian</label>
-        </div>
-        <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="P" name="Premonition" value="something" checked>
-        <label class="form-check-label">Premonition</label>
-        </div>
-        <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="P" name="checkbox" value="something" checked>
-        <label class="form-check-label">Refraction</label>
-        </div>
-        <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="SP" name="snowypeaks" value="something" checked>
-        <label class="form-check-label">Snowy Peaks</label>
-        </div>
-
-        <div class="slider">
-        <h5>Search by Price</h5>
-        <input type="range" class="form-range" step="5" id="slider" min="5" max="50" >
-        <p>Price Range: £<span id="price"></span></p>
-        </div>
-        <button type="submit" class="about-button" name="submit">Submit</button>
+        <div id="searchbar-stock">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="form-inline">
+            <div class="form-group">
+                <div class="input-group">
+                    <input type class="form-control" name="search" type="search" placeholder="Search Phone Cases">
+                    <span class="input-group-btn"><button class="btn btn-secondary" name="submit" type="submit"><i class="fa fa-search"></i></button></span>
+                </div>
+            </div>
+        </form>
     </div>
     </form>
 
@@ -70,24 +35,18 @@
                 <th>Colour Category</th>
                 </tr>
 <?php
-  $all=isset($_POST['all'])?$_POST['all']:false;
-  $apple=isset($_POST['apple'])?$_POST['apple']:false;
-  $google=isset($_POST['google'])?$_POST['google']:false;
-  $huawei=isset($_POST['huawei'])?$_POST['huawei']:false;
-  $samsung=isset($_POST['samsung'])?$_POST['samsung']:false;
+
+
 
 	include ('connectdb.php');  
 
 	try {
-        if(isset($_POST['all'])){
+        if(!isset($_POST['submit'])){
             $query="SELECT  * FROM  products";
             $rows =  $db->query($query);	
             if ( $rows && $rows->rowCount()> 0) {
-                
-                while  ($row =  $rows->fetch())	{
-                    if(isset($_POST['brasspeaks'])){
-                        
-                       echo "<tr>
+                while  ($row =  $rows->fetch())	{  
+                    echo "<tr>
                     <td>". $row['stock'] ."</td>
                     <td>". $row['productName'] ."</td>
                     <td>". $row['phoneModel'] ."</td>
@@ -97,13 +56,36 @@
                     <td>". $row['caseStyle'] ."</td>
                     <td>". $row['caseColour'] ."</td>
                     </tr>";
-    
-                    }
                 }
-                }else {
-            echo  "<p>0 results.</p>\n";
             }
         }
+        if(isset($_POST['submit'])){
+            if(!empty($_POST['search'])){
+                $search= $_POST['search'];
+
+                $query="SELECT  * FROM  products WHERE caseBrand LIKE '%$search%' OR caseColour LIKE '%$search%' OR productName LIKE '%$search%'
+                OR stock LIKE '%$search%' OR caseStyle LIKE '%$search%' OR SKU LIKE '%$search%' OR price LIKE '%$search%';";
+                $rows =  $db->query($query);
+
+                    if ( $rows && $rows->rowCount()> 0) {
+                        while  ($row =  $rows->fetch())	{ 
+                            echo "<tr>
+                            <td>". $row['stock'] ."</td>
+                            <td>". $row['productName'] ."</td>
+                            <td>". $row['phoneModel'] ."</td>
+                            <td>". $row['SKU'] ."</td>
+                            <td>£". $row['price'] ."</td>
+                            <td>". $row['caseBrand'] ."</td>
+                            <td>". $row['caseStyle'] ."</td>
+                            <td>". $row['caseColour'] ."</td>
+                            </tr>";
+                        }
+                    }
+                }else if(!empty($_POST['search'])){
+                    echo  "<p>0 results for '$search'.</p>\n"; //no match found
+                }
+        }
+        
     }
     catch (PDOexception $ex){
         echo "Sorry, a database error occurred! <br>";
