@@ -270,9 +270,10 @@
 		$rows =  $db->query($query);	
 		if ( $rows && $rows->rowCount()> 0) {
 			while  ($row =  $rows->fetch())	{
-				echo "<div id='product-box'>
+				echo 
+                "<div class='product-box'>
 				<h3>". $row['productName'] ."</h3>
-				<p>Price:  ". $row['price'] ."</p>
+				<p>Price:  £". $row['price'] ."</p>
 				<p>Style: ". $row['caseStyle'] ."</p>
                 <p>Brand: ". $row['caseBrand'] ."</p>
                 <img class='product-image'src=". $row['image'] .">
