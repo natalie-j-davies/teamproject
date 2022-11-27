@@ -14,7 +14,7 @@
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="form-inline">
             <div class="form-group">
                 <div class="input-group">
-                    <input type class="form-control" name="search" type="search" placeholder="Search Phone Cases">
+                    <input type class="form-control" name="search" type="search" placeholder="Search key words">
                     <span class="input-group-btn"><button class="btn btn-secondary" name="submit" type="submit"><i class="fa fa-search"></i></button></span>
                 </div>
             </div>
