@@ -36,8 +36,6 @@
                 </tr>
 <?php
 
-
-
 	include ('connectdb.php');  
 
 	try {
