@@ -48,31 +48,16 @@
         <label class="form-check-label">Snowy Peaks</label>
         </div>
 
-
+        <div class="slider">
         <h5>Search by Price</h5>
-        <input type="range" class="form-range" step="10" id="stock-slider" min="1" max="75" name="price">
-        <p>price range £1 to £ <span id="price"></span></p>
-
-        <button type="submit" class="about-button">Submit</button>
-
+        <input type="range" class="form-range" step="5" id="slider" min="5" max="50" >
+        <p>Price Range: £<span id="price"></span></p>
+        </div>
+        <button type="submit" class="about-button" name="submit">Submit</button>
+    </div>
     </form>
 
-</div>
-<?php
-  $all=isset($_POST['all'])?$_POST['all']:false;
-  $apple=isset($_POST['apple'])?$_POST['apple']:false;
-  $google=isset($_POST['google'])?$_POST['google']:false;
-  $huawei=isset($_POST['huawei'])?$_POST['huawei']:false;
-  $samsung=isset($_POST['samsung'])?$_POST['samsung']:false;
-
-	include ('connectdb.php');  
-
-	try {
-		$query="SELECT  * FROM  products";
-		$rows =  $db->query($query);	
-		if ( $rows && $rows->rowCount()> 0) {
-                echo " 
-                <div id='stock-right'>
+<div id='stock-right'>
                 <table id='stock-table'>
                 <tr>
                 <th>Stock</th>
@@ -83,24 +68,41 @@
                 <th>Brand</th>
                 <th>Style</th>
                 <th>Colour Category</th>
-                </tr>"; 
-            
-			while  ($row =  $rows->fetch())	{
-                echo "<tr>
-                <td>". $row['stock'] ."</td>
-                <td>". $row['productName'] ."</td>
-                <td>". $row['phoneModel'] ."</td>
-                <td>". $row['SKU'] ."</td>
-                <td>£". $row['price'] ."</td>
-                <td>". $row['caseBrand'] ."</td>
-                <td>". $row['caseStyle'] ."</td>
-                <td>". $row['caseColour'] ."</td>
-                </tr>";
-	        }
-        }
-		
-    else {
-	    echo  "<p>0 results.</p>\n";
+                </tr>
+<?php
+  $all=isset($_POST['all'])?$_POST['all']:false;
+  $apple=isset($_POST['apple'])?$_POST['apple']:false;
+  $google=isset($_POST['google'])?$_POST['google']:false;
+  $huawei=isset($_POST['huawei'])?$_POST['huawei']:false;
+  $samsung=isset($_POST['samsung'])?$_POST['samsung']:false;
+
+	include ('connectdb.php');  
+
+	try {
+        if(isset($_POST['all'])){
+            $query="SELECT  * FROM  products";
+            $rows =  $db->query($query);	
+            if ( $rows && $rows->rowCount()> 0) {
+                
+                while  ($row =  $rows->fetch())	{
+                    if(isset($_POST['brasspeaks'])){
+                        
+                       echo "<tr>
+                    <td>". $row['stock'] ."</td>
+                    <td>". $row['productName'] ."</td>
+                    <td>". $row['phoneModel'] ."</td>
+                    <td>". $row['SKU'] ."</td>
+                    <td>£". $row['price'] ."</td>
+                    <td>". $row['caseBrand'] ."</td>
+                    <td>". $row['caseStyle'] ."</td>
+                    <td>". $row['caseColour'] ."</td>
+                    </tr>";
+    
+                    }
+                }
+                }else {
+            echo  "<p>0 results.</p>\n";
+            }
         }
     }
     catch (PDOexception $ex){

@@ -1,7 +1,7 @@
-var slider = document.getElementById("stock-slider");
-var price = document.getElementById("price");
-price.innerHTML = slider.value;
+var slider = document.getElementById("slider");
+var output = document.getElementById("price");
+output.innerHTML = slider.value;
 
-slider.oninput = function(){
-    price.innerHTML = this.value;
+slider.oninput = function() {
+  output.innerHTML = this.value;
 }
