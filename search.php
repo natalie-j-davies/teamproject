@@ -267,6 +267,7 @@
    
 </div>
 <div class="products">
+    <h1>Search result for: <?php echo $_POST['search'] ?></h1>
 <?php
 	include ('connectdb.php');  
 
@@ -274,6 +275,7 @@
 	try {
         if(isset($_POST['search'])){
         $search = mysqli_real_escape_string($connect,$_POST['search']);
+        $search = str_replace(' ','',$search);
 		$query="SELECT  * FROM  products 
         WHERE productName LIKE '%$search%' 
         OR phoneModel LIKE '%$search%'
@@ -285,12 +287,21 @@
 			while  ($row = mysqli_fetch_assoc($result))	{
 				echo 
                 "<div class='product-box'>
-				<h3>". $row['productName'] ."</h3>
-				<p>Price:  £". $row['price'] ."</p>
-				<p>Style: ". $row['caseStyle'] ."</p>
-                <p>Brand: ". $row['caseBrand'] ."</p>
+                <h4>". $row['productName'] ."</h4>
+                <div class='product-left'>
+                <span class='fa fa-star checked'></span>
+                        <span class='fa fa-star checked'></span>
+                        <span class='fa fa-star checked'></span>
+                        <span class='fa fa-star checked'></span>
+                        <span class='fa fa-star checked'></span>
                 <img class='product-image'src=". $row['image'] .">
-                <p>Colour: <br>". $row['caseColour'] ."</p>
+                </div>
+                <div class='product-right'>
+				<h4>Price: £". $row['price'] ."</h4>
+                <p>Brand: ". $row['caseBrand'] ."</p>
+                <p>Colour: ". $row['caseColour'] ."</p>
+                <button class='basket-button' type='submit'>Add To Basket</button>
+                </div>
 				</div>";
 
 	        }
