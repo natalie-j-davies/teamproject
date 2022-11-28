@@ -24,10 +24,10 @@ if (isset($_POST['submit'])){
 				exit();
 			
 			} else {
-			 echo "<p style='color:red'>Error logging in, incorrect password </p>";
+			 echo "<p style='color:red; text-align: center;'>Error logging in, incorrect password </p>";
 			 }
 		} else {
-		  echo "<p style='color:red'>Error logging in, Username not found </p>";
+		  echo "<p style='color:red; text-align: center;'>Error logging in, Username not found </p>";
 		}
 	}
 	catch(PDOException $ex) {
@@ -48,7 +48,7 @@ if (isset($_POST['submit'])){
 
   <!-- Log in form and button --> 
   <div class="login-form">
-    <form action="adminlogin.php" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
       <div class="login-container">
         <!-- Username Field -->
         <label for="username">Username </label>

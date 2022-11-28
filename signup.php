@@ -46,7 +46,7 @@ if (isset($_POST['submit'])){
 
             <!-- Sign-up form to sign up an account -->
             <div class="signup-form">
-                <form action="signup.php" method="post">
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                     <div class="signup-container">
                         <!-- Username Field -->
                         <label for="username">Username </label>
@@ -55,6 +55,7 @@ if (isset($_POST['submit'])){
                         <!-- Password Field -->
                         <label for="password">Password </label>
                         <input type="password" id="password" name="password" required><br><br>
+                        <p id="password_msg">*Password should be a combination of letters, numbers and symbols and be at least 8+ characters</p>
 
                         <!-- Repeat Password Field -->
                         <label for="repeat-password">Repeat Password</label>

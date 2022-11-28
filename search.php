@@ -10,7 +10,7 @@
     <form action= "search.php" method="POST">
         <div class="searchbar">
         <input  class="form-control" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>"  type="search" placeholder="Search Phone Cases">
-  
+    
        
        
     </form>
@@ -266,38 +266,36 @@
     </label>
    
 </div>
-<div class='products'>
+<div class="products">
 <?php
 	include ('connectdb.php');  
 
 
 	try {
-		$query="SELECT  * FROM  products";
-		$rows =  $db->query($query);	
-		if (( $rows && $rows->rowCount()> 0 ))  {
-			while  ($row =  $rows->fetch())	{
+        if(isset($_POST['search'])){
+        $search = mysqli_real_escape_string($connect,$_POST['search']);
+		$query="SELECT  * FROM  products 
+        WHERE productName LIKE '%$search%' 
+        OR phoneModel LIKE '%$search%'
+        OR caseStyle LIKE '%$search%'
+        OR caseBrand LIKE '%$search%'
+        OR caseColour LIKE '%$search%'";
+        $result = mysqli_query($connect,$query);
+        $queryresult = mysqli_num_rows($result);
+			while  ($row = mysqli_fetch_assoc($result))	{
 				echo 
-
                 "<div class='product-box'>
-                <h4>". $row['productName'] ."</h4>
-                <div class='product-left'>
-                <span class='fa fa-star checked'></span>
-                        <span class='fa fa-star checked'></span>
-                        <span class='fa fa-star checked'></span>
-                        <span class='fa fa-star checked'></span>
-                        <span class='fa fa-star checked'></span>
-                <img class='product-image'src=". $row['image'] .">
-                </div>
-                <div class='product-right'>
-				<h4>Price: £". $row['price'] ."</h4>
+				<h3>". $row['productName'] ."</h3>
+				<p>Price:  £". $row['price'] ."</p>
+				<p>Style: ". $row['caseStyle'] ."</p>
                 <p>Brand: ". $row['caseBrand'] ."</p>
-                <p>Colour: ". $row['caseColour'] ."</p>
-                <button class='basket-button' type='submit'>Add To Basket</button>
-                </div>
+                <img class='product-image'src=". $row['image'] .">
+                <p>Colour: <br>". $row['caseColour'] ."</p>
 				</div>";
 
 	        }
-        }
+        
+    }
    
        
 		
