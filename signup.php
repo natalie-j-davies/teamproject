@@ -55,6 +55,7 @@ if (isset($_POST['submit'])){
                         <!-- Password Field -->
                         <label for="password">Password </label>
                         <input type="password" id="password" name="password" required><br><br>
+                        <p id="password_msg">*Password should be a combination of letters, numbers and symbols and be at least 8+ characters</p>
 
                         <!-- Repeat Password Field -->
                         <label for="repeat-password">Repeat Password</label>
