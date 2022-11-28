@@ -534,17 +534,32 @@ position: relative;
     height: 150px;
 }
 .products{
-   padding-top: 30px;
-    padding-left: 210px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-top: 50px;
+    background-color: whitesmoke;
 }
 
 .product-box{
-    display: inline-block;
-    width: 400px;
-    margin: auto;
-    text-align: center;
-    
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 10px;
+}
+.product-left{
+    width: 50%;
+    padding: 5px;
+}
+.product-right{
+    width: 50%;
+    padding-top: 25px;
+}
+.checked{
+    color: rgb(238, 198, 67);
+}
+.basket-button{
+    background-color: white;
 }
 /*Footer CSS*/
 /*footer sticks to the bottom of the page*/
