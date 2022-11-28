@@ -10,7 +10,13 @@
                 <h1>About Us</h1>
                 <h5>About<span class="about-p-title" > G-Twenty</span></h5>
                 <br>
-                <p>G-Twenty was founded in 2022 bya group of Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi quaerat reiciendis numquam suscipit quos voluptas cum velit. Corporis perferendis itaque harum rem autem sint hic! Nam quae nobis alias?</p>
+                <p>G-Twenty was founded in 2022 bya group of Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi quaeG-Twenty is a British brand founded in 
+                    2019 that specializes in tech cases & after having some experience with working in the tech market, we decided to be creative and launch an online brand that 
+                    is inspired by modern attractions. Phones have become the most used tool in everyday life and it’s important to us because our customers deserve the most efficient/fashionable covers/cases.</p>
+                <p> With G-Twenty, we create/design all our products ourselves with carefully selected materials to help better our environment we also challenge ourselves every day during the product 
+                    development procedure and we look out for any small detail because it makes a big difference, as we want our customers to feel that the product works and looks great. 
+                    We got you! 
+                </p>
                 <br>
                 <a href="products.php"><button class="about-button" type="button" >View Our Latest Products?</button></a>
             </div>
