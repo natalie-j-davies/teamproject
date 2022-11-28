@@ -1,7 +1,3 @@
-var slider = document.getElementById("slider");
-var output = document.getElementById("price");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
+function alert_function() {
+  alert("Thankyou for your message, we will be in touch within 3 working days");
 }
