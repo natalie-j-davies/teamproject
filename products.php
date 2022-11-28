@@ -38,6 +38,7 @@
     <a href="#">Over £60</a>
     </div>  
  </div>
+ <button><i class="fas fa-shopping-cart"></i></button>
 </div>
 
 
@@ -292,14 +293,14 @@
 				<h4>Price: £". $row['price'] ."</h4>
                 <p>Brand: ". $row['caseBrand'] ."</p>
                 <p>Colour: ". $row['caseColour'] ."</p>
-                <button class='basket-button' type='submit'>Add To Basket</button>
+                <form action=";echo htmlspecialchars($_SERVER['PHP_SELF']);echo " method='post'>
+                <button class='basket-button' name='basket' type='submit'>Add To Basket</button>
+                </form>
                 </div>
 				</div>";
 
 	        }
         }
-   
-       
 		
     else {
 	    echo  "<p>0 results.</p>\n";
@@ -310,6 +311,21 @@
         echo "Error details: <em>". $ex->getMessage()."</em>";
     }
 
+
+    try{
+        if(isset($_POST['basket'])){
+            if (isset($_SESSION['username'])){
+                
+                
+            }else{
+                echo "please sign in";
+            }
+        }
+    }
+    catch (PDOexception $ex){
+        echo "Sorry, a database error occurred! <br>";
+        echo "Error details: <em>". $ex->getMessage()."</em>";
+    }
 ?>
 </div>
 </div>
