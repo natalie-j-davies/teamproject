@@ -9,22 +9,7 @@
     echo "<h1 id='account-title'><img src='images/logo/logo-symbol.png' alt='img' id='account-logo'>". $username ."'s Shopping Basket</h1>";
 ?>
 </div>
-<?php
 
-	include ('connectdb.php'); 
-/*
-    if (isset($_POST['submit'])){
-                
-        $productID= '12';
-        $price= '25';
-        $quantity= '1';
-        $userID = '11';
-
-        $stat=$db->prepare("INSERT INTO order_details VALUES(default,?,?,?,?,default)");
-        $stat->execute(array($userID,$productID,$price,$quantity));
-        }
-*/
-?>
 </div>
     <div id='orders-container'>
          <table id='orders-table'>
@@ -37,18 +22,16 @@
                     <th></th>
                 </tr>
 <?php
-            
-            $query = "SELECT  order_details.userAccountId, order_details.orderID, order_details.price, order_details.quantity, order_details.productID, order_details.created_at, users.userAccountId
-            FROM order_details
-            INNER JOIN users ON order_details.userAccountId = users.userAccountId";
+            include ('connectdb.php'); 
+            $query = "SELECT  orders.userAccountId, orders.orderID, orders.total_price, orders.created_at, users.userAccountId
+            FROM orders
+            INNER JOIN users ON orders.userAccountId = users.userAccountId";
             $rows =  $db->query($query);	
             while  ($row =  $rows->fetch())	{
             echo "
                                 <tr>
                                     <td>" .$row['orderID']. "</td>
-                                    <td>" .$row['orderID']. "</td>
-                                    <td>" .$row['price']. "</td>
-                                    <td>" .$row['quantity']. "</td>
+                                    <td>" .$row['total_price']. "</td>
                                     <td>" .$row['created_at']. "</td>
                                     <td> Delete </td>
                                 </tr>
