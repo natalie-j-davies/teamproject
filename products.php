@@ -292,19 +292,17 @@
 				<h4>Price: £". $row['price'] ."</h4>
                 <p>Brand: ". $row['caseBrand'] ."</p>
                 <p>Colour: ". $row['caseColour'] ."</p>
-                <form action=";echo htmlspecialchars($_SERVER['PHP_SELF']);echo " method='post'>
-                <a href='view.php?SKU=". $row['SKU'] ."'><button class='view-button' name='basket' type='button'>View Product</button></a>
-                </form>
+                <div class='view-button-container'>
+                </div>
+                <button><a href='view.php?SKU=". $row['SKU'] ."'>View Product</a></button>
                 </div>
 				</div>";
+            }
+        }
+        }
+        
 
-	        }
-        }
-		
-    else {
-	    echo  "<p>0 results.</p>\n";
-        }
-    }
+    
     catch (PDOexception $ex){
         echo "Sorry, a database error occurred! <br>";
         echo "Error details: <em>". $ex->getMessage()."</em>";
@@ -313,6 +311,7 @@
 ?>
 </div>
 </div>
+
 <?php
     include('includes/footer.php');
 ?>
