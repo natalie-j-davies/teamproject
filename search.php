@@ -22,9 +22,11 @@
 <div class = "prodbutton">
  <button class="productbutton sortbybutton">Sort By</button>
  <div class ="productdropdown">
-    <a href="#">Ascending Order (A-Z)</a>
-    <a href="#">Descending Order (Z-A)</a>
-    <a href="#">Newest</a>
+    <a href="search.php?search=ascended_order">Ascending Order (A-Z)</a>
+    <a href="search.php?search=descended_order">Descending Order (Z-A)</a>
+    <a href="search.php?search=newest_cases">Newest</a>
+    <a href="search.php?search=oldest_cases">Oldest</a>
+    <a href="products.php">Default</a>
  </div>
     
  </div>
@@ -32,12 +34,13 @@
 <div class ="prodbutton">
     <button class="productbutton materialbutton">Price</button>
     <div class ="productdropdown">
-    <a href="#">Under £30</a>
-    <a href="#">£30 - £40</a>
-    <a href="#">£50 - £60</a>
-    <a href="#">Over £60</a>
+    <a href="search.php?search=under_£30">Under £30</a>
+    <a href="search.php?search=£30_to_£40">£30 - £40</a>
+    <a href="search.php?search=£40_to_£60">£40 - £60</a>
+    <a href="search.php?search=over_£60">Over £60</a>
     </div>  
  </div>
+ <button><i class="fas fa-shopping-cart"></i></button>
 </div>
 
 
@@ -274,13 +277,52 @@
 
 	try {
         if(isset($_GET['search'])){
-        $search = mysqli_real_escape_string($connect,$_GET['search']);
-		$query="SELECT  * FROM  products 
+            $search = mysqli_real_escape_string($connect,$_GET['search']);
+            if(($_GET['search']) == 'ascended_order'){
+                $query="SELECT  * FROM  products  
+                ORDER BY productName ASC";    
+            }
+            elseif(($_GET['search']) == 'descended_order'){
+                $query="SELECT  * FROM  products  
+                ORDER BY productName DESC";   
+            }
+            elseif(($_GET['search']) == 'newest_cases'){
+                $query="SELECT  * FROM  products  
+                ORDER BY created_at ASC";   
+            }
+            elseif(($_GET['search']) == 'oldest_cases'){
+                $query="SELECT  * FROM  products  
+                ORDER BY created_at DESC";   
+            }
+            elseif(($_GET['search']) == 'under_£30'){
+                $query="SELECT  * FROM  products
+                WHERE price < 30";
+            }
+            elseif(($_GET['search']) == '£30_to_£40'){
+                $query="SELECT  * FROM  products
+                WHERE price BETWEEN 30 AND 40";
+            }
+            elseif(($_GET['search']) == '£40_to_£60'){
+                $query="SELECT  * FROM  products
+                WHERE price BETWEEN 40 AND 60";
+            }
+            elseif(($_GET['search']) == 'over_£60'){
+                $query="SELECT  * FROM  products
+                WHERE price > 60";
+            }
+
+
+            else{
+                $query="SELECT  * FROM  products 
         WHERE productName LIKE '%$search%' 
         OR phoneModel LIKE '%$search%'
         OR caseStyle LIKE '%$search%'
         OR caseBrand LIKE '%$search%'
         OR caseColour LIKE '%$search%'";
+
+            }
+        
+		
         $result = mysqli_query($connect,$query);
         $queryresult = mysqli_num_rows($result);
 			while  ($row = mysqli_fetch_assoc($result))	{

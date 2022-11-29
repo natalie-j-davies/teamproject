@@ -15,28 +15,29 @@
        
     </form>
 </div>
-<?php
-?>
+
 <br>
 <div class = prodbuttonsection>
 <div class = "prodbutton">
- <button class="productbutton sortbybutton">Sort By</button>
+ <button class="productbutton sortbybutton" name= "order" method="GET">Sort By</button>
  <div class ="productdropdown">
-    <a href="#">Ascending Order (A-Z)</a>
-    <a href="#">Descending Order (Z-A)</a>
-    <a href="#">Newest</a>
+    <a href="search.php?search=ascended_order" value="ascended">Ascending Order (A-Z)</a>
+    <a href="search.php?search=descended_order">Descending Order (Z-A)</a>
+    <a href="search.php?search=newest_cases">Newest</a>
+    <a href="search.php?search=oldest_cases">Oldest</a>
+    <a href="products.php">Default</a>
  </div>
     
  </div>
 
-<div class ="prodbutton">
+ <div class ="prodbutton">
     <button class="productbutton materialbutton">Price</button>
     <div class ="productdropdown">
-    <a href="#">Under £30</a>
-    <a href="#">£30 - £40</a>
-    <a href="#">£50 - £60</a>
-    <a href="#">Over £60</a>
-    </div>  
+    <a href="search.php?search=under_£30">Under £30</a>
+    <a href="search.php?search=£30_to_£40">£30 - £40</a>
+    <a href="search.php?search=£40_to_£60">£40 - £60</a>
+    <a href="search.php?search=over_£60">Over £60</a>
+    </div>   
  </div>
  <button><i class="fas fa-shopping-cart"></i></button>
 </div>
