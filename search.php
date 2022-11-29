@@ -300,7 +300,7 @@
 				<h4>Price: £". $row['price'] ."</h4>
                 <p>Brand: ". $row['caseBrand'] ."</p>
                 <p>Colour: ". $row['caseColour'] ."</p>
-                <button class='basket-button' type='submit'>Add To Basket</button>
+                <button><a href='view.php?SKU=". $row['SKU'] ."'>Add to Basket</a></button>
                 </div>
 				</div>";
 
