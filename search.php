@@ -7,11 +7,11 @@
 <h1>Products</h1>
 </div>
 <div class="searchform">
-    <form action= "search.php" method="POST">
+    <form action= "search.php" method="GET">
         <div class="searchbar">
-        <input  class="form-control" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>"  type="search" placeholder="Search Phone Cases">
+        <input  class="form-control" name="search" value="<?php if(isset($_GET['search'])){echo $_GET['search'];}?>"  type="search" placeholder="Search Phone Cases">
     
-        <h3>Search result for: <?php echo $_POST['search'] ?></h3>
+        <h3>Search result for: <?php echo $_GET['search'] ?></h3>
        
     </form>
 </div>
@@ -273,9 +273,8 @@
 
 
 	try {
-        if(isset($_POST['search'])){
-        $search = mysqli_real_escape_string($connect,$_POST['search']);
-        $search = str_replace(' ','',$search);
+        if(isset($_GET['search'])){
+        $search = mysqli_real_escape_string($connect,$_GET['search']);
 		$query="SELECT  * FROM  products 
         WHERE productName LIKE '%$search%' 
         OR phoneModel LIKE '%$search%'
