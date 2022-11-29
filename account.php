@@ -1,5 +1,5 @@
 <?php
-    define("TITLE", "Login | G-TWENTY");
+    define("TITLE", "Account | G-TWENTY");
     include('includes/header.php');
 
 ?>
