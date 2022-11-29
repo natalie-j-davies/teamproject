@@ -1,14 +1,12 @@
 <?php
-    define("TITLE", "Products | G-TWENTY");
+    define("TITLE", "Product Information | G-TWENTY");
     include('includes/header.php');
 ?>
 <div class="view-container">
-
 <?php
-	include_once ('connectdb.php');  
+	include ('connectdb.php');  
 
 	try {
-        
         $SKU = $_GET['SKU'];
 
 		$query="SELECT  * FROM  products WHERE SKU='$SKU'";
@@ -30,12 +28,8 @@
                 <div class='view-product-right'>
 				<h4>Price: £". $row['price'] ."</h4>
                 <p>Brand: ". $row['caseBrand'] ."</p>
-                <p>Colour: ". $row['caseColour'] ."</p>
-                
-                
-                <form action=";echo htmlspecialchars($_SERVER['PHP_SELF']);echo " method='post'>
-                <a href='basket.php?SKU=". $row['SKU'] ."'><button class='basket-button' name='basket' type='button'>Add To Basket</button></a>
-                </form>";
+                <p>Colour: ". $row['caseColour'] ."</p>";
+
 	        }
         }
 		
@@ -50,7 +44,10 @@
     }	
 
 ?>
-        
+
+    <form action= "basket.php" method='post'>
+        <button class='basket-button' name='submit' type='submit'>Add To Basket</button>
+    </form>
     </div>
 	</div>
 </div>
