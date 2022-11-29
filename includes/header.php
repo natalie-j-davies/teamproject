@@ -84,17 +84,6 @@
             }
 
             ?>
-
-<!--
-                    <div class = "burgermenu">
-                        <div class = "line1"></div>
-                        <div class = "line2"></div>
-                        <div class = "line3"></div>
-                    </div>
-                </div>
-            </ul>
-        </nav>
-        -->
         
 
         <!-- content -->
