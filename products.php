@@ -278,7 +278,6 @@
 		if (( $rows && $rows->rowCount()> 0 ))  {
 			while  ($row =  $rows->fetch())	{
 				echo 
-
                 "<div class='product-box'>
                 <h4>". $row['productName'] ."</h4>
                 <div class='product-left'>
@@ -294,7 +293,7 @@
                 <p>Brand: ". $row['caseBrand'] ."</p>
                 <p>Colour: ". $row['caseColour'] ."</p>
                 <form action=";echo htmlspecialchars($_SERVER['PHP_SELF']);echo " method='post'>
-                <button class='basket-button' name='basket' type='submit'>Add To Basket</button>
+                <a href='view.php?SKU=". $row['SKU'] ."'><button class='view-button' name='basket' type='button'>View Product</button></a>
                 </form>
                 </div>
 				</div>";
@@ -311,21 +310,6 @@
         echo "Error details: <em>". $ex->getMessage()."</em>";
     }
 
-
-    try{
-        if(isset($_POST['basket'])){
-            if (isset($_SESSION['username'])){
-                
-                
-            }else{
-                echo "please sign in";
-            }
-        }
-    }
-    catch (PDOexception $ex){
-        echo "Sorry, a database error occurred! <br>";
-        echo "Error details: <em>". $ex->getMessage()."</em>";
-    }
 ?>
 </div>
 </div>
