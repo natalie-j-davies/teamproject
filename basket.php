@@ -1,5 +1,5 @@
 <?php
-    define("TITLE", "Contact Us | G-TWENTY");
+    define("TITLE", "Shopping Basket | G-TWENTY");
     include('includes/header.php');
 
 ?>
@@ -10,22 +10,16 @@
 ?>
 </div>
 <?php
-    include('connectdb.php');
-
-/*When the add to basket is clicked, the order details are added to the order details database within the basket.php page */         
-        $SKU = $_GET['SKU'];
-
-        if (isset($_POST['basket'])){
-
-            $query="SELECT  * FROM  products WHERE SKU='$SKU'";
-		    $rows =  $db->query($query);
+	include ('connectdb.php'); 
+    if (isset($_POST['submit'])){
                 
-                $productID= $row['productID'];
-                $price= $row['price'];
-                $quantity= '1';
-                $userID = '6';
-                $stat=$db->prepare("insert into order_details values(default,?,?,?,?,default)");
-                $stat->execute(array($userID,$productID,$price,$quantity));
+        $productID= '12';
+        $price= '25';
+        $quantity= '1';
+        $userID = '11';
+
+        $stat=$db->prepare("INSERT INTO order_details VALUES(default,?,?,?,?,default)");
+        $stat->execute(array($userID,$productID,$price,$quantity));
         }
 
 ?>
@@ -38,23 +32,23 @@
                     <th>Colour</th>
                     <th>Price</th>
                     <th>image</th>
+                    <th></th>
                 </tr>
 <?php
-            $query = "SELECT orders_details.userAccountId, orders_details.orderID, orders.created_at, orders.price, users.userAccountId, products.productName, products.image
-            FROM order_details";
-
+            
+            $query = "SELECT  order_details.userAccountId, order_details.orderID, order_details.price, order_details.quantity, order_details.productID, order_details.created_at, users.userAccountId
+            FROM order_details
+            INNER JOIN users ON order_details.userAccountId = users.userAccountId";
             $rows =  $db->query($query);	
             while  ($row =  $rows->fetch())	{
             echo "
                                 <tr>
-                                    <td>" .$row['image']. "</td>
-                                    <td>" .$row['productName']. "</td>
                                     <td>" .$row['orderID']. "</td>
-                                    <td>" .$row['productID']. "</td>
+                                    <td>" .$row['orderID']. "</td>
                                     <td>" .$row['price']. "</td>
                                     <td>" .$row['quantity']. "</td>
                                     <td>" .$row['created_at']. "</td>
-                                    
+                                    <td> Delete </td>
                                 </tr>
                            ";
                       }
