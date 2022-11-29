@@ -50,221 +50,172 @@
     <div class = "sidebarcategories">Case Design</div>
     <label class="container">Brass Peaks
     <input type="checkbox" id="red">
-    <span class="checkmark"></span>
-    </label>
+    </label></a>
     <label class="container">Laser Prism
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Obsidian
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Premonition
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Refraction
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <hr>
     <div class = "sidebarcategories">Phone Brand</div>
     <div class = "sidebarsubcategories">Apple</div>
     <label class="container">iPhone 12
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 12 Mini
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 12 Pro
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 12 Pro Max
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 13
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 13 Mini
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 13 Pro
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 13 Pro Max
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 14 
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 14 Plus
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 14 Pro
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">iPhone 14 Pro Max
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <div class = "sidebarsubcategories">Google</div>
     <label class="container">Google Pixel 6
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Google Pixel 6 Pro
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <div class = "sidebarsubcategories">Huawei</div>
     <label class="container">Huawei P20
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Huawei P20 Lite
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Huawei P20 Pro
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Huawei P30
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Huawei P30 Lite
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Huawei P30 Pro
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Huawei P40 Lite
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <div class = "sidebarsubcategories">Samsung Galaxy</div>
     <label class="container"> Galaxy S20
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Galaxy S20 Plus
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Galaxy S20 Ultra
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Galaxy S21
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Galaxy S21 Plus
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Galaxy S21 Ultra
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Galaxy S22
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Galaxy S22 Plus
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">Galaxy S22 Ultra
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <hr>
     <div class = "sidebarcategories">Case Colour</div>
     <label class="container">
     <span class = "circle red"></span>Red
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle orange"></span>Orange
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle yellow"></span>Yellow
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle green"></span>Green
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle blue"></span>Blue
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle pink"></span>Pink
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle purple"></span>Purple
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle brown"></span>Brown
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle gray"></span>Gray
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle black"></span>Black
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle white"></span>White
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle gold"></span>Gold
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle silver"></span>Silver
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
     <label class="container">
     <span class = "circle multicolour"></span>Multicolour
     <input type="checkbox">
-    <span class="checkmark"></span>
     </label>
    
 </div>
