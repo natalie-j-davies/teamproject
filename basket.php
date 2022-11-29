@@ -10,7 +10,9 @@
 ?>
 </div>
 <?php
+
 	include ('connectdb.php'); 
+/*
     if (isset($_POST['submit'])){
                 
         $productID= '12';
@@ -21,7 +23,7 @@
         $stat=$db->prepare("INSERT INTO order_details VALUES(default,?,?,?,?,default)");
         $stat->execute(array($userID,$productID,$price,$quantity));
         }
-
+*/
 ?>
 </div>
     <div id='orders-container'>
