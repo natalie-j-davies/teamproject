@@ -896,3 +896,22 @@ position: relative;
     text-align: center;
     padding: 10px;
 }
+
+/*Logout CSS*/
+#log-out-container{
+    background-color: whitesmoke;
+    padding: 100px;
+
+}
+#log-out{
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 32px;
+}
+#log-out h2{
+    border-bottom: solid 0.5px #333;
+}
