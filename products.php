@@ -7,9 +7,9 @@
 <h1>Products</h1>
 </div>
 <div class="searchform">
-    <form action= "search.php" method="POST">
+    <form action= "search.php" method="GET">
         <div class="searchbar">
-        <input  class="form-control" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>"  type="search" placeholder="Search Phone Cases">
+        <input  class="form-control" name="search" value="<?php if(isset($GET['search'])){echo $_GET['search'];}?>"  type="search" placeholder="Search Phone Cases">
   
        
        
@@ -48,7 +48,7 @@
 <div class="sidebar">
     <div class = "sidebarcategories">Case Design</div>
     <label class="container">Brass Peaks
-    <input type="checkbox">
+    <input type="checkbox" id="red">
     <span class="checkmark"></span>
     </label>
     <label class="container">Laser Prism
