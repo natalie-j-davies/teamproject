@@ -11,7 +11,7 @@
         <div class="searchbar">
         <input  class="form-control" name="search" value="<?php if(isset($_POST['search'])){echo $_POST['search'];}?>"  type="search" placeholder="Search Phone Cases">
     
-       
+        <h3>Search result for: <?php echo $_POST['search'] ?></h3>
        
     </form>
 </div>
@@ -267,7 +267,7 @@
    
 </div>
 <div class="products">
-    <h1>Search result for: <?php echo $_POST['search'] ?></h1>
+
 <?php
 	include ('connectdb.php');  
 
