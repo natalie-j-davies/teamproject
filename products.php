@@ -4,7 +4,7 @@
 ?>
 
 <div class="titleList">
-<h1>Products</h1>
+<h1><img class="contact-logo"src="images/logo/logo-symbol.png">Products</h1>
 </div>
 <div class="searchform">
     <form action= "search.php" method="GET">
