@@ -45,9 +45,7 @@
 
 ?>
 
-    <form action= "basket.php" method='post'>
         <button class='basket-button' name='submit' type='submit'>Add To Basket</button>
-    </form>
     </div>
 	</div>
 </div>
