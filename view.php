@@ -26,6 +26,7 @@
                 <img class='view-product-image'src=". $row['image'] .">
                 </div>
                 <div class='view-product-right'>
+                <img src='images/logo/logo.png' alt='img' id='view-logo'></img>
 				<h4>Price: £". $row['price'] ."</h4>
                 <p>Brand: ". $row['caseBrand'] ."</p>
                 <p>Colour: ". $row['caseColour'] ."</p>";

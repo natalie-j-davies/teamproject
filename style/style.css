@@ -638,6 +638,9 @@ position: relative;
     cursor: pointer;
     transform: scale(1.05);
 }
+#view-logo{
+    width: 200px;
+}
 /*Footer CSS*/
 .footer-container{
     padding-top: 10px;
