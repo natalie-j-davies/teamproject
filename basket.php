@@ -31,7 +31,7 @@
                                     <td>" .$row['orderID']. "</td>
                                     <td>£" .$row['total_price']. "</td>
                                     <td>" .$row['created_at']. "</td>
-                                    <td> Delete </td>
+                                    <td><button type='button' class='btn btn-danger'>Delete</button></td>
                                 </tr>
                            ";
                       }
