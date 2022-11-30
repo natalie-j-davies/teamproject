@@ -1,5 +1,5 @@
 <?php
-    define("TITLE", "Login | G-TWENTY");
+    define("TITLE", "Stock | G-TWENTY");
     include('includes/adminheader.php');
 
 ?>
