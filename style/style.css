@@ -555,10 +555,12 @@ position: relative;
     flex-wrap: wrap;
     width: 300px;
     padding: 10px;
+    border-bottom: lightgrey solid 0.5px;
 }
 .product-left{
     width: 50%;
     padding: 5px;
+
 }
 .product-right{
     width: 50%;
