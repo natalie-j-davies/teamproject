@@ -10,7 +10,7 @@
                 <h1>About Us</h1>
                 <h5>About<span class="about-p-title" > G-Twenty</span></h5>
                 <br>
-                <p>G-Twenty is a British brand founded in 2019 that specializes in tech cases & after having some experience with working in the tech market, 
+                <p>G-Twenty is a British brand founded in 2021 that specializes in tech cases & after having some experience with working in the tech market, 
                     we decided to be creative and launch an online brand that is inspired by modern attractions. Phones have become the most used tool in everyday
                      life and it is important to us because our customers deserve the most efficient/fashionable covers/cases. </p>
                 <p> With G-Twenty, we create/design all our products ourselves with carefully selected materials to help better our environment we also challenge ourselves every day during the product 
