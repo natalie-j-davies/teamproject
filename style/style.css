@@ -641,6 +641,11 @@ position: relative;
 #view-logo{
     width: 200px;
 }
+#add-basket{
+    color: green;
+    font-weight: bold;
+    padding: 10px;
+}
 /*Footer CSS*/
 .footer-container{
     padding-top: 10px;

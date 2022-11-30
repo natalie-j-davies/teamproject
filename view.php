@@ -45,11 +45,18 @@
     }	
 
 ?>
-
-        <button class='basket-button' name='submit' type='submit'>Add To Basket</button>
+<?php
+ if(isset($_POST['add'])){
+        echo "<p id='add-basket'>Added to Basket</p>";
+}
+?>
+        <form action="" method="post">
+        <button class='basket-button' name='add' type='submit'>Add To Basket</button></form>
     </div>
 	</div>
 </div>
+
+
 <?php
     include('includes/footer.php');
 ?>

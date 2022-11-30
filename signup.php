@@ -21,7 +21,7 @@ if (isset($_POST['submit'])){
  try{
 
 	//register user by inserting the user info into users database
-	$stat=$db->prepare("insert into users values(default,?,?,?,?,?,?,?,?)");
+	$stat=$db->prepare("INSERT INTO users VALUES(DEFAULT,?,?,?,?,?,?,?,?)");
 	$stat->execute(array($username, $password,$firstname,$lastname,$phone,$email,$address,$postcode));
 
 	echo "Congratulations $username! You are now registered. ";
