@@ -288,11 +288,10 @@
 				<h4>Price: £". $row['price'] ."</h4>
                 <p>Brand: ". $row['caseBrand'] ."</p>
                 <p>Colour: ". $row['caseColour'] ."</p>
-                <div class='view-button-container'>
-                </div>
-                <button><a href='view.php?SKU=". $row['SKU'] ."'>View Product</a></button>
+                <button class='basket-button' type='submit'>Add To Basket</button>
                 </div>
 				</div>";
+
             }
         }
         }
