@@ -15,10 +15,8 @@
          <table id='orders-table'>
                 <tr>
                     <th>Product Name</th>
-                    <th>Order Number</th>
-                    <th>Colour</th>
                     <th>Price</th>
-                    <th>image</th>
+                    <th>Order Number</th>
                     <th></th>
                 </tr>
 <?php
@@ -31,9 +29,9 @@
             echo "
                                 <tr>
                                     <td>" .$row['orderID']. "</td>
-                                    <td>" .$row['total_price']. "</td>
+                                    <td>£" .$row['total_price']. "</td>
                                     <td>" .$row['created_at']. "</td>
-                                    <td> Delete </td>
+                                    <td><button type='button' class='btn btn-danger'>Delete</button></td>
                                 </tr>
                            ";
                       }

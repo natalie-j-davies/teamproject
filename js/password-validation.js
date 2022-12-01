@@ -27,6 +27,7 @@ function fill_details_alert() {
         alert("Your account is created!");
     
     } else {
-        alert('Please fill in the details');
+        document.getElementById('test').innerHTML = 'Please Fill in All the fields';
+       // alert('Please fill in the details');
     }
 }

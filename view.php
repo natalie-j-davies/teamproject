@@ -26,6 +26,7 @@
                 <img class='view-product-image'src=". $row['image'] .">
                 </div>
                 <div class='view-product-right'>
+                <img src='images/logo/logo.png' alt='img' id='view-logo'></img>
 				<h4>Price: £". $row['price'] ."</h4>
                 <p>Brand: ". $row['caseBrand'] ."</p>
                 <p>Colour: ". $row['caseColour'] ."</p>";
@@ -44,13 +45,18 @@
     }	
 
 ?>
-
-    <form action= "basket.php" method='post'>
-        <button class='basket-button' name='submit' type='submit'>Add To Basket</button>
-    </form>
+<?php
+ if(isset($_POST['add'])){
+        echo "<p id='add-basket'>Added to Basket</p>";
+}
+?>
+        <form action="" method="post">
+        <button class='basket-button' name='add' type='submit'>Add To Basket</button></form>
     </div>
 	</div>
 </div>
+
+
 <?php
     include('includes/footer.php');
 ?>

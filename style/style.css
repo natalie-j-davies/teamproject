@@ -240,7 +240,8 @@ nav ul li a:hover{
     padding-right: 15px;
     padding-top: 20px;
     border-radius: 32px;
-    background-color: rgb(225, 225, 225);
+    background-color:rgb(135, 206, 250,0.3);
+    
 }
 .signup-container label{
     padding: 5px;
@@ -248,8 +249,8 @@ nav ul li a:hover{
 }
 .signup-container input{
     width: 30rem;
-    background-color: rgb(254, 254, 254);
     border: rgb(255, 255, 255);
+    background-color: inherit;
     padding: 10px;
     font-size: 14px;
     border-bottom: 2px solid rgb(0, 0, 0);
@@ -440,13 +441,14 @@ text-align: center;
 .productmainsection{
     margin-top: 20px;
     border-style: solid none solid none;
+    
 
 }
 .sidebar {
   
     width: 190px; 
     float: left;
-    background-color: lightgrey; 
+    background-color:rgb(135, 206, 250,0.25); 
     overflow-x: hidden; 
     padding-top: 20px;
     border-style: none solid solid none;
@@ -553,10 +555,12 @@ position: relative;
     flex-wrap: wrap;
     width: 300px;
     padding: 10px;
+    border-bottom: lightgrey solid 0.5px;
 }
 .product-left{
     width: 50%;
     padding: 5px;
+
 }
 .product-right{
     width: 50%;
@@ -633,6 +637,14 @@ position: relative;
     border: 2px solid lightblue;
     cursor: pointer;
     transform: scale(1.05);
+}
+#view-logo{
+    width: 200px;
+}
+#add-basket{
+    color: green;
+    font-weight: bold;
+    padding: 10px;
 }
 /*Footer CSS*/
 .footer-container{
@@ -918,4 +930,11 @@ position: relative;
 }
 #log-out h2{
     border-bottom: solid 0.5px #333;
+}
+
+.pp-container{
+    padding: 25px;
+}
+.pp-header{
+    border-bottom: solid 0.5px lightgray;
 }
