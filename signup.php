@@ -49,8 +49,9 @@ if (isset($_POST['submit'])){
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                     <div class="signup-container">
                         <!-- Username Field -->
+                        <p style="color: red; text-align: center;" id="test"> </p>
                         <label for="username">Username </label>
-                        <input type="text" id="username" name="username"><br><br>
+                        <input type="text" id="username" name="username" required><br><br>
 
                         <!-- Password Field -->
                         <label for="password">Password </label>
@@ -58,20 +59,20 @@ if (isset($_POST['submit'])){
                         <p id="password_msg">*Password should be a combination of letters, numbers and symbols and be at least 8+ characters</p>
 
                         <!-- Repeat Password Field -->
-                        <label for="repeat-password">Repeat Password</label>
+                        <label for="repeat-password" >Repeat Password</label>
                         <input type="password" id="repeat-password" name="repeat-password" required onkeyup="passwordValidator()"><br><br>
                         <p id="wrong_pass_alert"></p>
 
                         <!-- First Name Field -->
                         <label for="firstname">First Name </label>
-                        <input type="text" id="firstname" name="firstname"><br><br>
+                        <input type="text" id="firstname" name="firstname" required><br><br>
                         <!-- Last Name Field -->
                         <label for="lastname">Last Name </label>
-                        <input type="text" id="lastname" name="lastname"><br><br>
+                        <input type="text" id="lastname" name="lastname" required><br><br>
                         
                         <!-- Phone Number Field -->
                         <label for="phone">Phone Number </label>
-                        <input type="text" id="phone" name="phone"><br><br>
+                        <input type="text" id="phone" name="phone" required><br><br>
 
                         <!-- Email Field -->
                         <label for="email">Email Address </label>
@@ -79,11 +80,11 @@ if (isset($_POST['submit'])){
 
                         <!-- Address Line Field -->
                         <label for="address">Address Line </label>
-                        <input type="text" id="address" name="address"><br><br>
+                        <input type="text" id="address" name="address" required><br><br>
 
                         <!-- Postcode Field -->
                         <label for="postcode">Postcode </label>
-                        <input type="text" id="postcode" name="postcode"><br><br>
+                        <input type="text" id="postcode" name="postcode" required><br><br>
 
                         <p style="text-align: center;">By creating an account you agree to G-TWENTY's Terms and Conditions. Please see our <a href="privacypolicy.php">Privacy Policy</a>.</p>
 
